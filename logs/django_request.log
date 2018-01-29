@@ -1,0 +1,889 @@
+[Wed Jan 10 12:33:48.487749 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:31930] mod_wsgi (pid=27304): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/profiles.py' cannot be loaded as Python module.
+[Wed Jan 10 12:33:48.487787 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:31930] mod_wsgi (pid=27304): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/profiles.py'.
+[Wed Jan 10 12:33:48.487808 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:31930] Traceback (most recent call last):
+[Wed Jan 10 12:33:48.487824 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:31930]   File "/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/profiles.py", line 1, in <module>
+[Wed Jan 10 12:33:48.487889 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:31930]     from wazimap.data.utils import get_session, merge_dicts, group_remainder
+[Wed Jan 10 12:33:48.487901 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:31930]   File "/usr/local/lib/python2.7/dist-packages/wazimap/data/__init__.py", line 1, in <module>
+[Wed Jan 10 12:33:48.489812 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:31930]     from .utils import LocationNotFound
+[Wed Jan 10 12:33:48.489832 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:31930]   File "/usr/local/lib/python2.7/dist-packages/wazimap/data/utils.py", line 12, in <module>
+[Wed Jan 10 12:33:48.495755 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:31930]     if settings.TESTING:
+[Wed Jan 10 12:33:48.495783 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:31930]   File "/usr/local/lib/python2.7/dist-packages/django/conf/__init__.py", line 55, in __getattr__
+[Wed Jan 10 12:33:48.506159 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:31930]     self._setup(name)
+[Wed Jan 10 12:33:48.506183 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:31930]   File "/usr/local/lib/python2.7/dist-packages/django/conf/__init__.py", line 41, in _setup
+[Wed Jan 10 12:33:48.506201 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:31930]     % (desc, ENVIRONMENT_VARIABLE))
+[Wed Jan 10 12:33:48.506220 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:31930] ImproperlyConfigured: Requested setting TESTING, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.
+[Wed Jan 10 12:33:50.954906 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:32675] mod_wsgi (pid=27304): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/profiles.py' cannot be loaded as Python module.
+[Wed Jan 10 12:33:50.954942 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:32675] mod_wsgi (pid=27304): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/profiles.py'.
+[Wed Jan 10 12:33:50.954967 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:32675] Traceback (most recent call last):
+[Wed Jan 10 12:33:50.954982 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:32675]   File "/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/profiles.py", line 1, in <module>
+[Wed Jan 10 12:33:50.955009 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:32675]     from wazimap.data.utils import get_session, merge_dicts, group_remainder
+[Wed Jan 10 12:33:50.955018 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:32675]   File "/usr/local/lib/python2.7/dist-packages/wazimap/data/__init__.py", line 1, in <module>
+[Wed Jan 10 12:33:50.955031 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:32675]     from .utils import LocationNotFound
+[Wed Jan 10 12:33:50.955038 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:32675]   File "/usr/local/lib/python2.7/dist-packages/wazimap/data/utils.py", line 12, in <module>
+[Wed Jan 10 12:33:50.955049 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:32675]     if settings.TESTING:
+[Wed Jan 10 12:33:50.955058 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:32675]   File "/usr/local/lib/python2.7/dist-packages/django/conf/__init__.py", line 55, in __getattr__
+[Wed Jan 10 12:33:50.955079 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:32675]     self._setup(name)
+[Wed Jan 10 12:33:50.955087 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:32675]   File "/usr/local/lib/python2.7/dist-packages/django/conf/__init__.py", line 41, in _setup
+[Wed Jan 10 12:33:50.955097 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:32675]     % (desc, ENVIRONMENT_VARIABLE))
+[Wed Jan 10 12:33:50.955113 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:32675] ImproperlyConfigured: Requested setting TESTING, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.
+[Wed Jan 10 12:33:51.970965 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:3500] mod_wsgi (pid=27304): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/profiles.py' cannot be loaded as Python module.
+[Wed Jan 10 12:33:51.970997 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:3500] mod_wsgi (pid=27304): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/profiles.py'.
+[Wed Jan 10 12:33:51.971015 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:3500] Traceback (most recent call last):
+[Wed Jan 10 12:33:51.971031 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:3500]   File "/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/profiles.py", line 1, in <module>
+[Wed Jan 10 12:33:51.971059 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:3500]     from wazimap.data.utils import get_session, merge_dicts, group_remainder
+[Wed Jan 10 12:33:51.971068 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:3500]   File "/usr/local/lib/python2.7/dist-packages/wazimap/data/__init__.py", line 1, in <module>
+[Wed Jan 10 12:33:51.971084 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:3500]     from .utils import LocationNotFound
+[Wed Jan 10 12:33:51.971091 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:3500]   File "/usr/local/lib/python2.7/dist-packages/wazimap/data/utils.py", line 12, in <module>
+[Wed Jan 10 12:33:51.971104 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:3500]     if settings.TESTING:
+[Wed Jan 10 12:33:51.971112 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:3500]   File "/usr/local/lib/python2.7/dist-packages/django/conf/__init__.py", line 55, in __getattr__
+[Wed Jan 10 12:33:51.971124 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:3500]     self._setup(name)
+[Wed Jan 10 12:33:51.971131 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:3500]   File "/usr/local/lib/python2.7/dist-packages/django/conf/__init__.py", line 41, in _setup
+[Wed Jan 10 12:33:51.971141 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:3500]     % (desc, ENVIRONMENT_VARIABLE))
+[Wed Jan 10 12:33:51.971158 2018] [wsgi:error] [pid 27304] [remote 197.88.55.94:3500] ImproperlyConfigured: Requested setting TESTING, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.
+[Wed Jan 10 12:34:17.492860 2018] [wsgi:error] [pid 27304] [remote 23.101.61.176:31930] mod_wsgi (pid=27304): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/profiles.py' cannot be loaded as Python module.
+[Wed Jan 10 12:34:17.492902 2018] [wsgi:error] [pid 27304] [remote 23.101.61.176:31930] mod_wsgi (pid=27304): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/profiles.py'.
+[Wed Jan 10 12:34:17.492920 2018] [wsgi:error] [pid 27304] [remote 23.101.61.176:31930] Traceback (most recent call last):
+[Wed Jan 10 12:34:17.492936 2018] [wsgi:error] [pid 27304] [remote 23.101.61.176:31930]   File "/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/profiles.py", line 1, in <module>
+[Wed Jan 10 12:34:17.492963 2018] [wsgi:error] [pid 27304] [remote 23.101.61.176:31930]     from wazimap.data.utils import get_session, merge_dicts, group_remainder
+[Wed Jan 10 12:34:17.492980 2018] [wsgi:error] [pid 27304] [remote 23.101.61.176:31930]   File "/usr/local/lib/python2.7/dist-packages/wazimap/data/__init__.py", line 1, in <module>
+[Wed Jan 10 12:34:17.493005 2018] [wsgi:error] [pid 27304] [remote 23.101.61.176:31930]     from .utils import LocationNotFound
+[Wed Jan 10 12:34:17.493012 2018] [wsgi:error] [pid 27304] [remote 23.101.61.176:31930]   File "/usr/local/lib/python2.7/dist-packages/wazimap/data/utils.py", line 12, in <module>
+[Wed Jan 10 12:34:17.493024 2018] [wsgi:error] [pid 27304] [remote 23.101.61.176:31930]     if settings.TESTING:
+[Wed Jan 10 12:34:17.493042 2018] [wsgi:error] [pid 27304] [remote 23.101.61.176:31930]   File "/usr/local/lib/python2.7/dist-packages/django/conf/__init__.py", line 55, in __getattr__
+[Wed Jan 10 12:34:17.493054 2018] [wsgi:error] [pid 27304] [remote 23.101.61.176:31930]     self._setup(name)
+[Wed Jan 10 12:34:17.493062 2018] [wsgi:error] [pid 27304] [remote 23.101.61.176:31930]   File "/usr/local/lib/python2.7/dist-packages/django/conf/__init__.py", line 41, in _setup
+[Wed Jan 10 12:34:17.493072 2018] [wsgi:error] [pid 27304] [remote 23.101.61.176:31930]     % (desc, ENVIRONMENT_VARIABLE))
+[Wed Jan 10 12:34:17.493089 2018] [wsgi:error] [pid 27304] [remote 23.101.61.176:31930] ImproperlyConfigured: Requested setting TESTING, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.
+[Wed Jan 10 12:34:54.877425 2018] [wsgi:error] [pid 27304] [remote 104.45.18.178:32675] mod_wsgi (pid=27304): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/profiles.py' cannot be loaded as Python module.
+[Wed Jan 10 12:34:54.877469 2018] [wsgi:error] [pid 27304] [remote 104.45.18.178:32675] mod_wsgi (pid=27304): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/profiles.py'.
+[Wed Jan 10 12:34:54.877495 2018] [wsgi:error] [pid 27304] [remote 104.45.18.178:32675] Traceback (most recent call last):
+[Wed Jan 10 12:34:54.877511 2018] [wsgi:error] [pid 27304] [remote 104.45.18.178:32675]   File "/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/profiles.py", line 1, in <module>
+[Wed Jan 10 12:34:54.877538 2018] [wsgi:error] [pid 27304] [remote 104.45.18.178:32675]     from wazimap.data.utils import get_session, merge_dicts, group_remainder
+[Wed Jan 10 12:34:54.877550 2018] [wsgi:error] [pid 27304] [remote 104.45.18.178:32675]   File "/usr/local/lib/python2.7/dist-packages/wazimap/data/__init__.py", line 1, in <module>
+[Wed Jan 10 12:34:54.877565 2018] [wsgi:error] [pid 27304] [remote 104.45.18.178:32675]     from .utils import LocationNotFound
+[Wed Jan 10 12:34:54.877580 2018] [wsgi:error] [pid 27304] [remote 104.45.18.178:32675]   File "/usr/local/lib/python2.7/dist-packages/wazimap/data/utils.py", line 12, in <module>
+[Wed Jan 10 12:34:54.877593 2018] [wsgi:error] [pid 27304] [remote 104.45.18.178:32675]     if settings.TESTING:
+[Wed Jan 10 12:34:54.877610 2018] [wsgi:error] [pid 27304] [remote 104.45.18.178:32675]   File "/usr/local/lib/python2.7/dist-packages/django/conf/__init__.py", line 55, in __getattr__
+[Wed Jan 10 12:34:54.877622 2018] [wsgi:error] [pid 27304] [remote 104.45.18.178:32675]     self._setup(name)
+[Wed Jan 10 12:34:54.877630 2018] [wsgi:error] [pid 27304] [remote 104.45.18.178:32675]   File "/usr/local/lib/python2.7/dist-packages/django/conf/__init__.py", line 41, in _setup
+[Wed Jan 10 12:34:54.877641 2018] [wsgi:error] [pid 27304] [remote 104.45.18.178:32675]     % (desc, ENVIRONMENT_VARIABLE))
+[Wed Jan 10 12:34:54.877661 2018] [wsgi:error] [pid 27304] [remote 104.45.18.178:32675] ImproperlyConfigured: Requested setting TESTING, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.
+[Wed Jan 10 12:40:44.845398 2018] [wsgi:error] [pid 27583] [client 197.88.55.94:61665] Attempt to invoke directory as WSGI application: /home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/
+[Wed Jan 10 12:41:00.732861 2018] [wsgi:error] [pid 27587] [client 41.76.134.164:42264] Attempt to invoke directory as WSGI application: /home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/
+[Wed Jan 10 12:41:00.894370 2018] [wsgi:error] [pid 27587] [client 41.76.134.164:42264] Target WSGI script not found or unable to stat: /home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/favicon.ico, referer: http://widerlouw.vanilla.co.za/
+[Wed Jan 10 12:41:29.394870 2018] [wsgi:error] [pid 27584] [client 197.88.55.94:61681] Attempt to invoke directory as WSGI application: /home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/
+[Wed Jan 10 12:41:43.077711 2018] [wsgi:error] [pid 27585] [client 197.88.55.94:61683] Attempt to invoke directory as WSGI application: /home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/
+[Wed Jan 10 12:44:43.437559 2018] [wsgi:error] [pid 28121] [client 197.88.55.94:61708] Target WSGI script not found or unable to stat: /home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/manage.py
+[Wed Jan 10 12:45:50.990610 2018] [wsgi:error] [pid 28253] [remote 197.88.55.94:23782] mod_wsgi (pid=28253): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/manage.py' does not contain WSGI application 'application'.
+[Wed Jan 10 12:46:12.692531 2018] [wsgi:error] [pid 28253] [remote 41.76.134.164:23782] mod_wsgi (pid=28253): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/manage.py' does not contain WSGI application 'application'.
+[Wed Jan 10 12:46:13.414051 2018] [wsgi:error] [pid 28253] [remote 41.76.134.164:23526] mod_wsgi (pid=28253): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/manage.py' does not contain WSGI application 'application'.
+[Wed Jan 10 12:56:59.651297 2018] [authz_core:error] [pid 28940] [client 41.76.134.164:42582] AH01630: client denied by server configuration: /home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py
+[Wed Jan 10 12:57:00.160396 2018] [authz_core:error] [pid 28940] [client 41.76.134.164:42582] AH01630: client denied by server configuration: /home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py
+[Wed Jan 10 12:57:00.609322 2018] [authz_core:error] [pid 28940] [client 41.76.134.164:42582] AH01630: client denied by server configuration: /home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py
+[Wed Jan 10 12:57:00.849255 2018] [authz_core:error] [pid 28940] [client 41.76.134.164:42582] AH01630: client denied by server configuration: /home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py
+[Wed Jan 10 12:59:27.932071 2018] [authz_core:error] [pid 28943] [client 41.76.134.164:42622] AH01630: client denied by server configuration: /home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py
+[Wed Jan 10 12:59:28.395090 2018] [authz_core:error] [pid 28943] [client 41.76.134.164:42622] AH01630: client denied by server configuration: /home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py
+[Wed Jan 10 12:59:28.651573 2018] [authz_core:error] [pid 28943] [client 41.76.134.164:42622] AH01630: client denied by server configuration: /home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py
+[Wed Jan 10 12:59:28.907120 2018] [authz_core:error] [pid 28943] [client 41.76.134.164:42622] AH01630: client denied by server configuration: /home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py
+[Wed Jan 10 13:03:00.679101 2018] [authz_core:error] [pid 29418] [client 41.76.134.164:42670] AH01630: client denied by server configuration: /home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py
+[Wed Jan 10 13:03:00.933126 2018] [authz_core:error] [pid 29418] [client 41.76.134.164:42670] AH01630: client denied by server configuration: /home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py
+[Wed Jan 10 13:03:03.204552 2018] [authz_core:error] [pid 29418] [client 41.76.134.164:42670] AH01630: client denied by server configuration: /home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py
+[Wed Jan 10 13:04:46.060648 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698] mod_wsgi (pid=29684): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:04:46.060790 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698] mod_wsgi (pid=29684): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:04:46.060847 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698] Traceback (most recent call last):
+[Wed Jan 10 13:04:46.060882 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:04:46.060986 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]     application = get_wsgi_application()
+[Wed Jan 10 13:04:46.061018 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:04:46.083857 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]     django.setup()
+[Wed Jan 10 13:04:46.083923 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:04:46.085672 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:04:46.085708 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:04:46.122440 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:04:46.122511 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:04:46.122831 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]     mod = import_module(mod_path)
+[Wed Jan 10 13:04:46.122879 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:04:46.135222 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]     __import__(name)
+[Wed Jan 10 13:04:46.135298 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:04:46.136350 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]     from .management import update_contenttypes
+[Wed Jan 10 13:04:46.136412 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:08:34.814921 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698] mod_wsgi (pid=29684): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:08:34.814969 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698] mod_wsgi (pid=29684): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:08:34.814987 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698] Traceback (most recent call last):
+[Wed Jan 10 13:08:34.815005 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:08:34.815041 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]     application = get_wsgi_application()
+[Wed Jan 10 13:08:34.815054 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:08:34.815068 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]     django.setup()
+[Wed Jan 10 13:08:34.815076 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:08:34.815086 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:08:34.815094 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:08:34.815105 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:08:34.815117 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:08:34.815128 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]     mod = import_module(mod_path)
+[Wed Jan 10 13:08:34.815139 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:08:34.815151 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]     __import__(name)
+[Wed Jan 10 13:08:34.815159 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:08:34.815171 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698]     from .management import update_contenttypes
+[Wed Jan 10 13:08:34.815184 2018] [wsgi:error] [pid 29684] [remote 197.88.126.103:15698] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:10:51.258554 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] mod_wsgi (pid=29684): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:10:51.258592 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] mod_wsgi (pid=29684): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:10:51.258608 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] Traceback (most recent call last):
+[Wed Jan 10 13:10:51.258623 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:10:51.258649 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     application = get_wsgi_application()
+[Wed Jan 10 13:10:51.258660 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:10:51.258674 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     django.setup()
+[Wed Jan 10 13:10:51.258684 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:10:51.258696 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:10:51.258705 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:10:51.258717 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:10:51.258735 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:10:51.258748 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     mod = import_module(mod_path)
+[Wed Jan 10 13:10:51.258757 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:10:51.258770 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     __import__(name)
+[Wed Jan 10 13:10:51.258778 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:10:51.258790 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     from .management import update_contenttypes
+[Wed Jan 10 13:10:51.258804 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:10:51.944921 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] mod_wsgi (pid=29684): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:10:51.944953 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] mod_wsgi (pid=29684): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:10:51.944969 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] Traceback (most recent call last):
+[Wed Jan 10 13:10:51.944985 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:10:51.945012 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     application = get_wsgi_application()
+[Wed Jan 10 13:10:51.945021 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:10:51.945035 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     django.setup()
+[Wed Jan 10 13:10:51.945042 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:10:51.945053 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:10:51.945060 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:10:51.945071 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:10:51.945078 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:10:51.945089 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     mod = import_module(mod_path)
+[Wed Jan 10 13:10:51.945095 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:10:51.945107 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     __import__(name)
+[Wed Jan 10 13:10:51.945114 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:10:51.945125 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     from .management import update_contenttypes
+[Wed Jan 10 13:10:51.945138 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:16:55.807021 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] mod_wsgi (pid=29684): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:16:55.807064 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] mod_wsgi (pid=29684): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:16:55.807089 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] Traceback (most recent call last):
+[Wed Jan 10 13:16:55.807104 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:16:55.807129 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     application = get_wsgi_application()
+[Wed Jan 10 13:16:55.807140 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:16:55.807157 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     django.setup()
+[Wed Jan 10 13:16:55.807165 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:16:55.807176 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:16:55.807184 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:16:55.807195 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:16:55.807202 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:16:55.807213 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     mod = import_module(mod_path)
+[Wed Jan 10 13:16:55.807233 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:16:55.807245 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     __import__(name)
+[Wed Jan 10 13:16:55.807258 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:16:55.807269 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     from .management import update_contenttypes
+[Wed Jan 10 13:16:55.807285 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:16:56.333004 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] mod_wsgi (pid=29684): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:16:56.333043 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] mod_wsgi (pid=29684): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:16:56.333064 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] Traceback (most recent call last):
+[Wed Jan 10 13:16:56.333083 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:16:56.333111 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     application = get_wsgi_application()
+[Wed Jan 10 13:16:56.333123 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:16:56.333144 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     django.setup()
+[Wed Jan 10 13:16:56.333154 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:16:56.333179 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:16:56.333188 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:16:56.333200 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:16:56.333209 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:16:56.333221 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     mod = import_module(mod_path)
+[Wed Jan 10 13:16:56.333230 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:16:56.333243 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     __import__(name)
+[Wed Jan 10 13:16:56.333251 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:16:56.333263 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     from .management import update_contenttypes
+[Wed Jan 10 13:16:56.333279 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:16:56.764305 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] mod_wsgi (pid=29684): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:16:56.764339 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] mod_wsgi (pid=29684): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:16:56.764353 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] Traceback (most recent call last):
+[Wed Jan 10 13:16:56.764368 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:16:56.764391 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     application = get_wsgi_application()
+[Wed Jan 10 13:16:56.764400 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:16:56.764412 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     django.setup()
+[Wed Jan 10 13:16:56.764419 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:16:56.764431 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:16:56.764438 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:16:56.764449 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:16:56.764459 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:16:56.764470 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     mod = import_module(mod_path)
+[Wed Jan 10 13:16:56.764477 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:16:56.764489 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     __import__(name)
+[Wed Jan 10 13:16:56.764509 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:16:56.764521 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     from .management import update_contenttypes
+[Wed Jan 10 13:16:56.764534 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:17:19.996967 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] mod_wsgi (pid=29684): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:17:19.997000 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] mod_wsgi (pid=29684): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:17:19.997016 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] Traceback (most recent call last):
+[Wed Jan 10 13:17:19.997030 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:17:19.997055 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     application = get_wsgi_application()
+[Wed Jan 10 13:17:19.997071 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:17:19.997086 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     django.setup()
+[Wed Jan 10 13:17:19.997094 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:17:19.997105 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:17:19.997116 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:17:19.997127 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:17:19.997136 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:17:19.997147 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     mod = import_module(mod_path)
+[Wed Jan 10 13:17:19.997155 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:17:19.997167 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     __import__(name)
+[Wed Jan 10 13:17:19.997173 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:17:19.997185 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     from .management import update_contenttypes
+[Wed Jan 10 13:17:19.997200 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:17:20.506526 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:52058] mod_wsgi (pid=29684): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:17:20.506573 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:52058] mod_wsgi (pid=29684): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:17:20.506589 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:52058] Traceback (most recent call last):
+[Wed Jan 10 13:17:20.506605 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:52058]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:17:20.506640 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:52058]     application = get_wsgi_application()
+[Wed Jan 10 13:17:20.506651 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:52058]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:17:20.506665 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:52058]     django.setup()
+[Wed Jan 10 13:17:20.506677 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:52058]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:17:20.506689 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:52058]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:17:20.506698 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:52058]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:17:20.506712 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:52058]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:17:20.506722 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:52058]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:17:20.506735 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:52058]     mod = import_module(mod_path)
+[Wed Jan 10 13:17:20.506745 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:52058]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:17:20.506758 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:52058]     __import__(name)
+[Wed Jan 10 13:17:20.506767 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:52058]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:17:20.506779 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:52058]     from .management import update_contenttypes
+[Wed Jan 10 13:17:20.506795 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:52058] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:17:20.761746 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] mod_wsgi (pid=29684): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:17:20.761775 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] mod_wsgi (pid=29684): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:17:20.761790 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] Traceback (most recent call last):
+[Wed Jan 10 13:17:20.761804 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:17:20.761828 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     application = get_wsgi_application()
+[Wed Jan 10 13:17:20.761836 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:17:20.761849 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     django.setup()
+[Wed Jan 10 13:17:20.761856 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:17:20.761867 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:17:20.761876 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:17:20.761888 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:17:20.761903 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:17:20.761917 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     mod = import_module(mod_path)
+[Wed Jan 10 13:17:20.761924 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:17:20.761935 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     __import__(name)
+[Wed Jan 10 13:17:20.761942 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:17:20.761953 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698]     from .management import update_contenttypes
+[Wed Jan 10 13:17:20.761965 2018] [wsgi:error] [pid 29684] [remote 41.76.134.164:15698] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:17:51.708563 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:17:51.708607 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:17:51.708628 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881] Traceback (most recent call last):
+[Wed Jan 10 13:17:51.708648 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:17:51.708702 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     application = get_wsgi_application()
+[Wed Jan 10 13:17:51.708715 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:17:51.708743 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     django.setup()
+[Wed Jan 10 13:17:51.708757 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:17:51.708783 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:17:51.708797 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:17:51.708893 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:17:51.708914 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:17:51.708970 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     mod = import_module(mod_path)
+[Wed Jan 10 13:17:51.708998 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:17:51.709028 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     __import__(name)
+[Wed Jan 10 13:17:51.709040 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:17:51.709065 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     from .management import update_contenttypes
+[Wed Jan 10 13:17:51.709084 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:17:52.408717 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:17:52.408765 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:17:52.408783 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] Traceback (most recent call last):
+[Wed Jan 10 13:17:52.408800 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:17:52.408827 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     application = get_wsgi_application()
+[Wed Jan 10 13:17:52.408836 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:17:52.408850 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     django.setup()
+[Wed Jan 10 13:17:52.408857 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:17:52.408869 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:17:52.408877 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:17:52.408889 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:17:52.408896 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:17:52.408907 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     mod = import_module(mod_path)
+[Wed Jan 10 13:17:52.408915 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:17:52.408927 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     __import__(name)
+[Wed Jan 10 13:17:52.408934 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:17:52.408946 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     from .management import update_contenttypes
+[Wed Jan 10 13:17:52.408959 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:17:52.762033 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:17:52.762059 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:17:52.762074 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] Traceback (most recent call last):
+[Wed Jan 10 13:17:52.762089 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:17:52.762113 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     application = get_wsgi_application()
+[Wed Jan 10 13:17:52.762121 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:17:52.762134 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     django.setup()
+[Wed Jan 10 13:17:52.762141 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:17:52.762161 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:17:52.762168 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:17:52.762180 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:17:52.762187 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:17:52.762197 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     mod = import_module(mod_path)
+[Wed Jan 10 13:17:52.762204 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:17:52.762215 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     __import__(name)
+[Wed Jan 10 13:17:52.762222 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:17:52.762233 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     from .management import update_contenttypes
+[Wed Jan 10 13:17:52.762246 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:19:06.058741 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:19:06.058778 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:19:06.058795 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] Traceback (most recent call last):
+[Wed Jan 10 13:19:06.058811 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:19:06.058839 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     application = get_wsgi_application()
+[Wed Jan 10 13:19:06.058849 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:19:06.058863 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     django.setup()
+[Wed Jan 10 13:19:06.058873 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:19:06.058885 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:19:06.058893 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:19:06.058905 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:19:06.058913 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:19:06.058925 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     mod = import_module(mod_path)
+[Wed Jan 10 13:19:06.058932 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:19:06.058944 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     __import__(name)
+[Wed Jan 10 13:19:06.058951 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:19:06.058974 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     from .management import update_contenttypes
+[Wed Jan 10 13:19:06.058987 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:19:06.503137 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:19:06.503170 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:19:06.503185 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] Traceback (most recent call last):
+[Wed Jan 10 13:19:06.503200 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:19:06.503223 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     application = get_wsgi_application()
+[Wed Jan 10 13:19:06.503234 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:19:06.503247 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     django.setup()
+[Wed Jan 10 13:19:06.503256 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:19:06.503267 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:19:06.503277 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:19:06.503289 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:19:06.503298 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:19:06.503309 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     mod = import_module(mod_path)
+[Wed Jan 10 13:19:06.503318 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:19:06.503331 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     __import__(name)
+[Wed Jan 10 13:19:06.503339 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:19:06.503352 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     from .management import update_contenttypes
+[Wed Jan 10 13:19:06.503367 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:19:06.794321 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:19:06.794345 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:19:06.794359 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] Traceback (most recent call last):
+[Wed Jan 10 13:19:06.794375 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:19:06.794408 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     application = get_wsgi_application()
+[Wed Jan 10 13:19:06.794417 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:19:06.794430 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     django.setup()
+[Wed Jan 10 13:19:06.794438 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:19:06.794449 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:19:06.794458 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:19:06.794471 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:19:06.794478 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:19:06.794489 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     mod = import_module(mod_path)
+[Wed Jan 10 13:19:06.794497 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:19:06.794509 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     __import__(name)
+[Wed Jan 10 13:19:06.794516 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:19:06.794527 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     from .management import update_contenttypes
+[Wed Jan 10 13:19:06.794540 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:19:07.127328 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:19:07.127365 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:19:07.127381 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] Traceback (most recent call last):
+[Wed Jan 10 13:19:07.127398 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:19:07.127433 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     application = get_wsgi_application()
+[Wed Jan 10 13:19:07.127442 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:19:07.127457 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     django.setup()
+[Wed Jan 10 13:19:07.127466 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:19:07.127478 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:19:07.127488 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:19:07.127501 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:19:07.127508 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:19:07.127530 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     mod = import_module(mod_path)
+[Wed Jan 10 13:19:07.127538 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:19:07.127551 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     __import__(name)
+[Wed Jan 10 13:19:07.127559 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:19:07.127574 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     from .management import update_contenttypes
+[Wed Jan 10 13:19:07.127592 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:19:07.429438 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:19:07.429468 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:19:07.429484 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] Traceback (most recent call last):
+[Wed Jan 10 13:19:07.429499 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:19:07.429528 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     application = get_wsgi_application()
+[Wed Jan 10 13:19:07.429536 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:19:07.429549 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     django.setup()
+[Wed Jan 10 13:19:07.429557 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:19:07.429568 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:19:07.429575 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:19:07.429587 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:19:07.429594 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:19:07.429605 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     mod = import_module(mod_path)
+[Wed Jan 10 13:19:07.429612 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:19:07.429624 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     __import__(name)
+[Wed Jan 10 13:19:07.429630 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:19:07.429641 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     from .management import update_contenttypes
+[Wed Jan 10 13:19:07.429654 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:19:07.766965 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:19:07.767004 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:19:07.767019 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] Traceback (most recent call last):
+[Wed Jan 10 13:19:07.767035 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:19:07.767064 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     application = get_wsgi_application()
+[Wed Jan 10 13:19:07.767073 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:19:07.767087 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     django.setup()
+[Wed Jan 10 13:19:07.767095 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:19:07.767107 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:19:07.767115 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:19:07.767127 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:19:07.767137 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:19:07.767149 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     mod = import_module(mod_path)
+[Wed Jan 10 13:19:07.767157 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:19:07.767170 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     __import__(name)
+[Wed Jan 10 13:19:07.767177 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:19:07.767190 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     from .management import update_contenttypes
+[Wed Jan 10 13:19:07.767205 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:19:08.087371 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:19:08.087405 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:19:08.087421 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] Traceback (most recent call last):
+[Wed Jan 10 13:19:08.087435 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:19:08.087461 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     application = get_wsgi_application()
+[Wed Jan 10 13:19:08.087469 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:19:08.087482 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     django.setup()
+[Wed Jan 10 13:19:08.087490 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:19:08.087510 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:19:08.087517 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:19:08.087529 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:19:08.087536 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:19:08.087547 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     mod = import_module(mod_path)
+[Wed Jan 10 13:19:08.087554 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:19:08.087566 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     __import__(name)
+[Wed Jan 10 13:19:08.087573 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:19:08.087584 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     from .management import update_contenttypes
+[Wed Jan 10 13:19:08.087596 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:19:08.423913 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:19:08.423946 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:19:08.423961 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] Traceback (most recent call last):
+[Wed Jan 10 13:19:08.423976 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:19:08.424001 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     application = get_wsgi_application()
+[Wed Jan 10 13:19:08.424010 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:19:08.424023 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     django.setup()
+[Wed Jan 10 13:19:08.424033 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:19:08.424045 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:19:08.424054 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:19:08.424067 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:19:08.424075 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:19:08.424087 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     mod = import_module(mod_path)
+[Wed Jan 10 13:19:08.424095 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:19:08.424107 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     __import__(name)
+[Wed Jan 10 13:19:08.424115 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:19:08.424138 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     from .management import update_contenttypes
+[Wed Jan 10 13:19:08.424151 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:19:08.761198 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:19:08.761229 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:19:08.761245 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] Traceback (most recent call last):
+[Wed Jan 10 13:19:08.761260 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:19:08.761286 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     application = get_wsgi_application()
+[Wed Jan 10 13:19:08.761295 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:19:08.761308 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     django.setup()
+[Wed Jan 10 13:19:08.761318 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:19:08.761332 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:19:08.761341 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:19:08.761354 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:19:08.761362 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:19:08.761373 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     mod = import_module(mod_path)
+[Wed Jan 10 13:19:08.761384 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:19:08.761397 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     __import__(name)
+[Wed Jan 10 13:19:08.761406 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:19:08.761418 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     from .management import update_contenttypes
+[Wed Jan 10 13:19:08.761433 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:19:09.065980 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:19:09.066026 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:19:09.066043 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] Traceback (most recent call last):
+[Wed Jan 10 13:19:09.066058 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:19:09.066099 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     application = get_wsgi_application()
+[Wed Jan 10 13:19:09.066109 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:19:09.066122 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     django.setup()
+[Wed Jan 10 13:19:09.066132 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:19:09.066144 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:19:09.066151 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:19:09.066163 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:19:09.066171 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:19:09.066183 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     mod = import_module(mod_path)
+[Wed Jan 10 13:19:09.066193 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:19:09.066205 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     __import__(name)
+[Wed Jan 10 13:19:09.066213 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:19:09.066229 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     from .management import update_contenttypes
+[Wed Jan 10 13:19:09.066244 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:19:09.527227 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:19:09.527262 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:19:09.527277 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] Traceback (most recent call last):
+[Wed Jan 10 13:19:09.527293 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:19:09.527317 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     application = get_wsgi_application()
+[Wed Jan 10 13:19:09.527328 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:19:09.527341 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     django.setup()
+[Wed Jan 10 13:19:09.527348 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:19:09.527360 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:19:09.527367 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:19:09.527378 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:19:09.527385 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:19:09.527412 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     mod = import_module(mod_path)
+[Wed Jan 10 13:19:09.527420 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:19:09.527433 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     __import__(name)
+[Wed Jan 10 13:19:09.527441 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:19:09.527453 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     from .management import update_contenttypes
+[Wed Jan 10 13:19:09.527467 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:19:09.959244 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:19:09.959280 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:19:09.959295 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] Traceback (most recent call last):
+[Wed Jan 10 13:19:09.959311 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:19:09.959335 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     application = get_wsgi_application()
+[Wed Jan 10 13:19:09.959344 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:19:09.959357 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     django.setup()
+[Wed Jan 10 13:19:09.959365 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:19:09.959376 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:19:09.959384 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:19:09.959396 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:19:09.959405 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:19:09.959416 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     mod = import_module(mod_path)
+[Wed Jan 10 13:19:09.959423 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:19:09.959435 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     __import__(name)
+[Wed Jan 10 13:19:09.959443 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:19:09.959455 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     from .management import update_contenttypes
+[Wed Jan 10 13:19:09.959468 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:19:10.343816 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:19:10.343865 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:19:10.343882 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] Traceback (most recent call last):
+[Wed Jan 10 13:19:10.343898 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:19:10.343926 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     application = get_wsgi_application()
+[Wed Jan 10 13:19:10.343935 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:19:10.343948 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     django.setup()
+[Wed Jan 10 13:19:10.343957 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:19:10.343968 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:19:10.343977 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:19:10.343989 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:19:10.343999 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:19:10.344011 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     mod = import_module(mod_path)
+[Wed Jan 10 13:19:10.344020 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:19:10.344033 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     __import__(name)
+[Wed Jan 10 13:19:10.344041 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:19:10.344054 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     from .management import update_contenttypes
+[Wed Jan 10 13:19:10.344068 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:19:10.710560 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:19:10.710593 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:19:10.710608 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] Traceback (most recent call last):
+[Wed Jan 10 13:19:10.710623 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:19:10.710648 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     application = get_wsgi_application()
+[Wed Jan 10 13:19:10.710658 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:19:10.710671 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     django.setup()
+[Wed Jan 10 13:19:10.710679 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:19:10.710702 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:19:10.710710 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:19:10.710722 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:19:10.710730 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:19:10.710742 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     mod = import_module(mod_path)
+[Wed Jan 10 13:19:10.710750 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:19:10.710762 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     __import__(name)
+[Wed Jan 10 13:19:10.710771 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:19:10.710783 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     from .management import update_contenttypes
+[Wed Jan 10 13:19:10.710797 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:26:21.420452 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:26:21.420489 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:26:21.420514 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] Traceback (most recent call last):
+[Wed Jan 10 13:26:21.420530 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:26:21.420555 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     application = get_wsgi_application()
+[Wed Jan 10 13:26:21.420567 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:26:21.420583 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     django.setup()
+[Wed Jan 10 13:26:21.420591 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:26:21.420603 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:26:21.420613 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:26:21.420625 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:26:21.420634 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:26:21.420645 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     mod = import_module(mod_path)
+[Wed Jan 10 13:26:21.420654 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:26:21.420667 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     __import__(name)
+[Wed Jan 10 13:26:21.420675 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:26:21.420698 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     from .management import update_contenttypes
+[Wed Jan 10 13:26:21.420711 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:26:21.929041 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:26:21.929069 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:26:21.929085 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] Traceback (most recent call last):
+[Wed Jan 10 13:26:21.929103 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:26:21.929132 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     application = get_wsgi_application()
+[Wed Jan 10 13:26:21.929141 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:26:21.929155 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     django.setup()
+[Wed Jan 10 13:26:21.929166 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:26:21.929178 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:26:21.929185 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:26:21.929197 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:26:21.929206 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:26:21.929218 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     mod = import_module(mod_path)
+[Wed Jan 10 13:26:21.929225 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:26:21.929237 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     __import__(name)
+[Wed Jan 10 13:26:21.929244 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:26:21.929256 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     from .management import update_contenttypes
+[Wed Jan 10 13:26:21.929270 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:26:22.425416 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:26:22.425447 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:26:22.425463 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] Traceback (most recent call last):
+[Wed Jan 10 13:26:22.425479 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:26:22.425505 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     application = get_wsgi_application()
+[Wed Jan 10 13:26:22.425533 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:26:22.425556 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     django.setup()
+[Wed Jan 10 13:26:22.425609 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:26:22.425622 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:26:22.425630 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:26:22.425642 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:26:22.425651 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:26:22.425663 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     mod = import_module(mod_path)
+[Wed Jan 10 13:26:22.425671 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:26:22.425683 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     __import__(name)
+[Wed Jan 10 13:26:22.425691 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:26:22.425703 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     from .management import update_contenttypes
+[Wed Jan 10 13:26:22.425718 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:26:23.156094 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:26:23.156130 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:26:23.156155 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] Traceback (most recent call last):
+[Wed Jan 10 13:26:23.156171 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:26:23.156199 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     application = get_wsgi_application()
+[Wed Jan 10 13:26:23.156211 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:26:23.156226 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     django.setup()
+[Wed Jan 10 13:26:23.156235 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:26:23.156248 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:26:23.156256 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:26:23.156277 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:26:23.156285 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:26:23.156307 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     mod = import_module(mod_path)
+[Wed Jan 10 13:26:23.156315 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:26:23.156327 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     __import__(name)
+[Wed Jan 10 13:26:23.156335 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:26:23.156347 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     from .management import update_contenttypes
+[Wed Jan 10 13:26:23.156361 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:26:23.673036 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:26:23.673065 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:26:23.673080 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881] Traceback (most recent call last):
+[Wed Jan 10 13:26:23.673096 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:26:23.673122 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     application = get_wsgi_application()
+[Wed Jan 10 13:26:23.673131 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:26:23.673143 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     django.setup()
+[Wed Jan 10 13:26:23.673151 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:26:23.673162 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:26:23.673169 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:26:23.673181 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:26:23.673188 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:26:23.673199 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     mod = import_module(mod_path)
+[Wed Jan 10 13:26:23.673207 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:26:23.673218 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     __import__(name)
+[Wed Jan 10 13:26:23.673225 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:26:23.673236 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     from .management import update_contenttypes
+[Wed Jan 10 13:26:23.673252 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:26:24.104984 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:26:24.105017 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:26:24.105041 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881] Traceback (most recent call last):
+[Wed Jan 10 13:26:24.105056 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:26:24.105080 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     application = get_wsgi_application()
+[Wed Jan 10 13:26:24.105088 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:26:24.105101 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     django.setup()
+[Wed Jan 10 13:26:24.105110 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:26:24.105122 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:26:24.105131 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:26:24.105143 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:26:24.105150 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:26:24.105162 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     mod = import_module(mod_path)
+[Wed Jan 10 13:26:24.105169 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:26:24.105180 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     __import__(name)
+[Wed Jan 10 13:26:24.105187 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:26:24.105198 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     from .management import update_contenttypes
+[Wed Jan 10 13:26:24.105210 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:26:24.425463 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:26:24.425491 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:26:24.425506 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] Traceback (most recent call last):
+[Wed Jan 10 13:26:24.425522 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:26:24.425549 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     application = get_wsgi_application()
+[Wed Jan 10 13:26:24.425557 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:26:24.425570 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     django.setup()
+[Wed Jan 10 13:26:24.425578 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:26:24.425601 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:26:24.425609 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:26:24.425621 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:26:24.425629 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:26:24.425641 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     mod = import_module(mod_path)
+[Wed Jan 10 13:26:24.425649 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:26:24.425661 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     __import__(name)
+[Wed Jan 10 13:26:24.425671 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:26:24.425682 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     from .management import update_contenttypes
+[Wed Jan 10 13:26:24.425697 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:26:24.695440 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:26:24.695467 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:26:24.695482 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] Traceback (most recent call last):
+[Wed Jan 10 13:26:24.695497 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:26:24.695520 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     application = get_wsgi_application()
+[Wed Jan 10 13:26:24.695529 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:26:24.695542 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     django.setup()
+[Wed Jan 10 13:26:24.695553 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:26:24.695564 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:26:24.695573 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:26:24.695585 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:26:24.695592 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:26:24.695603 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     mod = import_module(mod_path)
+[Wed Jan 10 13:26:24.695612 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:26:24.695624 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     __import__(name)
+[Wed Jan 10 13:26:24.695632 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:26:24.695653 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     from .management import update_contenttypes
+[Wed Jan 10 13:26:24.695668 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:26:24.921429 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:26:24.921463 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:26:24.921478 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] Traceback (most recent call last):
+[Wed Jan 10 13:26:24.921494 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:26:24.921520 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     application = get_wsgi_application()
+[Wed Jan 10 13:26:24.921529 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:26:24.921542 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     django.setup()
+[Wed Jan 10 13:26:24.921550 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:26:24.921561 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:26:24.921570 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:26:24.921582 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:26:24.921590 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:26:24.921602 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     mod = import_module(mod_path)
+[Wed Jan 10 13:26:24.921609 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:26:24.921621 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     __import__(name)
+[Wed Jan 10 13:26:24.921629 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:26:24.921640 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451]     from .management import update_contenttypes
+[Wed Jan 10 13:26:24.921654 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:9451] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:30:49.329506 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:30:49.329563 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:30:49.329579 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881] Traceback (most recent call last):
+[Wed Jan 10 13:30:49.329595 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:30:49.329621 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     application = get_wsgi_application()
+[Wed Jan 10 13:30:49.329639 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:30:49.329653 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     django.setup()
+[Wed Jan 10 13:30:49.329662 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:30:49.329674 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:30:49.329681 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:30:49.329693 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:30:49.329703 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:30:49.329714 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     mod = import_module(mod_path)
+[Wed Jan 10 13:30:49.329723 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:30:49.329735 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     __import__(name)
+[Wed Jan 10 13:30:49.329743 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:30:49.329754 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     from .management import update_contenttypes
+[Wed Jan 10 13:30:49.329768 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 13:36:55.224746 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 13:36:55.224784 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 13:36:55.224808 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881] Traceback (most recent call last):
+[Wed Jan 10 13:36:55.224824 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 13:36:55.224850 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     application = get_wsgi_application()
+[Wed Jan 10 13:36:55.224862 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 13:36:55.224877 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     django.setup()
+[Wed Jan 10 13:36:55.224885 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 13:36:55.224897 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 13:36:55.224905 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 13:36:55.224918 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     app_config = AppConfig.create(entry)
+[Wed Jan 10 13:36:55.224928 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 13:36:55.224949 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     mod = import_module(mod_path)
+[Wed Jan 10 13:36:55.224957 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 13:36:55.224969 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     __import__(name)
+[Wed Jan 10 13:36:55.224979 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 13:36:55.224990 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881]     from .management import update_contenttypes
+[Wed Jan 10 13:36:55.225004 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:37881] ImportError: cannot import name update_contenttypes
+[Wed Jan 10 14:44:44.823467 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Target WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py' cannot be loaded as Python module.
+[Wed Jan 10 14:44:44.823508 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] mod_wsgi (pid=30376): Exception occurred processing WSGI script '/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py'.
+[Wed Jan 10 14:44:44.823531 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] Traceback (most recent call last):
+[Wed Jan 10 14:44:44.823547 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/home/louw/dev/projects/afrinic/firstdjango/ENV/lib/python2.7/site-packages/wazimap/wsgi.py", line 6, in <module>
+[Wed Jan 10 14:44:44.823574 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     application = get_wsgi_application()
+[Wed Jan 10 14:44:44.823584 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Wed Jan 10 14:44:44.823597 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     django.setup()
+[Wed Jan 10 14:44:44.823605 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+[Wed Jan 10 14:44:44.823616 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     apps.populate(settings.INSTALLED_APPS)
+[Wed Jan 10 14:44:44.823625 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+[Wed Jan 10 14:44:44.823637 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     app_config = AppConfig.create(entry)
+[Wed Jan 10 14:44:44.823647 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 116, in create
+[Wed Jan 10 14:44:44.823658 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     mod = import_module(mod_path)
+[Wed Jan 10 14:44:44.823666 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+[Wed Jan 10 14:44:44.823678 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     __import__(name)
+[Wed Jan 10 14:44:44.823686 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/contenttypes/apps.py", line 7, in <module>
+[Wed Jan 10 14:44:44.823697 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626]     from .management import update_contenttypes
+[Wed Jan 10 14:44:44.823711 2018] [wsgi:error] [pid 30376] [remote 41.76.134.164:38626] ImportError: cannot import name update_contenttypes
+2018-01-23 11:56:00,954 [WARNING] django.request: Not Found: /favicon.ico
+2018-01-23 11:56:01,018 [WARNING] django.request: Not Found: /favicon.ico
+2018-01-23 14:08:48,293 [ERROR] django.request: Internal Server Error: /profiles/world-WW-earth/
+Traceback (most recent call last):
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/django/utils/decorators.py", line 184, in inner
+    return func(*args, **kwargs)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/wazimap/views.py", line 62, in dispatch
+    return TemplateView.dispatch(self, *args, **kwargs)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/django/views/generic/base.py", line 157, in get
+    context = self.get_context_data(**kwargs)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/wazimap/views.py", line 74, in get_context_data
+    profile_data = profile_method(self.geo, self.profile_name, self.request)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/profiles.py", line 34, in get_profile
+    data[section] = func(geo, session)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/profiles.py", line 56, in get_ipv4_profile
+    return ipv4.get_ipv4_profile(geo, session)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/ipv4.py", line 15, in get_ipv4_profile
+    countrieUsers, total = get_stat_data('users_or_not', geo, session,table_fields=['users_or_not'])
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/wazimap/data/utils.py", line 421, in get_stat_data
+    only=only, exclude=exclude, data_table=data_table)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/wazimap/data/utils.py", line 313, in get_objects_by_geo
+    % (db_model.__table__.name, geo.geoid, geo.version))
+LocationNotFound: users_in_country for geography world-WW version '2018-01-09' not found
+2018-01-23 14:08:48,745 [WARNING] django.request: Not Found: /favicon.ico
+2018-01-24 12:08:58,946 [ERROR] django.request: Internal Server Error: /profiles/world-WW-earth/
+Traceback (most recent call last):
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/django/utils/decorators.py", line 184, in inner
+    return func(*args, **kwargs)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/wazimap/views.py", line 62, in dispatch
+    return TemplateView.dispatch(self, *args, **kwargs)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/django/views/generic/base.py", line 157, in get
+    context = self.get_context_data(**kwargs)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/wazimap/views.py", line 74, in get_context_data
+    profile_data = profile_method(self.geo, self.profile_name, self.request)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/profiles.py", line 34, in get_profile
+    data[section] = func(geo, session)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/profiles.py", line 56, in get_ipv4_profile
+    return ipv4.get_ipv4_profile(geo, session)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/ipv4.py", line 15, in get_ipv4_profile
+    countrieUsers, total = get_stat_data('users_or_not', geo, session,table_fields=['users_or_not'])
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/wazimap/data/utils.py", line 421, in get_stat_data
+    only=only, exclude=exclude, data_table=data_table)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/wazimap/data/utils.py", line 313, in get_objects_by_geo
+    % (db_model.__table__.name, geo.geoid, geo.version))
+LocationNotFound: users_in_country for geography world-WW version '2018-01-09' not found
+2018-01-24 12:08:59,659 [WARNING] django.request: Not Found: /favicon.ico
+2018-01-24 12:10:05,432 [ERROR] django.request: Internal Server Error: /profiles/world-WW-earth/
+Traceback (most recent call last):
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/django/utils/decorators.py", line 184, in inner
+    return func(*args, **kwargs)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/wazimap/views.py", line 62, in dispatch
+    return TemplateView.dispatch(self, *args, **kwargs)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/django/views/generic/base.py", line 157, in get
+    context = self.get_context_data(**kwargs)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/wazimap/views.py", line 74, in get_context_data
+    profile_data = profile_method(self.geo, self.profile_name, self.request)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/profiles.py", line 34, in get_profile
+    data[section] = func(geo, session)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/profiles.py", line 56, in get_ipv4_profile
+    return ipv4.get_ipv4_profile(geo, session)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/wazimap_ww/wazimap_ww/ipv4.py", line 15, in get_ipv4_profile
+    countrieUsers, total = get_stat_data('users_or_not', geo, session,table_fields=['users_or_not'])
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/wazimap/data/utils.py", line 421, in get_stat_data
+    only=only, exclude=exclude, data_table=data_table)
+  File "/etc/apache2/louw/projects/afrinic/firstdjango/ENV/local/lib/python2.7/site-packages/wazimap/data/utils.py", line 313, in get_objects_by_geo
+    % (db_model.__table__.name, geo.geoid, geo.version))
+LocationNotFound: users_in_country for geography world-WW version '2018-01-09' not found
