@@ -1,259 +1,98 @@
-2018-01-10 10:17:08,530 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-10 10:38:58,646 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-10 12:24:26,515 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
-2018-01-10 12:24:26,534 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
-2018-01-10 12:24:26,534 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 163f9d0 at 7fb7a4d3ddd0>
-2018-01-10 12:24:26,539 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
-2018-01-10 12:24:26,540 [DEBUG] shapely.geos: Library path: 'libc.so.6'
-2018-01-10 12:24:26,540 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7fb7aab629b0 at 7fb7a7bdadd0>
-2018-01-10 12:24:26,572 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
-2018-01-10 12:24:28,654 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
-2018-01-10 12:24:28,655 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
-2018-01-10 12:24:28,655 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 2691420 at 7f821efa7e10>
-2018-01-10 12:24:28,662 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
-2018-01-10 12:24:28,662 [DEBUG] shapely.geos: Library path: 'libc.so.6'
-2018-01-10 12:24:28,662 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f8224dcc9b0 at 7f8221e44e10>
-2018-01-10 12:24:28,669 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
-197.88.55.94 - - [10/Jan/2018:12:33:47 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:57.0) Gecko/20100101 Firefox/57.0"
-197.88.55.94 - - [10/Jan/2018:12:33:50 +0200] "GET /favicon.ico HTTP/1.1" 500 812 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:57.0) Gecko/20100101 Firefox/57.0"
-197.88.55.94 - - [10/Jan/2018:12:33:51 +0200] "GET /favicon.ico HTTP/1.1" 500 812 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:57.0) Gecko/20100101 Firefox/57.0"
-23.101.61.176 - - [10/Jan/2018:12:34:17 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) SkypeUriPreview Preview/0.5"
-104.45.18.178 - - [10/Jan/2018:12:34:54 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) SkypeUriPreview Preview/0.5"
-197.88.55.94 - - [10/Jan/2018:12:40:44 +0200] "GET / HTTP/1.1" 403 515 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:57.0) Gecko/20100101 Firefox/57.0"
-41.76.134.164 - - [10/Jan/2018:12:41:00 +0200] "GET / HTTP/1.1" 403 515 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:12:41:00 +0200] "GET /favicon.ico HTTP/1.1" 404 514 "http://widerlouw.vanilla.co.za/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-197.88.55.94 - - [10/Jan/2018:12:41:29 +0200] "GET / HTTP/1.1" 403 515 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:57.0) Gecko/20100101 Firefox/57.0"
-197.88.55.94 - - [10/Jan/2018:12:41:43 +0200] "GET / HTTP/1.1" 403 515 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:57.0) Gecko/20100101 Firefox/57.0"
-197.88.55.94 - - [10/Jan/2018:12:44:43 +0200] "GET / HTTP/1.1" 404 504 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:57.0) Gecko/20100101 Firefox/57.0"
-197.88.55.94 - - [10/Jan/2018:12:45:50 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:57.0) Gecko/20100101 Firefox/57.0"
-41.76.134.164 - - [10/Jan/2018:12:46:12 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:12:46:13 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-2018-01-10 12:56:56,530 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
-2018-01-10 12:56:56,531 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
-2018-01-10 12:56:56,531 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 2b3a9d0 at 7f1ca7374dd0>
-2018-01-10 12:56:56,536 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
-2018-01-10 12:56:56,536 [DEBUG] shapely.geos: Library path: 'libc.so.6'
-2018-01-10 12:56:56,536 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f1cad1999b0 at 7f1caa211dd0>
-2018-01-10 12:56:56,543 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
-2018-01-10 12:56:56,847 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
-2018-01-10 12:56:56,848 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
-2018-01-10 12:56:56,848 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 20e7420 at 7f7bea4dbe10>
-2018-01-10 12:56:56,853 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
-2018-01-10 12:56:56,853 [DEBUG] shapely.geos: Library path: 'libc.so.6'
-2018-01-10 12:56:56,853 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f7bf03009b0 at 7f7bed378e10>
-2018-01-10 12:56:56,860 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
-41.76.134.164 - - [10/Jan/2018:12:56:59 +0200] "GET / HTTP/1.1" 403 515 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:12:57:00 +0200] "GET / HTTP/1.1" 403 514 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:12:57:00 +0200] "GET / HTTP/1.1" 403 514 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:12:57:00 +0200] "GET / HTTP/1.1" 403 514 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:12:59:27 +0200] "GET / HTTP/1.1" 403 515 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:12:59:28 +0200] "GET / HTTP/1.1" 403 514 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:12:59:28 +0200] "GET / HTTP/1.1" 403 514 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:12:59:28 +0200] "GET / HTTP/1.1" 403 514 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:03:00 +0200] "GET / HTTP/1.1" 403 515 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:03:00 +0200] "GET / HTTP/1.1" 403 514 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:03:03 +0200] "GET / HTTP/1.1" 403 514 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-197.88.126.103 - - [10/Jan/2018:13:04:44 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:57.0) Gecko/20100101 Firefox/57.0"
-197.88.126.103 - - [10/Jan/2018:13:08:34 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:57.0) Gecko/20100101 Firefox/57.0"
-41.76.134.164 - - [10/Jan/2018:13:10:51 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:10:51 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:16:55 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:16:56 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:16:56 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:17:19 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:17:20 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:17:20 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:17:51 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:17:52 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:17:52 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:19:06 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:19:06 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:19:06 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:19:07 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:19:07 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:19:07 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:19:08 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:19:08 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:19:08 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:19:09 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:19:09 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:19:09 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:19:10 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:19:10 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-2018-01-10 13:26:18,507 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
-2018-01-10 13:26:18,507 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
-2018-01-10 13:26:18,507 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 233ead0 at 7f3d407fedd0>
-2018-01-10 13:26:18,513 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
-2018-01-10 13:26:18,513 [DEBUG] shapely.geos: Library path: 'libc.so.6'
-2018-01-10 13:26:18,513 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f3d466239b0 at 7f3d4369bdd0>
-2018-01-10 13:26:18,520 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
-2018-01-10 13:26:18,827 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
-2018-01-10 13:26:18,827 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
-2018-01-10 13:26:18,828 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 2593420 at 7ff5f787ce10>
-2018-01-10 13:26:18,833 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
-2018-01-10 13:26:18,834 [DEBUG] shapely.geos: Library path: 'libc.so.6'
-2018-01-10 13:26:18,834 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7ff5fd6a19b0 at 7ff5fa719e10>
-2018-01-10 13:26:18,840 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
-41.76.134.164 - - [10/Jan/2018:13:26:21 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:26:21 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:26:22 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:26:23 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:26:23 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:26:24 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:26:24 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:26:24 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:26:24 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-41.76.134.164 - - [10/Jan/2018:13:30:49 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-2018-01-10 13:31:59,750 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-10 13:32:02,302 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-10 13:32:02,907 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-10 13:32:03,306 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-10 13:32:03,626 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-10 13:32:04,364 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-10 13:33:15,242 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-10 13:33:15,864 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-10 13:33:16,392 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-10 13:33:16,954 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-10 13:34:33,478 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-10 13:34:34,165 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-10 13:34:34,694 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-10 13:34:35,064 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-41.76.134.164 - - [10/Jan/2018:13:36:55 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-2018-01-10 13:38:44,384 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-10 13:41:11,899 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-10 13:41:12,651 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-10 13:47:29,255 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
-2018-01-10 13:47:29,255 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
-2018-01-10 13:47:29,255 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 29c0c20 at 7f87a9e5be10>
-2018-01-10 13:47:29,266 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
-2018-01-10 13:47:29,267 [DEBUG] shapely.geos: Library path: 'libc.so.6'
-2018-01-10 13:47:29,267 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f87afc809b0 at 7f87accf8e10>
-2018-01-10 13:47:29,273 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
-2018-01-10 13:47:36,328 [DEBUG] wazimap_ww.profiles: {'China': 5, 'Nepal': 3, 'India': 4, 'metadata': 8, 'Others': 6}
-2018-01-10 13:48:28,398 [DEBUG] wazimap_ww.profiles: {'China': 5, 'Nepal': 3, 'India': 4, 'metadata': 8, 'Others': 6}
-2018-01-10 13:48:38,650 [DEBUG] wazimap_ww.profiles: {'China': 5, 'Nepal': 3, 'India': 4, 'metadata': 8, 'Others': 6}
-2018-01-10 13:48:39,564 [DEBUG] wazimap_ww.profiles: {'China': 5, 'Nepal': 3, 'India': 4, 'metadata': 8, 'Others': 6}
-2018-01-10 13:48:41,771 [DEBUG] wazimap_ww.profiles: {'China': 5, 'Nepal': 3, 'India': 4, 'metadata': 8, 'Others': 6}
-2018-01-10 13:49:38,073 [DEBUG] wazimap_ww.profiles: {'China': 5, 'Nepal': 3, 'India': 4, 'metadata': 8, 'Others': 6}
-2018-01-10 13:49:38,648 [DEBUG] wazimap_ww.profiles: {'China': 5, 'Nepal': 3, 'India': 4, 'metadata': 8, 'Others': 6}
-2018-01-10 13:49:48,518 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
-2018-01-10 13:49:48,518 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
-2018-01-10 13:49:48,518 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 2543420 at 7efc3ffdfe10>
-2018-01-10 13:49:48,523 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
-2018-01-10 13:49:48,524 [DEBUG] shapely.geos: Library path: 'libc.so.6'
-2018-01-10 13:49:48,524 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7efc45e049b0 at 7efc42e7ce10>
-2018-01-10 13:49:48,530 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
-2018-01-10 13:49:49,091 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-10 13:56:17,807 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-10 13:56:18,542 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-41.76.134.164 - - [10/Jan/2018:14:44:44 +0200] "GET / HTTP/1.1" 500 812 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-2018-01-23 11:55:16,293 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
-2018-01-23 11:55:16,339 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
-2018-01-23 11:55:16,339 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 1f33560 at 7f1d0ce6ad90>
-2018-01-23 11:55:16,347 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
-2018-01-23 11:55:16,347 [DEBUG] shapely.geos: Library path: 'libc.so.6'
-2018-01-23 11:55:16,348 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f1d12c8f9b0 at 7f1d0fd07d90>
-2018-01-23 11:55:16,577 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
-2018-01-23 11:55:34,294 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
-2018-01-23 11:55:34,294 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
-2018-01-23 11:55:34,294 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 192c9d0 at 7f2ab6d2fdd0>
-2018-01-23 11:55:34,299 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
-2018-01-23 11:55:34,300 [DEBUG] shapely.geos: Library path: 'libc.so.6'
-2018-01-23 11:55:34,300 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f2abcb549b0 at 7f2ab9bccdd0>
-2018-01-23 11:55:34,306 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
-2018-01-23 11:55:34,895 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
-2018-01-23 11:55:34,896 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
-2018-01-23 11:55:34,896 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 18eb420 at 7f0788165e10>
-2018-01-23 11:55:34,901 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
-2018-01-23 11:55:34,901 [DEBUG] shapely.geos: Library path: 'libc.so.6'
-2018-01-23 11:55:34,902 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f078df8a9b0 at 7f078b002e10>
-2018-01-23 11:55:34,908 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
-2018-01-23 11:56:00,552 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-23 12:18:54,473 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
-2018-01-23 12:18:54,474 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
-2018-01-23 12:18:54,474 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 1d0a9d0 at 7f29daa97dd0>
-2018-01-23 12:18:54,479 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
-2018-01-23 12:18:54,480 [DEBUG] shapely.geos: Library path: 'libc.so.6'
-2018-01-23 12:18:54,480 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f29e08bc9b0 at 7f29dd934dd0>
-2018-01-23 12:18:54,486 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
-2018-01-23 12:18:54,854 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
-2018-01-23 12:18:54,855 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
-2018-01-23 12:18:54,855 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 10e3420 at 7f08eed77e10>
-2018-01-23 12:18:54,860 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
-2018-01-23 12:18:54,861 [DEBUG] shapely.geos: Library path: 'libc.so.6'
-2018-01-23 12:18:54,861 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f08f4b9c9b0 at 7f08f1c14e10>
-2018-01-23 12:18:54,867 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
-2018-01-23 14:05:43,392 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
-2018-01-23 14:05:43,393 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
-2018-01-23 14:05:43,393 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 26ece80 at 7faac93a4c10>
-2018-01-23 14:05:43,400 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
-2018-01-23 14:05:43,400 [DEBUG] shapely.geos: Library path: 'libc.so.6'
-2018-01-23 14:05:43,400 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7faacf1c99b0 at 7faacc1c2c10>
-2018-01-23 14:05:43,408 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
-2018-01-23 14:05:43,760 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
-2018-01-23 14:05:43,761 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
-2018-01-23 14:05:43,761 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 2809420 at 7fed69b87c50>
-2018-01-23 14:05:43,767 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
-2018-01-23 14:05:43,767 [DEBUG] shapely.geos: Library path: 'libc.so.6'
-2018-01-23 14:05:43,767 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7fed6f9ac9b0 at 7fed6c9a6c50>
-2018-01-23 14:05:43,773 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
-2018-01-23 14:07:34,209 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
-2018-01-23 14:07:34,209 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
-2018-01-23 14:07:34,209 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 16ae810 at 7fa8612e0c10>
-2018-01-23 14:07:34,214 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
-2018-01-23 14:07:34,214 [DEBUG] shapely.geos: Library path: 'libc.so.6'
-2018-01-23 14:07:34,215 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7fa8671059b0 at 7fa8640fec10>
-2018-01-23 14:07:34,221 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
-2018-01-23 14:07:34,536 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
-2018-01-23 14:07:34,537 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
-2018-01-23 14:07:34,537 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 2a3d190 at 7f5f174e6c50>
-2018-01-23 14:07:34,542 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
-2018-01-23 14:07:34,543 [DEBUG] shapely.geos: Library path: 'libc.so.6'
-2018-01-23 14:07:34,543 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f5f1d30b9b0 at 7f5f1a305c50>
-2018-01-23 14:07:34,549 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
-2018-01-23 14:08:13,788 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-23 14:10:04,844 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
-2018-01-23 14:10:04,844 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
-2018-01-23 14:10:04,844 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 208d6b0 at 7f7149f5eb90>
-2018-01-23 14:10:04,849 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
-2018-01-23 14:10:04,850 [DEBUG] shapely.geos: Library path: 'libc.so.6'
-2018-01-23 14:10:04,850 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f714fd8e9b0 at 7f714cdfeb90>
-2018-01-23 14:10:04,856 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
-2018-01-23 14:14:01,238 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
-2018-01-23 14:14:01,239 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
-2018-01-23 14:14:01,239 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 1960d10 at 7fe905aeabd0>
-2018-01-23 14:14:01,245 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
-2018-01-23 14:14:01,246 [DEBUG] shapely.geos: Library path: 'libc.so.6'
-2018-01-23 14:14:01,246 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7fe90b90f9b0 at 7fe908908bd0>
-2018-01-23 14:14:01,254 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
-2018-01-23 14:25:49,009 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
-2018-01-23 14:25:49,009 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
-2018-01-23 14:25:49,009 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 2264810 at 7f06c1d29c10>
-2018-01-23 14:25:49,014 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
-2018-01-23 14:25:49,015 [DEBUG] shapely.geos: Library path: 'libc.so.6'
-2018-01-23 14:25:49,015 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f06c7b4e9b0 at 7f06c4b47c10>
-2018-01-23 14:25:49,021 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
-2018-01-23 14:25:49,345 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
-2018-01-23 14:25:49,346 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
-2018-01-23 14:25:49,346 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 242f190 at 7ff10b350c50>
-2018-01-23 14:25:49,351 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
-2018-01-23 14:25:49,351 [DEBUG] shapely.geos: Library path: 'libc.so.6'
-2018-01-23 14:25:49,351 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7ff1111759b0 at 7ff10e16fc50>
-2018-01-23 14:25:49,358 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
-2018-01-24 11:55:05,280 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
-2018-01-24 11:55:05,323 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
-2018-01-24 11:55:05,323 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 2a5b810 at 7efdd7e30c10>
-2018-01-24 11:55:05,330 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
-2018-01-24 11:55:05,330 [DEBUG] shapely.geos: Library path: 'libc.so.6'
-2018-01-24 11:55:05,330 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7efdddc559b0 at 7efddac4ec10>
-2018-01-24 11:55:05,569 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
-2018-01-24 11:55:09,180 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
-2018-01-24 11:55:09,181 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
-2018-01-24 11:55:09,181 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 1820690 at 7fa0c78cac50>
-2018-01-24 11:55:09,186 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
-2018-01-24 11:55:09,187 [DEBUG] shapely.geos: Library path: 'libc.so.6'
-2018-01-24 11:55:09,187 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7fa0cd6ef9b0 at 7fa0ca6e9c50>
-2018-01-24 11:55:09,194 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
-2018-01-24 11:56:34,172 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-24 11:57:11,342 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
-2018-01-24 12:07:45,963 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
+2018-02-02 11:59:25,358 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
+2018-02-02 11:59:25,373 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
+2018-02-02 11:59:25,373 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 2947a90 at 7f3751ca5dd0>
+2018-02-02 11:59:25,381 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
+2018-02-02 11:59:25,382 [DEBUG] shapely.geos: Library path: 'libc.so.6'
+2018-02-02 11:59:25,382 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f3757aca9b0 at 7f3754b42dd0>
+2018-02-02 11:59:25,416 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
+2018-02-02 11:59:26,777 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
+2018-02-02 11:59:26,777 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
+2018-02-02 11:59:26,777 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 2cdb190 at 7fa7dc7d5e10>
+2018-02-02 11:59:26,782 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
+2018-02-02 11:59:26,782 [DEBUG] shapely.geos: Library path: 'libc.so.6'
+2018-02-02 11:59:26,783 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7fa7e25fa9b0 at 7fa7df672e10>
+2018-02-02 11:59:26,789 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
+2018-02-02 12:01:43,612 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
+2018-02-02 12:08:07,381 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
+2018-02-02 12:08:22,907 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 100.0})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': None}), ('values', {'this': None})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
+2018-02-02 12:08:45,945 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 81.52})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 226717.0}), ('values', {'this': 18.48})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
+2018-02-02 12:22:06,012 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
+2018-02-02 12:22:06,012 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
+2018-02-02 12:22:06,012 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 29e1920 at 7f9351e13d90>
+2018-02-02 12:22:06,017 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
+2018-02-02 12:22:06,017 [DEBUG] shapely.geos: Library path: 'libc.so.6'
+2018-02-02 12:22:06,018 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f9357c389b0 at 7f9354cb0d90>
+2018-02-02 12:22:06,024 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
+2018-02-02 12:22:24,755 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
+2018-02-02 12:22:24,756 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
+2018-02-02 12:22:24,756 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 1d58920 at 7f4b6a026d90>
+2018-02-02 12:22:24,761 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
+2018-02-02 12:22:24,762 [DEBUG] shapely.geos: Library path: 'libc.so.6'
+2018-02-02 12:22:24,762 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f4b6fe4b9b0 at 7f4b6cec3d90>
+2018-02-02 12:22:24,768 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
+2018-02-02 12:24:16,703 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
+2018-02-02 12:24:16,703 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
+2018-02-02 12:24:16,703 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 23fda90 at 7f93c7afedd0>
+2018-02-02 12:24:16,708 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
+2018-02-02 12:24:16,709 [DEBUG] shapely.geos: Library path: 'libc.so.6'
+2018-02-02 12:24:16,709 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f93cd9239b0 at 7f93ca99bdd0>
+2018-02-02 12:24:16,715 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
+2018-02-02 12:24:17,019 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
+2018-02-02 12:24:17,019 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
+2018-02-02 12:24:17,019 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 1087190 at 7f96b4526e10>
+2018-02-02 12:24:17,024 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
+2018-02-02 12:24:17,025 [DEBUG] shapely.geos: Library path: 'libc.so.6'
+2018-02-02 12:24:17,025 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f96ba34b9b0 at 7f96b73c3e10>
+2018-02-02 12:24:17,031 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
+2018-02-02 12:27:50,557 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
+2018-02-02 12:27:50,557 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
+2018-02-02 12:27:50,557 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 2cd6190 at 7f3422a40e10>
+2018-02-02 12:27:50,563 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
+2018-02-02 12:27:50,563 [DEBUG] shapely.geos: Library path: 'libc.so.6'
+2018-02-02 12:27:50,563 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f34288659b0 at 7f34258dde10>
+2018-02-02 12:27:50,570 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
+2018-02-02 12:35:19,631 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
+2018-02-02 12:35:19,632 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
+2018-02-02 12:35:19,632 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 1d19f00 at 7f4785615d90>
+2018-02-02 12:35:19,637 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
+2018-02-02 12:35:19,637 [DEBUG] shapely.geos: Library path: 'libc.so.6'
+2018-02-02 12:35:19,637 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f478b43a9b0 at 7f47884b2d90>
+2018-02-02 12:35:19,643 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
+2018-02-02 12:35:21,802 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
+2018-02-02 12:35:21,802 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
+2018-02-02 12:35:21,803 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 2e1aa90 at 7f16a15e9dd0>
+2018-02-02 12:35:21,808 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
+2018-02-02 12:35:21,808 [DEBUG] shapely.geos: Library path: 'libc.so.6'
+2018-02-02 12:35:21,808 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f16a740e9b0 at 7f16a4486dd0>
+2018-02-02 12:35:21,814 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
+2018-02-02 12:35:22,119 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
+2018-02-02 12:35:22,120 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
+2018-02-02 12:35:22,120 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 2e73190 at 7f32c8144e10>
+2018-02-02 12:35:22,125 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
+2018-02-02 12:35:22,125 [DEBUG] shapely.geos: Library path: 'libc.so.6'
+2018-02-02 12:35:22,125 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f32cdf699b0 at 7f32cafe1e10>
+2018-02-02 12:35:22,131 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
+2018-02-02 12:45:15,226 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 100.0})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': None}), ('values', {'this': None})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
+2018-02-02 12:57:22,433 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 100.0})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': None}), ('values', {'this': None})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
+2018-02-02 12:57:36,655 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
+2018-02-02 12:57:36,655 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
+2018-02-02 12:57:36,655 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 29f0920 at 7fc2e2517d90>
+2018-02-02 12:57:36,660 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
+2018-02-02 12:57:36,661 [DEBUG] shapely.geos: Library path: 'libc.so.6'
+2018-02-02 12:57:36,661 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7fc2e833c9b0 at 7fc2e53b4d90>
+2018-02-02 12:57:36,667 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
+2018-02-02 12:57:49,347 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
+2018-02-02 12:57:49,347 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
+2018-02-02 12:57:49,347 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 1a21a90 at 7fefb87fedd0>
+2018-02-02 12:57:49,352 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
+2018-02-02 12:57:49,353 [DEBUG] shapely.geos: Library path: 'libc.so.6'
+2018-02-02 12:57:49,353 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7fefbe6239b0 at 7fefbb69bdd0>
+2018-02-02 12:57:49,359 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
+2018-02-02 12:57:49,662 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
+2018-02-02 12:57:49,663 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
+2018-02-02 12:57:49,663 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 184d190 at 7f3829e7ce10>
+2018-02-02 12:57:49,668 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
+2018-02-02 12:57:49,668 [DEBUG] shapely.geos: Library path: 'libc.so.6'
+2018-02-02 12:57:49,668 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f382fca19b0 at 7f382cd19e10>
+2018-02-02 12:57:49,674 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
+2018-02-02 13:06:49,092 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 39.95})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 1503164.0}), ('values', {'this': 60.05})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
