@@ -23,11 +23,4 @@ def get_ipv4_profile(geo, session):
 		"name": "Active IPV4 Internet users in " + geo.name,
         "values": {"this": users["users"]["numerators"]["this"]}
 	},
-	'users_in_country':countrieUsers,
-	'citizenship_by_sex': {
-                'Nepal': 3,
-                'India': 4,
-                'China': 5,
-                'Others': 6,
-                'metadata': 8
-            }}
+	'users_in_country':countrieUsers}

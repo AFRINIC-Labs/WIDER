@@ -1,4 +1,4 @@
-{% extends 'profile/_base_profile.html' %}{% load humanize lookup staticfiles %}
+{% extends 'profile/profile_detail.html' %}{% load humanize lookup staticfiles %}
 
 {% block head_title %}{{ geography.this.short_name }} - {{ block.super }}{% endblock %}
 
@@ -12,11 +12,6 @@
     <meta property="og:type" content="article" />
 {% endblock %}
 
-{% block head_css_extra %}
-<!--[if lte IE 8]>
-    <link rel="stylesheet" href="{% static 'css/vendor/leaflet-0.6.4.ie.css' %}" />
-<![endif]-->
-{% endblock %}
 {% block body_id %}profile{% endblock %}
 
 {% block header_content %}

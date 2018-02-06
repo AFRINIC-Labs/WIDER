@@ -96,3 +96,25 @@
 2018-02-02 12:57:49,668 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f382fca19b0 at 7f382cd19e10>
 2018-02-02 12:57:49,674 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
 2018-02-02 13:06:49,092 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 39.95})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 1503164.0}), ('values', {'this': 60.05})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
+2018-02-06 15:10:00,198 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
+2018-02-06 15:10:00,227 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
+2018-02-06 15:10:00,227 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 18fee30 at 7f925eff6e50>
+2018-02-06 15:10:00,234 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
+2018-02-06 15:10:00,234 [DEBUG] shapely.geos: Library path: 'libc.so.6'
+2018-02-06 15:10:00,234 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f9264e1b9b0 at 7f9261e93e50>
+2018-02-06 15:10:00,922 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
+2018-02-06 15:14:12,029 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 71.4})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 400571.0}), ('values', {'this': 28.6})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
+2018-02-06 15:14:24,365 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 66.66})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 500172.0}), ('values', {'this': 33.34})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
+2018-02-06 15:15:31,482 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 14.07})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 6104934.0}), ('values', {'this': 85.93})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
+2018-02-06 15:16:47,755 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 64.78})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 543711.0}), ('values', {'this': 35.22})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
+2018-02-06 15:18:40,121 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
+2018-02-06 15:19:14,409 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
+2018-02-06 15:19:19,269 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
+2018-02-06 15:20:34,777 [DEBUG] wazimap_ww.profiles: OrderedDict([(u'Non_users', OrderedDict([('name', u'Non_users'), ('numerators', {'this': 1000000.0}), ('values', {'this': 3.42})])), (u'Users', OrderedDict([('name', u'Users'), ('numerators', {'this': 28277885.0}), ('values', {'this': 96.58})])), ('metadata', {'universe': 'Internet users', 'table_id': 'USERS_IN_COUNTRY', 'year': '2017'})])
+2018-02-06 15:25:12,805 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
+2018-02-06 15:25:12,869 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
+2018-02-06 15:25:12,869 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 2d538b0 at 7f5412e71e50>
+2018-02-06 15:25:12,876 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
+2018-02-06 15:25:12,876 [DEBUG] shapely.geos: Library path: 'libc.so.6'
+2018-02-06 15:25:12,876 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f5418c969b0 at 7f5415d0ee50>
+2018-02-06 15:25:20,507 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
