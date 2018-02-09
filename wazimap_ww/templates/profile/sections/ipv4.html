@@ -6,11 +6,12 @@
     <div class="section-container">
 
         <section class="clearfix stat-row">
-            <h2><a class="permalink" href="#demographics">Internet users <i class="fa fa-link"></i></a></h2>
-            <div class="column-quarter">
+            <h2><a class="permalink" href="#demographics">Internet users  <i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=ipv4.ipv4_users stat_type='number' %}
             </div>
-            <div class="column-third" id="chart-pie-ipv4-citizenship_by_sex" data-stat-type="scaled-percentage" data-chart-title="% of country are internet users"></div>
+            <div class="column-third" id="chart-pie-ipv4-users_in_country" data-stat-type="scaled-percentage" data-chart-title='{{ ipv4.users_in_country.Users.values.this|floatformat:"1" }}% of country are internet users'></div>
+            <!-- <div class="column-third" id="chart-pie-ipv4-users_in_world" data-stat-type="scaled-percentage" data-chart-title='{{ ipv4.users_in_world.Users.values.this|floatformat:"1" }}% of the world'></div> -->
         </section>
 
     </div>

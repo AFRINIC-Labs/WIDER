@@ -8,6 +8,13 @@ FieldTable(['users_or_not'],
 		year='2017')
 
 
+FieldTable(['country_or_world'],
+        id='users_in_world',
+        universe='Internet users',
+        description='How much of the worlds internet users does this country make',
+        dataset='Stats from stats.labs.apnic.net',
+        year='2017')
+
 # Define our tables so the data API can discover them.
 #Ipv4
 # FieldTable(['main type of cooking fuel'],

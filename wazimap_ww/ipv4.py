@@ -13,6 +13,7 @@ def get_ipv4_profile(geo, session):
 
 	countriesTable = get_datatable('countries')
 	countrieUsers, total = get_stat_data('users_or_not', geo, session,table_fields=['users_or_not'])
+	# worldUsers, total = get_stat_data('country_or_world', geo, session,table_fields=['country_or_world'])
 
 	users, _ = countriesTable.get_stat_data(geo, 'users')
 

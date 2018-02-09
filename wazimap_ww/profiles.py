@@ -33,19 +33,10 @@ def get_profile(geo, profile_name, request):
                 func = globals()[function_name]
                 data[section] = func(geo, session)
 
-                # # get profiles for province and/or country
-                # for ingeo in geo_summary_levels:
-                #     # merge summary profile into current geo profile
-                #     merge_dicts(data[section], func(ingeo, session),
-                #                 level)
-
     finally:
         session.close()
 
-    # if geo_level != 'vdc':
-    #     group_remainder(data['demographics']['language_distribution'], 10)
-    #     group_remainder(data['demographics']['ethnic_distribution'], 10)
-    logger.debug(data['ipv4']['users_in_country'])
+    # logger.debug(data['ipv4']['users_in_world']['Users']['values']['this'])
     return data
 
 
