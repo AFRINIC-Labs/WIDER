@@ -265,3 +265,17 @@
 2018-02-09 09:28:38,162 [DEBUG] shapely.geos: Library path: 'libc.so.6'
 2018-02-09 09:28:38,162 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7ff086b739b0 at 7ff083bebe50>
 2018-02-09 09:28:38,861 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
+2018-02-09 09:31:11,138 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
+2018-02-09 09:31:11,139 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
+2018-02-09 09:31:11,139 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 1ecaa90 at 7f9af8301e10>
+2018-02-09 09:31:11,145 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
+2018-02-09 09:31:11,145 [DEBUG] shapely.geos: Library path: 'libc.so.6'
+2018-02-09 09:31:11,145 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f9afe1269b0 at 7f9afb19ee10>
+2018-02-09 09:31:11,856 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
+2018-02-09 09:31:12,219 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
+2018-02-09 09:31:12,219 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
+2018-02-09 09:31:12,220 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 26c28b0 at 7f703fdc4e50>
+2018-02-09 09:31:12,228 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
+2018-02-09 09:31:12,228 [DEBUG] shapely.geos: Library path: 'libc.so.6'
+2018-02-09 09:31:12,229 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7f7045be99b0 at 7f7042c61e50>
+2018-02-09 09:31:12,856 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.2
