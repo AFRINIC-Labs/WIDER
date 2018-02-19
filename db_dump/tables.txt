@@ -29,6 +29,13 @@ countries
       samples bigint,
 )
 
+asn_to_name
+(
+      asn text,
+      name text,
+      trading_name text
+)
+
 users_in_country
 (
     geo_level text,
