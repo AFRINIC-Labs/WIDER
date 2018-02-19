@@ -1,0 +1,25 @@
+
+<article id="example" class="clearfix">
+    <header class="section-contents">
+        <h1>IPv4</h1>
+    </header>
+    <div class="section-container">
+
+        <section class="clearfix stat-row">
+            <h2><a class="permalink" href="#demographics">APNIC data  <i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=ipv4.ipv4_users stat_type='number' %}
+            </div>
+            <div class="column-third" id="chart-pie-ipv4-users_in_world" data-stat-type="scaled-percentage" data-chart-title='{{ ipv4.users_in_world.Users.values.this|floatformat:"1" }}% of the world'></div>
+        </section>
+
+        <section class="clearfix stat-row">
+            <h2><a class="permalink" href="#demographics">Population  <i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=demographics.total_population stat_type='number' %}
+            </div>
+            <div class="column-third" id="chart-pie-ipv4-users_in_country" data-stat-type="scaled-percentage" data-chart-title='{{ ipv4.users_in_country.Users.values.this|floatformat:"1" }}% of country are internet users'></div>
+        </section>
+
+    </div>
+</article>
