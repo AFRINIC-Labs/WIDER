@@ -1,0 +1,24 @@
+{% extends 'homepage.html' %}
+
+{% block homepage_detail %}
+<div class="content-container clearfix">
+    <article id="explore" class="clearfix wrapper">
+        {% include "data/_blocks/_data_query_builder.html" %}
+    </article>
+</div>
+
+<div class="content-container clearfix tan-stripe">
+    <article class="wrapper">
+        {% block hero %}
+        <section class="column-full clearfix">
+            <h1 class="article-header">Discover the story behind the data.</h1>
+            <div id="slippy-map"></div>
+        </section>
+        <section>
+            <div class="column-full callout with-icon">
+            </div>
+        </section>
+        {% endblock %}
+    </article>
+</div>
+{% endblock %}
