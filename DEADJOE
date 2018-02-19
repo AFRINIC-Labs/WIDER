@@ -1,0 +1,18 @@
+
+*** These modified files were found in JOE when it aborted on Mon Feb 19 11:59:30 2018
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+/etc/apache2/louw/projects/afrinic/firstdjango/wazimap_ww/.git/MERGE_MSG
+
+*** File '/etc/apache2/louw/projects/afrinic/firstdjango/wazimap_ww/.git/MERGE_MSG'
+Merge branch 'master' of https://github.com/AFRINIC-Labs/WIDER
+
+# I made changes directly on the git server
+
+
+*** File '* Startup Log *'
+Processing '/etc/joe/editorrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/editorrc
