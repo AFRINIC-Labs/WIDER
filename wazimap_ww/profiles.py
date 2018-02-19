@@ -7,7 +7,8 @@ logger = logging.getLogger(__name__)
 from wazimap_ww import (
     demographics,
     ipv4,
-    ipv6
+    ipv6,
+    isp
 )
 
 
@@ -16,7 +17,8 @@ from wazimap_ww import (
 PROFILE_SECTIONS = (
     'demographics',
     'ipv4',
-    'ipv6'
+    'ipv6',
+    'isp'
 )
 
 
@@ -36,7 +38,7 @@ def get_profile(geo, profile_name, request):
     finally:
         session.close()
 
-    # logger.debug(data['ipv4']['users_in_world']['Users']['values']['this'])
+    logger.debug(data['ipv4']['ipv4_users'])
     return data
 
 
@@ -48,4 +50,7 @@ def get_ipv4_profile(geo, session):
 
 def get_ipv6_profile(geo, session):
     return ipv6.get_ipv6_profile(geo, session)
+
+def get_isp_profile(geo, session):
+    return isp.get_isp_profile(geo, session)
 

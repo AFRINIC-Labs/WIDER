@@ -1,30 +1,64 @@
 from wazimap.data.tables import FieldTable, SimpleTable
 
+# Ipv4
+
 FieldTable(['users_or_not'],
 		id='users_in_country',
 		universe='Internet users',
+        value_type='BIGINT',
 		description='What percentage of a country are internet users',
 		dataset='Stats from stats.labs.apnic.net',
 		year='2017')
 
 
+
 FieldTable(['country_or_world'],
         id='users_in_world',
         universe='Internet users',
-        description='How much of the worlds internet users does this country make',
+        value_type='BIGINT',
+        description='How much of the worlds internet users does this country make make up of',
         dataset='Stats from stats.labs.apnic.net',
         year='2017')
 
-# Define our tables so the data API can discover them.
-#Ipv4
-# FieldTable(['main type of cooking fuel'],
-#            universe='Households',
-#            description='Main type of cooking fuel',
-#            dataset='National Population and Housing Census 2011',
-#            year='2011',
-#            table_per_level=False)
 
-# Household tables
+
+
+FieldTable(['asn'],
+        id='market_share',
+        universe='Internet users',
+        value_type='BIGINT',
+        description='The market share in a given country.',
+        dataset='Stats from stats.labs.apnic.net',
+        year='2017')
+
+# Ipv6
+
+
+FieldTable(['v6users_in_country'],
+        id='v6user_or_not',
+        universe='Internet users',
+        value_type='BIGINT',
+        description='What percentage of a country are internet IPv6 users',
+        dataset='Stats from stats.labs.apnic.net',
+        year='2017')
+
+FieldTable(['v6coutry_or_world'],
+        id='v6users_in_world',
+        universe='Internet users',
+        value_type='BIGINT',
+        description='How much of the worlds Ipv6 internet users does this country make up of',
+        dataset='Stats from stats.labs.apnic.net',
+        year='2017')
+
+FieldTable(['v6asn'],
+        id='v6market_share',
+        universe='Internet users',
+        value_type='BIGINT',
+        description='The IPv6 market share in a given country.',
+        dataset='Stats from stats.labs.apnic.net',
+        year='2017')
+
+# Simple tables
 
 SimpleTable(
     id='countries',
