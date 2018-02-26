@@ -10,7 +10,7 @@ WAZIMAP['name'] = 'WIDER'
 WAZIMAP['url'] = ' http://wider.isoc.org.za:8000/'
 WAZIMAP['country_code'] = 'WW'
 
-DATABASE_URL = os.environ.get('DATABASE_URL', 'postgresql://wider:w1d3r@localhost/wider')
+DATABASE_URL = os.environ.get('DATABASE_URL', 'postgresql://wider:localhost/wider:5555')
 DATABASES = {
     'default': dj_database_url.parse(DATABASE_URL),
 }
