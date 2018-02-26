@@ -1,0 +1,249 @@
+id,geo_level,geo_code,name,square_kms,parent_level,parent_code,long_name
+1,world,WW,Earth,,,,Earth
+2,continent,AS,Asia,,world,WW,Asia
+3,continent,AA,Africa,,world,WW,Africa
+4,continent,EU,Europe,,world,WW,Europe
+5,continent,SM,South America,,world,WW,South America
+6,continent,NM,Northern America,,world,WW,Northern America
+7,continent,OC,Oceania,,world,WW,Oceania
+8,country,DZ,Algeria,,continent,AA,Algeria
+9,country,AO,Angola,,continent,AA,Angola
+10,country,BJ,Benin,,continent,AA,Benin
+11,country,BW,Botswana,,continent,AA,Botswana
+12,country,BF,Burkina Faso,,continent,AA,Burkina Faso
+13,country,BI,Burundi,,continent,AA,Burundi
+14,country,CM,Cameroon,,continent,AA,Cameroon
+15,country,CV,Cape Verde,,continent,AA,Cape Verde
+16,country,CF,Central African Republic,,continent,AA,Central African Republic
+17,country,TD,Chad,,continent,AA,Chad
+18,country,KM,Comoros,,continent,AA,Comoros
+19,country,CG,Congo,,continent,AA,Congo
+20,country,CD,"Congo, The Democratic Republic of the",,continent,AA,"Congo, The Democratic Republic of the"
+21,country,CI,Cote D Ivoire,,continent,AA,Cote D Ivoire
+22,country,DJ,Djibouti,,continent,AA,Djibouti
+23,country,EG,Egypt,,continent,AA,Egypt
+24,country,GQ,Equatorial Guinea,,continent,AA,Equatorial Guinea
+25,country,ER,Eritrea,,continent,AA,Eritrea
+26,country,ET,Ethiopia,,continent,AA,Ethiopia
+27,country,GA,Gabon,,continent,AA,Gabon
+28,country,GM,Gambia,,continent,AA,Gambia
+29,country,GH,Ghana,,continent,AA,Ghana
+30,country,GN,Guinea,,continent,AA,Guinea
+31,country,GW,Guinea-Bissau,,continent,AA,Guinea-Bissau
+32,country,KE,Kenya,,continent,AA,Kenya
+33,country,LS,Lesotho,,continent,AA,Lesotho
+34,country,LR,Liberia,,continent,AA,Liberia
+35,country,LY,Libyan Arab Jamahiriya,,continent,AA,Libyan Arab Jamahiriya
+36,country,MG,Madagascar,,continent,AA,Madagascar
+37,country,MW,Malawi,,continent,AA,Malawi
+38,country,ML,Mali,,continent,AA,Mali
+39,country,MR,Mauritania,,continent,AA,Mauritania
+40,country,MU,Mauritius,,continent,AA,Mauritius
+41,country,YT,Mayotte,,continent,AA,Mayotte
+42,country,MA,Morocco,,continent,AA,Morocco
+43,country,MZ,Mozambique,,continent,AA,Mozambique
+44,country,NA,Namibia,,continent,AA,Namibia
+45,country,NE,Niger,,continent,AA,Niger
+46,country,NG,Nigeria,,continent,AA,Nigeria
+47,country,RE,Reunion,,continent,AA,Reunion
+48,country,RW,Rwanda,,continent,AA,RWANDA
+49,country,SH,Saint Helena,,continent,AA,Saint Helena
+50,country,ST,Sao Tome and Principe,,continent,AA,Sao Tome and Principe
+51,country,SN,Senegal,,continent,AA,Senegal
+52,country,SC,Seychelles,,continent,AA,Seychelles
+53,country,SL,Sierra Leone,,continent,AA,Sierra Leone
+54,country,SO,Somalia,,continent,AA,Somalia
+55,country,ZA,South Africa,,continent,AA,South Africa
+56,country,SD,Sudan,,continent,AA,Sudan
+57,country,SS,South Sudan,,continent,AA,South Sudan
+58,country,SZ,Swaziland,,continent,AA,Swaziland
+59,country,TZ,"Tanzania, United Republic of",,continent,AA,"Tanzania, United Republic of"
+60,country,TG,Togo,,continent,AA,Togo
+61,country,TN,Tunisia,,continent,AA,Tunisia
+62,country,UG,Uganda,,continent,AA,Uganda
+63,country,EH,Western Sahara,,continent,AA,Western Sahara
+64,country,ZM,Zambia,,continent,AA,Zambia
+65,country,ZW,Zimbabwe,,continent,AA,Zimbabwe
+66,country,AF,Afghanistan,,continent,AS,Afghanistan
+67,country,AM,Armenia,,continent,AS,Armenia
+68,country,AZ,Azerbaijan,,continent,AS,Azerbaijan
+69,country,BH,Bahrain,,continent,AS,Bahrain
+70,country,BD,Bangladesh,,continent,AS,Bangladesh
+71,country,BT,Bhutan,,continent,AS,Bhutan
+72,country,BN,Brunei Darussalam,,continent,AS,Brunei Darussalam
+73,country,KH,Cambodia,,continent,AS,Cambodia
+74,country,CN,China,,continent,AS,China
+75,country,HK,Hong Kong,,continent,AS,Hong Kong
+76,country,IN,India,,continent,AS,India
+77,country,ID,Indonesia,,continent,AS,Indonesia
+78,country,IR,"Iran, Islamic Republic Of",,continent,AS,"Iran, Islamic Republic Of"
+79,country,IQ,Iraq,,continent,AS,Iraq
+80,country,IL,Israel,,continent,AS,Israel
+81,country,JP,Japan,,continent,AS,Japan
+82,country,JO,Jordan,,continent,AS,Jordan
+83,country,KZ,Kazakhstan,,continent,AS,Kazakhstan
+84,country,KP,"Korea, Democratic People S Republic of",,continent,AS,"Korea, Democratic People S Republic of"
+85,country,KR,"Korea, Republic of",,continent,AS,"Korea, Republic of"
+86,country,KW,Kuwait,,continent,AS,Kuwait
+87,country,KG,Kyrgyzstan,,continent,AS,Kyrgyzstan
+88,country,LA,Lao People S Democratic Republic,,continent,AS,Lao People S Democratic Republic
+89,country,LB,Lebanon,,continent,AS,Lebanon
+90,country,MO,Macao,,continent,AS,Macao
+91,country,MY,Malaysia,,continent,AS,Malaysia
+92,country,MV,Maldives,,continent,AS,Maldives
+93,country,MN,Mongolia,,continent,AS,Mongolia
+94,country,MM,Myanmar,,continent,AS,Myanmar
+95,country,NP,Nepal,,continent,AS,Nepal
+96,country,OM,Oman,,continent,AS,Oman
+97,country,PK,Pakistan,,continent,AS,Pakistan
+98,country,PS,"Palestinian Territory, Occupied",,continent,AS,"Palestinian Territory, Occupied"
+99,country,PH,Philippines,,continent,AS,Philippines
+100,country,QA,Qatar,,continent,AS,Qatar
+101,country,RU,Russian Federation,,continent,AS,Russian Federation
+102,country,SA,Saudi Arabia,,continent,AS,Saudi Arabia
+103,country,SG,Singapore,,continent,AS,Singapore
+104,country,LK,Sri Lanka,,continent,AS,Sri Lanka
+105,country,SY,Syrian Arab Republic,,continent,AS,Syrian Arab Republic
+106,country,TW,"Taiwan, Province of China",,continent,AS,"Taiwan, Province of China"
+107,country,TJ,Tajikistan,,continent,AS,Tajikistan
+108,country,TH,Thailand,,continent,AS,Thailand
+109,country,TL,Timor-Leste,,continent,AS,Timor-Leste
+110,country,TR,Turkey,,continent,AS,Turkey
+111,country,TM,Turkmenistan,,continent,AS,Turkmenistan
+112,country,AE,United Arab Emirates,,continent,AS,United Arab Emirates
+113,country,UZ,Uzbekistan,,continent,AS,Uzbekistan
+114,country,VN,Viet Nam,,continent,AS,Viet Nam
+115,country,YE,Yemen,,continent,AS,Yemen
+116,country,AX,Åland Islands,,continent,EU,Åland Islands
+117,country,AL,Albania,,continent,EU,Albania
+118,country,AD,Andorra,,continent,EU,AndorrA
+119,country,AT,Austria,,continent,EU,Austria
+120,country,BY,Belarus,,continent,EU,Belarus
+121,country,BE,Belgium,,continent,EU,Belgium
+122,country,BA,Bosnia and Herzegovina,,continent,EU,Bosnia and Herzegovina
+123,country,BG,Bulgaria,,continent,EU,Bulgaria
+124,country,HR,Croatia,,continent,EU,Croatia
+125,country,CY,Cyprus,,continent,EU,Cyprus
+126,country,CZ,Czech Republic,,continent,EU,Czech Republic
+127,country,DK,Denmark,,continent,EU,Denmark
+128,country,EE,Estonia,,continent,EU,Estonia
+129,country,FO,Faroe Islands,,continent,EU,Faroe Islands
+130,country,FI,Finland,,continent,EU,Finland
+131,country,FR,France,,continent,EU,France
+132,country,GE,Georgia,,continent,EU,Georgia
+133,country,DE,Germany,,continent,EU,Germany
+134,country,GI,Gibraltar,,continent,EU,Gibraltar
+135,country,GR,Greece,,continent,EU,Greece
+136,country,GG,Guernsey,,continent,EU,Guernsey
+137,country,VA,Holy See (Vatican City State),,continent,EU,Holy See (Vatican City State)
+138,country,HU,Hungary,,continent,EU,Hungary
+139,country,IS,Iceland,,continent,EU,Iceland
+140,country,IE,Ireland,,continent,EU,Ireland
+141,country,IM,Isle of Man,,continent,EU,Isle of Man
+142,country,IT,Italy,,continent,EU,Italy
+143,country,JE,Jersey,,continent,EU,Jersey
+144,country,LV,Latvia,,continent,EU,Latvia
+145,country,LI,Liechtenstein,,continent,EU,Liechtenstein
+146,country,LT,Lithuania,,continent,EU,Lithuania
+147,country,LU,Luxembourg,,continent,EU,Luxembourg
+148,country,MK,"Macedonia, The Former Yugoslav Republic of",,continent,EU,"Macedonia, The Former Yugoslav Republic of"
+149,country,MT,Malta,,continent,EU,Malta
+150,country,MD,"Moldova, Republic of",,continent,EU,"Moldova, Republic of"
+151,country,MC,Monaco,,continent,EU,Monaco
+152,country,NL,Netherlands,,continent,EU,Netherlands
+153,country,NO,Norway,,continent,EU,Norway
+154,country,PL,Poland,,continent,EU,Poland
+155,country,PT,Portugal,,continent,EU,Portugal
+156,country,RO,Romania,,continent,EU,Romania
+157,country,RM,San Marino,,continent,EU,San Marino
+158,country,CS,Serbia,,continent,EU,Serbia and Montenegro
+159,country,SK,Slovakia,,continent,EU,Slovakia
+160,country,SI,Slovenia,,continent,EU,Slovenia
+161,country,ES,Spain,,continent,EU,Spain
+162,country,SE,Sweden,,continent,EU,Sweden
+163,country,CH,Switzerland,,continent,EU,Switzerland
+164,country,UA,Ukraine,,continent,EU,Ukraine
+165,country,GB,United Kingdom,,continent,EU,United Kingdom
+166,country,AI,Anguilla,,continent,NM,Anguilla
+167,country,AG,Antigua and Barbuda,,continent,NM,Antigua and Barbuda
+168,country,BS,Bahamas,,continent,NM,Bahamas
+169,country,BB,Barbados,,continent,NM,Barbados
+170,country,BZ,Belize,,continent,NM,Belize
+171,country,BM,Bermuda,,continent,NM,Bermuda
+172,country,CA,Canada,,continent,NM,Canada
+173,country,KY,Cayman Islands,,continent,NM,Cayman Islands
+174,country,CL,Chile,,continent,NM,Chile
+175,country,CO,Colombia,,continent,NM,Colombia
+176,country,CR,Costa Rica,,continent,NM,Costa Rica
+177,country,CU,Cuba,,continent,NM,Cuba
+178,country,DM,Dominica,,continent,NM,Dominica
+179,country,DO,Dominican Republic,,continent,NM,Dominican Republic
+180,country,EC,Ecuador,,continent,NM,Ecuador
+181,country,SV,El Salvador,,continent,NM,El Salvador
+182,country,GL,Greenland,,continent,NM,Greenland
+183,country,GD,Grenada,,continent,NM,Grenada
+184,country,GP,Guadeloupe,,continent,NM,Guadeloupe
+185,country,GT,Guatemala,,continent,NM,Guatemala
+186,country,HT,Haiti,,continent,NM,Haiti
+187,country,HN,Honduras,,continent,NM,Honduras
+188,country,JM,Jamaica,,continent,NM,Jamaica
+189,country,MQ,Martinique,,continent,NM,Martinique
+190,country,MX,Mexico,,continent,NM,Mexico
+191,country,MS,Montserrat,,continent,NM,Montserrat
+192,country,NI,Nicaragua,,continent,NM,Nicaragua
+193,country,PA,Panama,,continent,NM,Panama
+194,country,PR,Puerto Rico,,continent,NM,Puerto Rico
+195,country,KN,Saint Kitts and Nevis,,continent,NM,Saint Kitts and Nevis
+196,country,LC,Saint Lucia,,continent,NM,Saint Lucia
+197,country,PM,Saint Pierre and Miquelon,,continent,NM,Saint Pierre and Miquelon
+198,country,VC,Saint Vincent and the Grenadines,,continent,NM,Saint Vincent and the Grenadines
+199,country,TT,Trinidad and Tobago,,continent,NM,Trinidad and Tobago
+200,country,TC,Turks and Caicos Islands,,continent,NM,Turks and Caicos Islands
+201,country,US,United States,,continent,NM,United States
+202,country,UM,United States Minor Outlying Islands,,continent,NM,United States Minor Outlying Islands
+203,country,VG,"Virgin Islands, British",,continent,NM,"Virgin Islands, British"
+204,country,VI,"Virgin Islands, U.S.",,continent,NM,"Virgin Islands, U.S."
+205,country,OA,American Samoa,,continent,OC,American Samoa
+206,country,AU,Australia,,continent,OC,Australia
+207,country,BV,Bouvet Island,,continent,OC,Bouvet Island
+208,country,IO,British Indian Ocean Territory,,continent,OC,British Indian Ocean Territory
+209,country,CX,Christmas Island,,continent,OC,Christmas Island
+210,country,CC,Cocos (Keeling) Islands,,continent,OC,Cocos (Keeling) Islands
+211,country,CK,Cook Islands,,continent,OC,Cook Islands
+212,country,FJ,Fiji,,continent,OC,Fiji
+213,country,PF,French Polynesia,,continent,OC,French Polynesia
+214,country,TF,French Southern Territories,,continent,OC,French Southern Territories
+215,country,GU,Guam,,continent,OC,Guam
+216,country,HM,Heard Island and Mcdonald Islands,,continent,OC,Heard Island and Mcdonald Islands
+217,country,KI,Kiribati,,continent,OC,Kiribati
+218,country,MH,Marshall Islands,,continent,OC,Marshall Islands
+219,country,FM,"Micronesia, Federated States of",,continent,OC,"Micronesia, Federated States of"
+220,country,NR,Nauru,,continent,OC,Nauru
+221,country,NC,New Caledonia,,continent,OC,New Caledonia
+222,country,NZ,New Zealand,,continent,OC,New Zealand
+223,country,NU,Niue,,continent,OC,Niue
+224,country,NF,Norfolk Island,,continent,OC,Norfolk Island
+225,country,MP,Northern Mariana Islands,,continent,OC,Northern Mariana Islands
+226,country,PW,Palau,,continent,OC,Palau
+227,country,PG,Papua New Guinea,,continent,OC,Papua New Guinea
+228,country,PN,Pitcairn,,continent,OC,Pitcairn
+229,country,WS,Samoa,,continent,OC,Samoa
+230,country,SB,Solomon Islands,,continent,OC,Solomon Islands
+231,country,TK,Tokelau,,continent,OC,Tokelau
+232,country,TO,Tonga,,continent,OC,Tonga
+233,country,TV,Tuvalu,,continent,OC,Tuvalu
+234,country,VU,Vanuatu,,continent,OC,Vanuatu
+235,country,WF,Wallis and Futuna,,continent,OC,Wallis and Futuna
+236,country,AR,Argentina,,continent,SM,Argentina
+237,country,AW,Aruba,,continent,SM,Aruba
+238,country,BO,Bolivia,,continent,SM,Bolivia
+239,country,BR,Brazil,,continent,SM,Brazil
+240,country,FK,Falkland Islands (Malvinas),,continent,SM,Falkland Islands (Malvinas)
+241,country,GF,French Guiana,,continent,SM,French Guiana
+242,country,GY,Guyana,,continent,SM,Guyana
+243,country,PY,Paraguay,,continent,SM,Paraguay
+244,country,PE,Peru,,continent,SM,Peru
+245,country,GS,South Georgia and the South Sandwich Islands,,continent,SM,South Georgia and the South Sandwich Islands
+246,country,SR,Suriname,,continent,SM,Suriname
+247,country,UY,Uruguay,,continent,SM,Uruguay
+248,country,VE,Venezuela,,continent,SM,Venezuela
