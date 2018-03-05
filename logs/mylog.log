@@ -1,17 +1,492 @@
-2018-02-27 11:56:21,427 [WARNING] wazimap.geo: NOTE: Wazimap is unable to load GDAL, it's probably not installed. Some functionality such as data downloads and geolocation won't work. This is ok in development, but is a problem in production. For more information on installing GDAL, see http://wazimap.readthedocs.io/en/latest/
-2018-02-27 13:12:09,610 [WARNING] wazimap.geo: NOTE: Wazimap is unable to load GDAL, it's probably not installed. Some functionality such as data downloads and geolocation won't work. This is ok in development, but is a problem in production. For more information on installing GDAL, see http://wazimap.readthedocs.io/en/latest/
-2018-02-27 13:12:20,558 [WARNING] wazimap.geo: NOTE: Wazimap is unable to load GDAL, it's probably not installed. Some functionality such as data downloads and geolocation won't work. This is ok in development, but is a problem in production. For more information on installing GDAL, see http://wazimap.readthedocs.io/en/latest/
-2018-02-27 15:31:09,650 [WARNING] wazimap.geo: NOTE: Wazimap is unable to load GDAL, it's probably not installed. Some functionality such as data downloads and geolocation won't work. This is ok in development, but is a problem in production. For more information on installing GDAL, see http://wazimap.readthedocs.io/en/latest/
-2018-02-27 15:31:19,722 [WARNING] wazimap.geo: NOTE: Wazimap is unable to load GDAL, it's probably not installed. Some functionality such as data downloads and geolocation won't work. This is ok in development, but is a problem in production. For more information on installing GDAL, see http://wazimap.readthedocs.io/en/latest/
-2018-02-27 15:46:01,005 [WARNING] wazimap.geo: NOTE: Wazimap is unable to load GDAL, it's probably not installed. Some functionality such as data downloads and geolocation won't work. This is ok in development, but is a problem in production. For more information on installing GDAL, see http://wazimap.readthedocs.io/en/latest/
-2018-02-27 15:46:39,417 [WARNING] wazimap.geo: NOTE: Wazimap is unable to load GDAL, it's probably not installed. Some functionality such as data downloads and geolocation won't work. This is ok in development, but is a problem in production. For more information on installing GDAL, see http://wazimap.readthedocs.io/en/latest/
-2018-02-27 15:46:45,826 [WARNING] wazimap.geo: NOTE: Wazimap is unable to load GDAL, it's probably not installed. Some functionality such as data downloads and geolocation won't work. This is ok in development, but is a problem in production. For more information on installing GDAL, see http://wazimap.readthedocs.io/en/latest/
-2018-02-27 15:46:50,343 [WARNING] wazimap.geo: NOTE: Wazimap is unable to load GDAL, it's probably not installed. Some functionality such as data downloads and geolocation won't work. This is ok in development, but is a problem in production. For more information on installing GDAL, see http://wazimap.readthedocs.io/en/latest/
-2018-02-27 15:48:37,858 [WARNING] wazimap.geo: NOTE: Wazimap is unable to load GDAL, it's probably not installed. Some functionality such as data downloads and geolocation won't work. This is ok in development, but is a problem in production. For more information on installing GDAL, see http://wazimap.readthedocs.io/en/latest/
-2018-02-27 15:48:57,944 [WARNING] wazimap.geo: NOTE: Wazimap is unable to load GDAL, it's probably not installed. Some functionality such as data downloads and geolocation won't work. This is ok in development, but is a problem in production. For more information on installing GDAL, see http://wazimap.readthedocs.io/en/latest/
-2018-02-27 15:49:07,765 [WARNING] wazimap.geo: NOTE: Wazimap is unable to load GDAL, it's probably not installed. Some functionality such as data downloads and geolocation won't work. This is ok in development, but is a problem in production. For more information on installing GDAL, see http://wazimap.readthedocs.io/en/latest/
-2018-02-27 15:49:18,200 [WARNING] wazimap.geo: NOTE: Wazimap is unable to load GDAL, it's probably not installed. Some functionality such as data downloads and geolocation won't work. This is ok in development, but is a problem in production. For more information on installing GDAL, see http://wazimap.readthedocs.io/en/latest/
-2018-02-27 15:49:19,295 [WARNING] wazimap.geo: NOTE: Wazimap is unable to load GDAL, it's probably not installed. Some functionality such as data downloads and geolocation won't work. This is ok in development, but is a problem in production. For more information on installing GDAL, see http://wazimap.readthedocs.io/en/latest/
-2018-02-27 15:49:52,835 [WARNING] wazimap.geo: NOTE: Wazimap is unable to load GDAL, it's probably not installed. Some functionality such as data downloads and geolocation won't work. This is ok in development, but is a problem in production. For more information on installing GDAL, see http://wazimap.readthedocs.io/en/latest/
-2018-02-27 15:49:53,896 [WARNING] wazimap.geo: NOTE: Wazimap is unable to load GDAL, it's probably not installed. Some functionality such as data downloads and geolocation won't work. This is ok in development, but is a problem in production. For more information on installing GDAL, see http://wazimap.readthedocs.io/en/latest/
-2018-02-27 15:55:43,933 [WARNING] wazimap.geo: NOTE: Wazimap is unable to load GDAL, it's probably not installed. Some functionality such as data downloads and geolocation won't work. This is ok in development, but is a problem in production. For more information on installing GDAL, see http://wazimap.readthedocs.io/en/latest/
+2018-03-05 12:03:57,782 [DEBUG] shapely.geos: Trying `CDLL(libgeos_c.so.1)`
+2018-03-05 12:03:57,783 [DEBUG] shapely.geos: Library path: 'libgeos_c.so.1'
+2018-03-05 12:03:57,783 [DEBUG] shapely.geos: DLL: <CDLL 'libgeos_c.so.1', handle 1beae10 at 7fda170ac290>
+2018-03-05 12:03:57,787 [DEBUG] shapely.geos: Trying `CDLL(libc.so.6)`
+2018-03-05 12:03:57,787 [DEBUG] shapely.geos: Library path: 'libc.so.6'
+2018-03-05 12:03:57,787 [DEBUG] shapely.geos: DLL: <CDLL 'libc.so.6', handle 7fda18fc54e8 at 7fda16021e90>
+2018-03-05 12:03:59,265 [INFO] wazimap.apps: Wazimap found GDAL version 2.2.3
+2018-03-05 12:49:30,717 INFO apps 23926 139908739655424 Wazimap found GDAL version 2.2.3
+2018-03-05 12:49:30,868 DEBUG utils 23926 139908739655424 (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-05 12:49:30,870 DEBUG utils 23926 139908739655424 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-03-05 12:49:30,871 DEBUG utils 23926 139908739655424 (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-05 12:49:30,872 DEBUG utils 23926 139908739655424 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-03-05 12:49:30,900 DEBUG utils 23926 139908739655424 (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+2018-03-05 12:49:30,901 DEBUG utils 23926 139908739655424 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sites'; args=('sites',)
+2018-03-05 12:49:30,902 DEBUG utils 23926 139908739655424 (0.000) SELECT (1) AS "a" FROM "django_site" LIMIT 1; args=()
+2018-03-05 12:49:30,903 DEBUG utils 23926 139908739655424 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'wazimap'; args=('wazimap',)
+2018-03-05 12:49:30,903 DEBUG utils 23926 139908739655424 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'census'; args=('census',)
+2018-03-05 12:52:24,025 ERROR base 23949 139680348067584 Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 374, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/local/lib/python2.7/dist-packages/wazimap/urls.py", line 9, in <module>
+    from census.views import HealthcheckView, DataView, ExampleView
+  File "/usr/local/lib/python2.7/dist-packages/census/views.py", line 24, in <module>
+    from .models import Geography, Table, Column, SummaryLevel
+  File "/usr/local/lib/python2.7/dist-packages/census/models.py", line 3, in <module>
+    class Table(models.Model):
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 94, in __new__
+    app_config = apps.get_containing_app_config(module)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 239, in get_containing_app_config
+    self.check_apps_ready()
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 124, in check_apps_ready
+    raise AppRegistryNotReady("Apps aren't loaded yet.")
+AppRegistryNotReady: Apps aren't loaded yet.
+2018-03-05 12:52:28,877 ERROR base 23949 139680314496768 Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 374, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/local/lib/python2.7/dist-packages/wazimap/urls.py", line 9, in <module>
+    from census.views import HealthcheckView, DataView, ExampleView
+  File "/usr/local/lib/python2.7/dist-packages/census/views.py", line 24, in <module>
+    from .models import Geography, Table, Column, SummaryLevel
+  File "/usr/local/lib/python2.7/dist-packages/census/models.py", line 3, in <module>
+    class Table(models.Model):
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 94, in __new__
+    app_config = apps.get_containing_app_config(module)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 239, in get_containing_app_config
+    self.check_apps_ready()
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 124, in check_apps_ready
+    raise AppRegistryNotReady("Apps aren't loaded yet.")
+AppRegistryNotReady: Apps aren't loaded yet.
+2018-03-05 12:54:10,687 ERROR base 23949 139680348067584 Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 374, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/local/lib/python2.7/dist-packages/wazimap/urls.py", line 9, in <module>
+    from census.views import HealthcheckView, DataView, ExampleView
+  File "/usr/local/lib/python2.7/dist-packages/census/views.py", line 24, in <module>
+    from .models import Geography, Table, Column, SummaryLevel
+  File "/usr/local/lib/python2.7/dist-packages/census/models.py", line 3, in <module>
+    class Table(models.Model):
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 94, in __new__
+    app_config = apps.get_containing_app_config(module)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 239, in get_containing_app_config
+    self.check_apps_ready()
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 124, in check_apps_ready
+    raise AppRegistryNotReady("Apps aren't loaded yet.")
+AppRegistryNotReady: Apps aren't loaded yet.
+2018-03-05 12:55:57,502 ERROR base 23949 139680314496768 Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 374, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/local/lib/python2.7/dist-packages/wazimap/urls.py", line 9, in <module>
+    from census.views import HealthcheckView, DataView, ExampleView
+  File "/usr/local/lib/python2.7/dist-packages/census/views.py", line 24, in <module>
+    from .models import Geography, Table, Column, SummaryLevel
+  File "/usr/local/lib/python2.7/dist-packages/census/models.py", line 3, in <module>
+    class Table(models.Model):
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 94, in __new__
+    app_config = apps.get_containing_app_config(module)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 239, in get_containing_app_config
+    self.check_apps_ready()
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 124, in check_apps_ready
+    raise AppRegistryNotReady("Apps aren't loaded yet.")
+AppRegistryNotReady: Apps aren't loaded yet.
+2018-03-05 12:55:59,984 ERROR base 23949 139680348067584 Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 374, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/local/lib/python2.7/dist-packages/wazimap/urls.py", line 9, in <module>
+    from census.views import HealthcheckView, DataView, ExampleView
+  File "/usr/local/lib/python2.7/dist-packages/census/views.py", line 24, in <module>
+    from .models import Geography, Table, Column, SummaryLevel
+  File "/usr/local/lib/python2.7/dist-packages/census/models.py", line 3, in <module>
+    class Table(models.Model):
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 94, in __new__
+    app_config = apps.get_containing_app_config(module)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 239, in get_containing_app_config
+    self.check_apps_ready()
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 124, in check_apps_ready
+    raise AppRegistryNotReady("Apps aren't loaded yet.")
+AppRegistryNotReady: Apps aren't loaded yet.
+2018-03-05 12:57:41,689 ERROR base 23990 139680348067584 Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 183, in inner
+    with self:
+  File "/usr/local/lib/python2.7/dist-packages/django/db/transaction.py", line 158, in __enter__
+    if not connection.get_autocommit():
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 365, in get_autocommit
+    self.ensure_connection()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 171, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/postgresql/base.py", line 175, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+OperationalError: FATAL:  database "wazimap" does not exist
+
+2018-03-05 12:57:54,763 ERROR base 23990 139680314496768 Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 183, in inner
+    with self:
+  File "/usr/local/lib/python2.7/dist-packages/django/db/transaction.py", line 158, in __enter__
+    if not connection.get_autocommit():
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 365, in get_autocommit
+    self.ensure_connection()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 171, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/postgresql/base.py", line 175, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+OperationalError: FATAL:  database "wazimap" does not exist
+
+2018-03-05 12:57:59,287 ERROR base 24016 139680314496768 Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 183, in inner
+    with self:
+  File "/usr/local/lib/python2.7/dist-packages/django/db/transaction.py", line 158, in __enter__
+    if not connection.get_autocommit():
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 365, in get_autocommit
+    self.ensure_connection()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 171, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/postgresql/base.py", line 175, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+OperationalError: FATAL:  database "wazimap" does not exist
+
+2018-03-05 12:58:00,297 ERROR base 24016 139680348067584 Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 183, in inner
+    with self:
+  File "/usr/local/lib/python2.7/dist-packages/django/db/transaction.py", line 158, in __enter__
+    if not connection.get_autocommit():
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 365, in get_autocommit
+    self.ensure_connection()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 171, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/postgresql/base.py", line 175, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+OperationalError: FATAL:  database "wazimap" does not exist
+
+2018-03-05 12:58:35,528 ERROR base 24016 139680314496768 Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 183, in inner
+    with self:
+  File "/usr/local/lib/python2.7/dist-packages/django/db/transaction.py", line 158, in __enter__
+    if not connection.get_autocommit():
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 365, in get_autocommit
+    self.ensure_connection()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 171, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/postgresql/base.py", line 175, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+OperationalError: FATAL:  database "wazimap" does not exist
+
+2018-03-05 12:59:03,405 ERROR base 24044 139680348067584 Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 183, in inner
+    with self:
+  File "/usr/local/lib/python2.7/dist-packages/django/db/transaction.py", line 158, in __enter__
+    if not connection.get_autocommit():
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 365, in get_autocommit
+    self.ensure_connection()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 171, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/postgresql/base.py", line 175, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+OperationalError: FATAL:  database "wazimap" does not exist
+
+2018-03-05 12:59:47,998 ERROR base 24069 139680322889472 Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 183, in inner
+    with self:
+  File "/usr/local/lib/python2.7/dist-packages/django/db/transaction.py", line 158, in __enter__
+    if not connection.get_autocommit():
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 365, in get_autocommit
+    self.ensure_connection()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 171, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/postgresql/base.py", line 175, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+OperationalError: FATAL:  database "wazimap" does not exist
+
+2018-03-05 12:59:48,661 ERROR base 24069 139680348067584 Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 183, in inner
+    with self:
+  File "/usr/local/lib/python2.7/dist-packages/django/db/transaction.py", line 158, in __enter__
+    if not connection.get_autocommit():
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 365, in get_autocommit
+    self.ensure_connection()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 171, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/postgresql/base.py", line 175, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+OperationalError: FATAL:  database "wazimap" does not exist
+
+2018-03-05 12:59:55,514 ERROR base 24069 139680322889472 Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 183, in inner
+    with self:
+  File "/usr/local/lib/python2.7/dist-packages/django/db/transaction.py", line 158, in __enter__
+    if not connection.get_autocommit():
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 365, in get_autocommit
+    self.ensure_connection()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 171, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/postgresql/base.py", line 175, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+OperationalError: FATAL:  database "wazimap" does not exist
+
+2018-03-05 12:59:58,372 ERROR base 24095 139680322889472 Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 374, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/local/lib/python2.7/dist-packages/wazimap/urls.py", line 9, in <module>
+    from census.views import HealthcheckView, DataView, ExampleView
+  File "/usr/local/lib/python2.7/dist-packages/census/views.py", line 24, in <module>
+    from .models import Geography, Table, Column, SummaryLevel
+  File "/usr/local/lib/python2.7/dist-packages/census/models.py", line 3, in <module>
+    class Table(models.Model):
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 94, in __new__
+    app_config = apps.get_containing_app_config(module)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 239, in get_containing_app_config
+    self.check_apps_ready()
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 124, in check_apps_ready
+    raise AppRegistryNotReady("Apps aren't loaded yet.")
+AppRegistryNotReady: Apps aren't loaded yet.
+2018-03-05 13:00:19,865 ERROR base 24118 139680314496768 Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 183, in inner
+    with self:
+  File "/usr/local/lib/python2.7/dist-packages/django/db/transaction.py", line 158, in __enter__
+    if not connection.get_autocommit():
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 365, in get_autocommit
+    self.ensure_connection()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 171, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/postgresql/base.py", line 175, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/psycopg2/__init__.py", line 130, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+OperationalError: FATAL:  database "wazimap" does not exist
+
+2018-03-05 13:01:55,290 WARNING geo 24146 139680348067584 Couldn't open geometry file /var/www/static/geo/world.geojson -- no geometry will be available for level world and version ''
+2018-03-05 13:01:55,290 WARNING geo 24146 139680348067584 Couldn't open geometry file /var/www/static/geo/continent.geojson -- no geometry will be available for level continent and version ''
+2018-03-05 13:01:55,290 WARNING geo 24146 139680348067584 Couldn't open geometry file /var/www/static/geo/country.geojson -- no geometry will be available for level country and version ''
+2018-03-05 13:01:55,290 INFO apps 24146 139680348067584 Wazimap found GDAL version 2.2.3
+2018-03-05 13:01:55,513 DEBUG utils 24146 139680348067584 (0.066) SELECT DISTINCT "wazimap_geography"."version" FROM "wazimap_geography"; args=()
+2018-03-05 13:01:55,522 DEBUG utils 24146 139680348067584 (0.008) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."parent_level" IS NULL AND "wazimap_geography"."geo_level" = 'world' AND "wazimap_geography"."parent_code" IS NULL AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=('world', '')
+2018-03-05 13:02:12,468 DEBUG utils 24146 139680348067584 (0.001) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'AA' AND "wazimap_geography"."geo_level" = 'continent' AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'AA', u'continent', '')
+2018-03-05 13:02:12,499 DEBUG utils 24146 139680348067584 (0.001) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'AA' AND "wazimap_geography"."geo_level" = 'continent' AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'AA', u'continent', '')
+2018-03-05 13:02:12,502 DEBUG utils 24146 139680348067584 (0.001) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'WW' AND "wazimap_geography"."version" = '' AND "wazimap_geography"."geo_level" = 'world') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'WW', u'', u'world')
+2018-03-05 13:02:17,773 DEBUG utils 24146 139680314496768 (0.001) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."parent_level" IS NULL AND "wazimap_geography"."geo_level" = 'world' AND "wazimap_geography"."parent_code" IS NULL AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=('world', '')
+2018-03-05 13:04:01,878 DEBUG utils 24146 139680314496768 (0.001) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'AA' AND "wazimap_geography"."geo_level" = 'continent' AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'AA', u'continent', '')
+2018-03-05 13:04:01,969 DEBUG utils 24146 139680314496768 (0.001) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'AA' AND "wazimap_geography"."geo_level" = 'continent' AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'AA', u'continent', '')
+2018-03-05 13:04:01,970 DEBUG utils 24146 139680314496768 (0.000) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'WW' AND "wazimap_geography"."version" = '' AND "wazimap_geography"."geo_level" = 'world') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'WW', u'', u'world')
+2018-03-05 13:05:04,132 DEBUG utils 24146 139680348067584 (0.001) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'ZA' AND "wazimap_geography"."geo_level" = 'country' AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'ZA', u'country', '')
+2018-03-05 13:05:04,332 DEBUG utils 24146 139680348067584 (0.001) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'ZA' AND "wazimap_geography"."geo_level" = 'country' AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'ZA', u'country', '')
+2018-03-05 13:05:04,334 DEBUG utils 24146 139680348067584 (0.000) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'AA' AND "wazimap_geography"."version" = '' AND "wazimap_geography"."geo_level" = 'continent') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'AA', u'', u'continent')
+2018-03-05 13:05:04,335 DEBUG utils 24146 139680348067584 (0.000) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'WW' AND "wazimap_geography"."version" = '' AND "wazimap_geography"."geo_level" = 'world') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'WW', u'', u'world')
+2018-03-05 13:05:27,690 DEBUG utils 24146 139680314496768 (0.002) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'ZA' AND "wazimap_geography"."geo_level" = 'country' AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'ZA', u'country', '')
+2018-03-05 13:05:27,831 DEBUG utils 24146 139680314496768 (0.001) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'ZA' AND "wazimap_geography"."geo_level" = 'country' AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'ZA', u'country', '')
+2018-03-05 13:05:27,833 DEBUG utils 24146 139680314496768 (0.000) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'AA' AND "wazimap_geography"."version" = '' AND "wazimap_geography"."geo_level" = 'continent') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'AA', u'', u'continent')
+2018-03-05 13:05:27,834 DEBUG utils 24146 139680314496768 (0.000) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'WW' AND "wazimap_geography"."version" = '' AND "wazimap_geography"."geo_level" = 'world') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'WW', u'', u'world')
+2018-03-05 13:06:18,933 DEBUG utils 24146 139680348067584 (0.001) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'AA' AND "wazimap_geography"."geo_level" = 'continent' AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'AA', u'continent', '')
+2018-03-05 13:06:18,934 DEBUG utils 24146 139680348067584 (0.000) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'WW' AND "wazimap_geography"."version" = '' AND "wazimap_geography"."geo_level" = 'world') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'WW', u'', u'world')
+2018-03-05 13:07:24,987 DEBUG utils 24146 139680314496768 (0.031) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE (UPPER("wazimap_geography"."name"::text) LIKE UPPER('%gabon%') OR "wazimap_geography"."geo_code" = 'GABON') LIMIT 10; args=(u'%gabon%', u'GABON')
+2018-03-05 13:07:27,589 DEBUG utils 24146 139680314496768 (0.001) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'GA' AND "wazimap_geography"."geo_level" = 'country' AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'GA', u'country', '')
+2018-03-05 13:07:27,730 DEBUG utils 24146 139680314496768 (0.001) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'GA' AND "wazimap_geography"."geo_level" = 'country' AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'GA', u'country', '')
+2018-03-05 13:07:27,732 DEBUG utils 24146 139680314496768 (0.000) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'AA' AND "wazimap_geography"."version" = '' AND "wazimap_geography"."geo_level" = 'continent') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'AA', u'', u'continent')
+2018-03-05 13:07:27,733 DEBUG utils 24146 139680314496768 (0.000) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'WW' AND "wazimap_geography"."version" = '' AND "wazimap_geography"."geo_level" = 'world') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'WW', u'', u'world')
+2018-03-05 13:18:58,605 DEBUG utils 24146 139680348067584 (0.001) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."parent_level" IS NULL AND "wazimap_geography"."geo_level" = 'world' AND "wazimap_geography"."parent_code" IS NULL AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=('world', '')

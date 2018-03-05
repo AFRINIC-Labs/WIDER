@@ -9,11 +9,11 @@ import populationjson
 
 logger = logging.getLogger(__name__)
 
-def get_ipv4_profile(geo, session):
+def get_access_profile(geo, session):
 
-	countriesTable = get_datatable('countries')
+	countriesTable = get_datatable('regions')
 	countrieUsers, total = get_stat_data('users_or_not', geo, session,table_fields=['users_or_not'])
-	worldUsers, total = get_stat_data('country_or_world', geo, session,table_fields=['country_or_world'])
+	worldUsers, total = get_stat_data('region_or_world', geo, session,table_fields=['region_or_world'])
 	marketShare, total = get_stat_data('asn', geo, session, '-total',table_fields=['asn'])
 
 	users, _ = countriesTable.get_stat_data(geo, 'users')

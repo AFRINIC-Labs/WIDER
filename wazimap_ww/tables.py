@@ -3,7 +3,7 @@ from wazimap.data.tables import FieldTable, SimpleTable
 # Ipv4
 
 FieldTable(['users_or_not'],
-		id='users_in_country',
+		id='users_in_region',
 		universe='Internet users',
         value_type='BIGINT',
 		description='What percentage of a country are internet users',
@@ -12,7 +12,7 @@ FieldTable(['users_or_not'],
 
 
 
-FieldTable(['country_or_world'],
+FieldTable(['region_or_world'],
         id='users_in_world',
         universe='Internet users',
         value_type='BIGINT',
@@ -34,7 +34,7 @@ FieldTable(['asn'],
 # Ipv6
 
 
-FieldTable(['v6users_in_country'],
+FieldTable(['v6users_in_region'],
         id='v6user_or_not',
         universe='Internet users',
         value_type='BIGINT',

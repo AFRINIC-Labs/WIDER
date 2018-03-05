@@ -1,8 +1,6 @@
 from wazimap.data.utils import get_session, merge_dicts, group_remainder
 from wazimap.geo import geo_data
 
-logger = logging.getLogger(__name__)
-
 from wazimap_ww import (
     demographics,
     access,
@@ -28,11 +26,11 @@ def get_profile(geo, profile_name, request):
         geo_summary_levels = geo_data.get_geometry(geo)
         data = {}
 
-        for section in PROFILE_SECTIONS:
-            function_name = 'get_%s_profile' % section
-            if function_name in globals():
-                func = globals()[function_name]
-                data[section] = func(geo, session)
+        # for section in PROFILE_SECTIONS:
+        #     function_name = 'get_%s_profile' % section
+        #     if function_name in globals():
+        #         func = globals()[function_name]
+        #         data[section] = func(geo, session)
 
     finally:
         session.close()

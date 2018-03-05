@@ -6,7 +6,7 @@ from wazimap.data.utils import get_stat_data, get_objects_by_geo, \
 
 import populationjson
 
-logger = logging.getLogger(__name__)
+# logger = logging.getLogger(__name__)
 
 def get_isp_profile(geo, session):
 
@@ -14,9 +14,9 @@ def get_isp_profile(geo, session):
 
 	ispAmount = len(marketShare);
 
-	if(!ispAmount){
-		ispAmount = 0;
-	}
+	# if ispAmount > 0
+	# 	ispAmount = 0
+	
 
 	return	{
 	'isp_count':{
