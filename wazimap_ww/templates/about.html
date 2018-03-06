@@ -1,0 +1,24 @@
+{% extends '_base.html' %}{% load partition staticfiles %}
+
+{% block head_title %}About - {{ block.super }}{% endblock %}
+
+{% block content %}
+<article id="about">
+    <header>
+        <h1 class="article-header">WIDER project</h1>
+    </header>
+    <section>
+      <h2 class="article-header">What is WIDER</h2>
+      <p>WIDER stands for World Internet Data Explorer. It is a collaboration project between Vanilla and Afrinic, to create a web application that displays data provided to us from stats.labs.apnic.net in an user friendly way.</p>
+
+      <p>We have built WIDER on a framework called Wazimap which was brought to us from <a href="https://openup.org.za/">OpenUp</a>, who have built their project on another Django application called Census. Even though Wazimap and Census are typically used for census data, we have adapted this system to our market data.</p>
+
+      <h2 class="article-header">Why Wazimap? A brief history.</h2>
+      <p>Since our first democratic elections in South Africa, <a href="http://mediamonitoringafrica.org">Media Monitoring Africa (MMA)</a> has monitored the media’s coverage in the run up to the elections. While our media are overwhelmingly fair we have found a general tendency across all the media monitored (on average 50 different media titles for each period) to have their elections agenda set by  political leaders and political parties contesting. With some clear and often excellent exceptions that prove we have quality journalism, the news on offer tends to be event based, and fails to focus on the bigger issues we face. </p>
+
+      <p>Despite issues of labour, unemployment, crime, health, education challenges, transformation, sustainability, land, racism, xenophobia, poverty, inequality, gender-based violence and child abuse being so prevalent, we see that each of these issues receive less than 2% of coverage. For a more comprehensive overview of the challenges in coverage and positive trends see our interactive elections analysis of the 2014 national elections at <a href="http://elections2014.mediamonitoringafrica.org/">elections2014.mediamonitoringafrica.org</a>.</p>
+
+      <p>Read more about <a href="https://wazimap.co.za/about">Wazimap</a> on their about page.</p>
+    </section>
+</article>
+{% endblock %}

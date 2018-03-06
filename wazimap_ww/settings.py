@@ -52,10 +52,10 @@ WAZIMAP['geometry_data'] = {
 
 WAZIMAP['default_geo_version'] = ''
 WAZIMAP['profile_builder'] = 'wazimap_ww.profiles.get_profile'
-WAZIMAP['map_centre'] = [0, 0]
+WAZIMAP['map_centre'] = [45, 0]
 WAZIMAP['map_zoom'] = 2
 
-
+django.setup()
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': True,
@@ -68,7 +68,7 @@ LOGGING = {
         'console': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': '//home/wider/wazimap_ww/logs/mylog.log',
+            'filename': '/home/wider/wazimap_ww/logs/mylog.log',
             'formatter': 'verbose'
         },
     },
@@ -93,5 +93,5 @@ LOGGING = {
 }
 
 
-django.setup()
+
 logging.config.dictConfig(LOGGING)
