@@ -68,7 +68,7 @@ LOGGING = {
         'console': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': '/home/wider/wazimap_ww/logs/mylog.log',
+            'filename': '../logs/mylog.log',
             'formatter': 'verbose'
         },
     },
