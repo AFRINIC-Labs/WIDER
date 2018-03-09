@@ -1,0 +1,33 @@
+note: in this example I am not using a virtualenv, because I am comvinced that it's impossible to install gdal on it.
+
+install postgres
+
+install pip
+
+pip django install
+
+django startproject wazimap_ww
+
+cd wazimap_ww
+
+delete everything inside
+
+git clone https://github.com/AFRINIC-Labs/WIDER
+
+sudo apt-get install binutils libproj-dev gdal-bin
+
+pip requirements.txt
+
+edit: settings.py, change the directory of the logs, REMEBER TO CHANGE THEM BACK!!!
+
+delete all the files that end in .pyc if there are any
+
+python manage.py migrate
+
+let louw know if you have a database error
+
+python manage.py runserver
+
+
+
+

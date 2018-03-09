@@ -44,6 +44,13 @@ WITH (
 ALTER TABLE public.regions
   OWNER TO wider;
 
+COPY wazimap_geography (geo_level, geo_code, name, parent_level, parent_code, long_name, version) FROM '/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/db_dump/data/wazimap-geography.csv' CSV HEADER DELIMITER ',';
+
+
+
+
+/*
+
 CREATE OR REPLACE FUNCTION public.populate_market_share()
   RETURNS void AS
 $BODY$DECLARE
@@ -274,6 +281,4 @@ END$BODY$
   COST 100;
 ALTER FUNCTION public.users_in_world_generator()
   OWNER TO wider;
-
-
-COPY wazimap_geography (geo_level, geo_code, name, parent_level, parent_code, long_name, version) FROM '/home/wider/wider/db_dump/data/wazimap-geography.csv' CSV HEADER DELIMITER ',';
+*/
