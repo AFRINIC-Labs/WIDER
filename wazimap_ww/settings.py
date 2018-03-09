@@ -17,13 +17,6 @@ WAZIMAP['country_code'] = 'WW'
 ROOT_URLCONF = 'wazimap.urls'
 WSGI_APPLICATION = 'wazimap.wsgi.application'
 
-
-DATABASE_URL = os.environ.get('DATABASE_URL', 'postgresql://wider:w1d3r@localhost/wider')
-DATABASES = {
-    'default': dj_database_url.parse(DATABASE_URL),
-}
-
-
 WAZIMAP['levels'] = {
     'world': {
         'plural': 'worlds',
@@ -68,7 +61,7 @@ LOGGING = {
         'console': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': '../logs/mylog.log',
+            'filename': '/home/wider/wazimap_ww/logs/mylog.log',
             'formatter': 'verbose'
         },
     },
