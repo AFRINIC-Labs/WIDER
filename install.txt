@@ -2,32 +2,31 @@ note: in this example I am not using a virtualenv, because I am comvinced that i
 
 install postgres
 
-install pip
+create user wider
+create database wider with user wider as owner
 
-pip django install
+install pip
 
 django startproject wazimap_ww
 
-cd wazimap_ww
-
-delete everything inside
-
 git clone https://github.com/AFRINIC-Labs/WIDER
 
-sudo apt-get install binutils libproj-dev gdal-bin
+Erase original wazimap_ww and rename WIDER to wazimap_ww
 
-pip requirements.txt
+pip install -r requirements.txt
 
 edit: settings.py, change the directory of the logs, REMEBER TO CHANGE THEM BACK!!!
 
-delete all the files that end in .pyc if there are any
+Edit /ENV/lib/python2.7/site-packages/wazimap/settings.py
+  DATABASE_URL = os.environ.get('DATABASE_URL', 'postgresql://wider:your_PASSWORD@localhost/wider')
+  DATABASES = {
+      'default': dj_database_url.parse(DATABASE_URL),
+  }
+
+
 
 python manage.py migrate
 
 let louw know if you have a database error
 
 python manage.py runserver
-
-
-
-

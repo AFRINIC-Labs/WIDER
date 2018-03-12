@@ -171,3 +171,439 @@
 2018-03-08 11:42:27,175 WARNING base 12383 140572898563840 Not Found: /profiles/continent-AF/
 2018-03-08 12:11:32,182 WARNING base 12383 140572932134656 Not Found: /rongame_beta/rgfate/60_member/network/network_config_android_1.17.1.json
 2018-03-08 14:39:06,748 DEBUG utils 12383 140572898563840 (0.001) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."parent_level" IS NULL AND "wazimap_geography"."geo_level" = 'world' AND "wazimap_geography"."parent_code" IS NULL AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=('world', '')
+2018-03-12 12:18:50,730 DEBUG utils 20233 140736257598272 (0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:18:50,730 DEBUG schema 20233 140736257598272 CREATE TABLE "django_migrations" ("id" serial NOT NULL PRIMARY KEY, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" timestamp with time zone NOT NULL); (params None)
+2018-03-12 12:18:50,743 DEBUG utils 20233 140736257598272 (0.013) CREATE TABLE "django_migrations" ("id" serial NOT NULL PRIMARY KEY, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" timestamp with time zone NOT NULL); args=None
+2018-03-12 12:18:50,746 DEBUG utils 20233 140736257598272 (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-03-12 12:18:50,768 DEBUG schema 20233 140736257598272 CREATE TABLE "django_content_type" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params None)
+2018-03-12 12:18:50,771 DEBUG utils 20233 140736257598272 (0.003) CREATE TABLE "django_content_type" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); args=None
+2018-03-12 12:18:50,775 DEBUG schema 20233 140736257598272 ALTER TABLE "django_content_type" ADD CONSTRAINT "django_content_type_app_label_76bd3d3b_uniq" UNIQUE ("app_label", "model"); (params [])
+2018-03-12 12:18:50,778 DEBUG utils 20233 140736257598272 (0.002) ALTER TABLE "django_content_type" ADD CONSTRAINT "django_content_type_app_label_76bd3d3b_uniq" UNIQUE ("app_label", "model"); args=[]
+2018-03-12 12:18:50,780 DEBUG utils 20233 140736257598272 (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:18:50,784 DEBUG utils 20233 140736257598272 (0.002) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('contenttypes', '0001_initial', '2018-03-12T10:18:50.781333+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('contenttypes', u'0001_initial', datetime.datetime(2018, 3, 12, 10, 18, 50, 781333, tzinfo=<UTC>))
+2018-03-12 12:18:50,791 DEBUG schema 20233 140736257598272 ALTER TABLE "django_content_type" ALTER COLUMN "name" DROP NOT NULL; (params [])
+2018-03-12 12:18:50,792 DEBUG utils 20233 140736257598272 (0.001) ALTER TABLE "django_content_type" ALTER COLUMN "name" DROP NOT NULL; args=[]
+2018-03-12 12:18:50,798 DEBUG schema 20233 140736257598272 ALTER TABLE "django_content_type" DROP COLUMN "name" CASCADE; (params [])
+2018-03-12 12:18:50,805 DEBUG utils 20233 140736257598272 (0.006) ALTER TABLE "django_content_type" DROP COLUMN "name" CASCADE; args=[]
+2018-03-12 12:18:50,806 DEBUG utils 20233 140736257598272 (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:18:50,807 DEBUG utils 20233 140736257598272 (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('contenttypes', '0002_remove_content_type_name', '2018-03-12T10:18:50.806981+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('contenttypes', u'0002_remove_content_type_name', datetime.datetime(2018, 3, 12, 10, 18, 50, 806981, tzinfo=<UTC>))
+2018-03-12 12:18:50,812 DEBUG schema 20233 140736257598272 CREATE TABLE "django_site" ("id" serial NOT NULL PRIMARY KEY, "domain" varchar(100) NOT NULL, "name" varchar(50) NOT NULL); (params None)
+2018-03-12 12:18:50,815 DEBUG utils 20233 140736257598272 (0.003) CREATE TABLE "django_site" ("id" serial NOT NULL PRIMARY KEY, "domain" varchar(100) NOT NULL, "name" varchar(50) NOT NULL); args=None
+2018-03-12 12:18:50,816 DEBUG utils 20233 140736257598272 (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:18:50,817 DEBUG utils 20233 140736257598272 (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('sites', '0001_initial', '2018-03-12T10:18:50.816875+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('sites', u'0001_initial', datetime.datetime(2018, 3, 12, 10, 18, 50, 816875, tzinfo=<UTC>))
+2018-03-12 12:18:50,822 DEBUG schema 20233 140736257598272 ALTER TABLE "django_site" ADD CONSTRAINT "django_site_domain_a2e37b91_uniq" UNIQUE ("domain"); (params [])
+2018-03-12 12:18:50,825 DEBUG utils 20233 140736257598272 (0.003) ALTER TABLE "django_site" ADD CONSTRAINT "django_site_domain_a2e37b91_uniq" UNIQUE ("domain"); args=[]
+2018-03-12 12:18:50,826 DEBUG schema 20233 140736257598272 CREATE INDEX "django_site_domain_a2e37b91_like" ON "django_site" ("domain" varchar_pattern_ops); (params [])
+2018-03-12 12:18:50,829 DEBUG utils 20233 140736257598272 (0.003) CREATE INDEX "django_site_domain_a2e37b91_like" ON "django_site" ("domain" varchar_pattern_ops); args=[]
+2018-03-12 12:18:50,832 DEBUG utils 20233 140736257598272 (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:18:50,835 DEBUG utils 20233 140736257598272 (0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('sites', '0002_alter_domain_unique', '2018-03-12T10:18:50.833635+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('sites', u'0002_alter_domain_unique', datetime.datetime(2018, 3, 12, 10, 18, 50, 833635, tzinfo=<UTC>))
+2018-03-12 12:18:50,841 DEBUG schema 20233 140736257598272 CREATE TABLE "wazimap_geography" ("id" serial NOT NULL PRIMARY KEY, "geo_level" varchar(15) NOT NULL, "geo_code" varchar(10) NOT NULL, "name" varchar(20) NOT NULL, "year" integer NULL, "osm_area_id" integer NULL, "square_kms" double precision NULL, "parent_level" varchar(15) NULL, "parent_code" varchar(10) NULL); (params None)
+2018-03-12 12:18:50,843 DEBUG utils 20233 140736257598272 (0.002) CREATE TABLE "wazimap_geography" ("id" serial NOT NULL PRIMARY KEY, "geo_level" varchar(15) NOT NULL, "geo_code" varchar(10) NOT NULL, "name" varchar(20) NOT NULL, "year" integer NULL, "osm_area_id" integer NULL, "square_kms" double precision NULL, "parent_level" varchar(15) NULL, "parent_code" varchar(10) NULL); args=None
+2018-03-12 12:18:50,849 DEBUG schema 20233 140736257598272 ALTER TABLE "wazimap_geography" ADD CONSTRAINT "wazimap_geography_geo_level_9a5128d2_uniq" UNIQUE ("geo_level", "geo_code"); (params [])
+2018-03-12 12:18:50,850 DEBUG utils 20233 140736257598272 (0.001) ALTER TABLE "wazimap_geography" ADD CONSTRAINT "wazimap_geography_geo_level_9a5128d2_uniq" UNIQUE ("geo_level", "geo_code"); args=[]
+2018-03-12 12:18:50,850 DEBUG schema 20233 140736257598272 CREATE INDEX "wazimap_geography_b068931c" ON "wazimap_geography" ("name"); (params [])
+2018-03-12 12:18:50,851 DEBUG utils 20233 140736257598272 (0.001) CREATE INDEX "wazimap_geography_b068931c" ON "wazimap_geography" ("name"); args=[]
+2018-03-12 12:18:50,851 DEBUG schema 20233 140736257598272 CREATE INDEX "wazimap_geography_84cdc76c" ON "wazimap_geography" ("year"); (params [])
+2018-03-12 12:18:50,852 DEBUG utils 20233 140736257598272 (0.001) CREATE INDEX "wazimap_geography_84cdc76c" ON "wazimap_geography" ("year"); args=[]
+2018-03-12 12:18:50,852 DEBUG schema 20233 140736257598272 CREATE INDEX "wazimap_geography_d7d547e9" ON "wazimap_geography" ("osm_area_id"); (params [])
+2018-03-12 12:18:50,856 DEBUG utils 20233 140736257598272 (0.003) CREATE INDEX "wazimap_geography_d7d547e9" ON "wazimap_geography" ("osm_area_id"); args=[]
+2018-03-12 12:18:50,856 DEBUG schema 20233 140736257598272 CREATE INDEX "wazimap_geography_name_36b79089_like" ON "wazimap_geography" ("name" varchar_pattern_ops); (params [])
+2018-03-12 12:18:50,857 DEBUG utils 20233 140736257598272 (0.001) CREATE INDEX "wazimap_geography_name_36b79089_like" ON "wazimap_geography" ("name" varchar_pattern_ops); args=[]
+2018-03-12 12:18:50,859 DEBUG utils 20233 140736257598272 (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:18:50,860 DEBUG utils 20233 140736257598272 (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('wazimap', '0001_initial', '2018-03-12T10:18:50.860052+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('wazimap', u'0001_initial', datetime.datetime(2018, 3, 12, 10, 18, 50, 860052, tzinfo=<UTC>))
+2018-03-12 12:18:50,866 DEBUG schema 20233 140736257598272 ALTER TABLE "wazimap_geography" ADD COLUMN "long_name" varchar(100) NULL; (params [])
+2018-03-12 12:18:50,866 DEBUG utils 20233 140736257598272 (0.000) ALTER TABLE "wazimap_geography" ADD COLUMN "long_name" varchar(100) NULL; args=[]
+2018-03-12 12:18:50,867 DEBUG schema 20233 140736257598272 ALTER TABLE "wazimap_geography" ALTER COLUMN "long_name" DROP DEFAULT; (params [])
+2018-03-12 12:18:50,867 DEBUG utils 20233 140736257598272 (0.000) ALTER TABLE "wazimap_geography" ALTER COLUMN "long_name" DROP DEFAULT; args=[]
+2018-03-12 12:18:50,867 DEBUG schema 20233 140736257598272 CREATE INDEX "wazimap_geography_2fc6351a" ON "wazimap_geography" ("long_name"); (params [])
+2018-03-12 12:18:50,868 DEBUG utils 20233 140736257598272 (0.001) CREATE INDEX "wazimap_geography_2fc6351a" ON "wazimap_geography" ("long_name"); args=[]
+2018-03-12 12:18:50,868 DEBUG schema 20233 140736257598272 CREATE INDEX "wazimap_geography_long_name_9b8409f5_like" ON "wazimap_geography" ("long_name" varchar_pattern_ops); (params [])
+2018-03-12 12:18:50,870 DEBUG utils 20233 140736257598272 (0.001) CREATE INDEX "wazimap_geography_long_name_9b8409f5_like" ON "wazimap_geography" ("long_name" varchar_pattern_ops); args=[]
+2018-03-12 12:18:50,871 DEBUG utils 20233 140736257598272 (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:18:50,872 DEBUG utils 20233 140736257598272 (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('wazimap', '0002_geography_long_name', '2018-03-12T10:18:50.871966+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('wazimap', u'0002_geography_long_name', datetime.datetime(2018, 3, 12, 10, 18, 50, 871966, tzinfo=<UTC>))
+2018-03-12 12:18:50,884 DEBUG schema 20233 140736257598272 ALTER TABLE "wazimap_geography" DROP COLUMN "osm_area_id" CASCADE; (params [])
+2018-03-12 12:18:50,885 DEBUG utils 20233 140736257598272 (0.001) ALTER TABLE "wazimap_geography" DROP COLUMN "osm_area_id" CASCADE; args=[]
+2018-03-12 12:18:50,888 DEBUG utils 20233 140736257598272 (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:18:50,889 DEBUG utils 20233 140736257598272 (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('wazimap', '0003_remove_geography_osm_area_id', '2018-03-12T10:18:50.888906+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('wazimap', u'0003_remove_geography_osm_area_id', datetime.datetime(2018, 3, 12, 10, 18, 50, 888906, tzinfo=<UTC>))
+2018-03-12 12:18:50,894 DEBUG schema 20233 140736257598272 ALTER TABLE "wazimap_geography" ALTER COLUMN "name" TYPE varchar(100) USING "name"::varchar(100); (params [])
+2018-03-12 12:18:50,896 DEBUG utils 20233 140736257598272 (0.002) ALTER TABLE "wazimap_geography" ALTER COLUMN "name" TYPE varchar(100) USING "name"::varchar(100); args=[]
+2018-03-12 12:18:50,897 DEBUG utils 20233 140736257598272 (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:18:50,898 DEBUG utils 20233 140736257598272 (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('wazimap', '0004_auto_20160302_1645', '2018-03-12T10:18:50.898246+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('wazimap', u'0004_auto_20160302_1645', datetime.datetime(2018, 3, 12, 10, 18, 50, 898246, tzinfo=<UTC>))
+2018-03-12 12:18:50,924 DEBUG utils 20233 140736257598272 (0.017) 
+            SELECT
+                kc.constraint_name,
+                kc.column_name,
+                c.constraint_type,
+                array(SELECT table_name::text || '.' || column_name::text
+                      FROM information_schema.constraint_column_usage
+                      WHERE constraint_name = kc.constraint_name)
+            FROM information_schema.key_column_usage AS kc
+            JOIN information_schema.table_constraints AS c ON
+                kc.table_schema = c.table_schema AND
+                kc.table_name = c.table_name AND
+                kc.constraint_name = c.constraint_name
+            WHERE
+                kc.table_schema = 'public' AND
+                kc.table_name = 'wazimap_geography'
+            ORDER BY kc.ordinal_position ASC
+        ; args=[u'public', u'wazimap_geography']
+2018-03-12 12:18:50,939 DEBUG utils 20233 140736257598272 (0.015) 
+            SELECT kc.constraint_name, kc.column_name
+            FROM information_schema.constraint_column_usage AS kc
+            JOIN information_schema.table_constraints AS c ON
+                kc.table_schema = c.table_schema AND
+                kc.table_name = c.table_name AND
+                kc.constraint_name = c.constraint_name
+            WHERE
+                c.constraint_type = 'CHECK' AND
+                kc.table_schema = 'public' AND
+                kc.table_name = 'wazimap_geography'
+        ; args=[u'public', u'wazimap_geography']
+2018-03-12 12:18:50,941 DEBUG utils 20233 140736257598272 (0.001) 
+            SELECT
+                c2.relname,
+                ARRAY(
+                    SELECT (SELECT attname FROM pg_catalog.pg_attribute WHERE attnum = i AND attrelid = c.oid)
+                    FROM unnest(idx.indkey) i
+                ),
+                idx.indisunique,
+                idx.indisprimary
+            FROM pg_catalog.pg_class c, pg_catalog.pg_class c2,
+                pg_catalog.pg_index idx
+            WHERE c.oid = idx.indrelid
+                AND idx.indexrelid = c2.oid
+                AND c.relname = 'wazimap_geography'
+        ; args=[u'wazimap_geography']
+2018-03-12 12:18:50,941 DEBUG schema 20233 140736257598272 ALTER TABLE "wazimap_geography" DROP CONSTRAINT "wazimap_geography_geo_level_9a5128d2_uniq"; (params [])
+2018-03-12 12:18:50,942 DEBUG utils 20233 140736257598272 (0.001) ALTER TABLE "wazimap_geography" DROP CONSTRAINT "wazimap_geography_geo_level_9a5128d2_uniq"; args=[]
+2018-03-12 12:18:50,942 DEBUG schema 20233 140736257598272 ALTER TABLE "wazimap_geography" ADD CONSTRAINT "wazimap_geography_geo_level_d0885b86_uniq" UNIQUE ("geo_level", "geo_code", "year"); (params [])
+2018-03-12 12:18:50,944 DEBUG utils 20233 140736257598272 (0.001) ALTER TABLE "wazimap_geography" ADD CONSTRAINT "wazimap_geography_geo_level_d0885b86_uniq" UNIQUE ("geo_level", "geo_code", "year"); args=[]
+2018-03-12 12:18:50,945 DEBUG utils 20233 140736257598272 (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:18:50,947 DEBUG utils 20233 140736257598272 (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('wazimap', '0005_unique-geo-add-year', '2018-03-12T10:18:50.946460+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('wazimap', u'0005_unique-geo-add-year', datetime.datetime(2018, 3, 12, 10, 18, 50, 946460, tzinfo=<UTC>))
+2018-03-12 12:18:50,953 DEBUG schema 20233 140736257598272 ALTER TABLE "wazimap_geography" ADD COLUMN "version" varchar(100) NULL; (params [])
+2018-03-12 12:18:50,954 DEBUG utils 20233 140736257598272 (0.000) ALTER TABLE "wazimap_geography" ADD COLUMN "version" varchar(100) NULL; args=[]
+2018-03-12 12:18:50,954 DEBUG schema 20233 140736257598272 ALTER TABLE "wazimap_geography" ALTER COLUMN "version" DROP DEFAULT; (params [])
+2018-03-12 12:18:50,955 DEBUG utils 20233 140736257598272 (0.000) ALTER TABLE "wazimap_geography" ALTER COLUMN "version" DROP DEFAULT; args=[]
+2018-03-12 12:18:50,960 DEBUG schema 20233 140736257598272 
+        update wazimap_geography set version = year::text
+        ; (params None)
+2018-03-12 12:18:50,961 DEBUG utils 20233 140736257598272 (0.001) 
+        update wazimap_geography set version = year::text
+        ; args=None
+2018-03-12 12:18:50,975 DEBUG utils 20233 140736257598272 (0.008) 
+            SELECT
+                kc.constraint_name,
+                kc.column_name,
+                c.constraint_type,
+                array(SELECT table_name::text || '.' || column_name::text
+                      FROM information_schema.constraint_column_usage
+                      WHERE constraint_name = kc.constraint_name)
+            FROM information_schema.key_column_usage AS kc
+            JOIN information_schema.table_constraints AS c ON
+                kc.table_schema = c.table_schema AND
+                kc.table_name = c.table_name AND
+                kc.constraint_name = c.constraint_name
+            WHERE
+                kc.table_schema = 'public' AND
+                kc.table_name = 'wazimap_geography'
+            ORDER BY kc.ordinal_position ASC
+        ; args=[u'public', u'wazimap_geography']
+2018-03-12 12:18:50,985 DEBUG utils 20233 140736257598272 (0.010) 
+            SELECT kc.constraint_name, kc.column_name
+            FROM information_schema.constraint_column_usage AS kc
+            JOIN information_schema.table_constraints AS c ON
+                kc.table_schema = c.table_schema AND
+                kc.table_name = c.table_name AND
+                kc.constraint_name = c.constraint_name
+            WHERE
+                c.constraint_type = 'CHECK' AND
+                kc.table_schema = 'public' AND
+                kc.table_name = 'wazimap_geography'
+        ; args=[u'public', u'wazimap_geography']
+2018-03-12 12:18:50,987 DEBUG utils 20233 140736257598272 (0.001) 
+            SELECT
+                c2.relname,
+                ARRAY(
+                    SELECT (SELECT attname FROM pg_catalog.pg_attribute WHERE attnum = i AND attrelid = c.oid)
+                    FROM unnest(idx.indkey) i
+                ),
+                idx.indisunique,
+                idx.indisprimary
+            FROM pg_catalog.pg_class c, pg_catalog.pg_class c2,
+                pg_catalog.pg_index idx
+            WHERE c.oid = idx.indrelid
+                AND idx.indexrelid = c2.oid
+                AND c.relname = 'wazimap_geography'
+        ; args=[u'wazimap_geography']
+2018-03-12 12:18:50,987 DEBUG schema 20233 140736257598272 ALTER TABLE "wazimap_geography" DROP CONSTRAINT "wazimap_geography_geo_level_d0885b86_uniq"; (params [])
+2018-03-12 12:18:50,988 DEBUG utils 20233 140736257598272 (0.000) ALTER TABLE "wazimap_geography" DROP CONSTRAINT "wazimap_geography_geo_level_d0885b86_uniq"; args=[]
+2018-03-12 12:18:50,988 DEBUG schema 20233 140736257598272 ALTER TABLE "wazimap_geography" ADD CONSTRAINT "wazimap_geography_geo_level_bbe3c9fc_uniq" UNIQUE ("geo_level", "geo_code", "version"); (params [])
+2018-03-12 12:18:50,990 DEBUG utils 20233 140736257598272 (0.002) ALTER TABLE "wazimap_geography" ADD CONSTRAINT "wazimap_geography_geo_level_bbe3c9fc_uniq" UNIQUE ("geo_level", "geo_code", "version"); args=[]
+2018-03-12 12:18:50,996 DEBUG schema 20233 140736257598272 ALTER TABLE "wazimap_geography" DROP COLUMN "year" CASCADE; (params [])
+2018-03-12 12:18:50,997 DEBUG utils 20233 140736257598272 (0.000) ALTER TABLE "wazimap_geography" DROP COLUMN "year" CASCADE; args=[]
+2018-03-12 12:18:50,997 DEBUG schema 20233 140736257598272 CREATE INDEX "wazimap_geography_2af72f10" ON "wazimap_geography" ("version"); (params [])
+2018-03-12 12:18:50,998 DEBUG utils 20233 140736257598272 (0.001) CREATE INDEX "wazimap_geography_2af72f10" ON "wazimap_geography" ("version"); args=[]
+2018-03-12 12:18:50,998 DEBUG schema 20233 140736257598272 CREATE INDEX "wazimap_geography_version_01953818_like" ON "wazimap_geography" ("version" varchar_pattern_ops); (params [])
+2018-03-12 12:18:51,000 DEBUG utils 20233 140736257598272 (0.001) CREATE INDEX "wazimap_geography_version_01953818_like" ON "wazimap_geography" ("version" varchar_pattern_ops); args=[]
+2018-03-12 12:18:51,002 DEBUG utils 20233 140736257598272 (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:18:51,003 DEBUG utils 20233 140736257598272 (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('wazimap', '0006_geo-year-to-geo-version', '2018-03-12T10:18:51.002566+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('wazimap', u'0006_geo-year-to-geo-version', datetime.datetime(2018, 3, 12, 10, 18, 51, 2566, tzinfo=<UTC>))
+2018-03-12 12:19:55,271 DEBUG utils 20342 140736257598272 (0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:19:55,273 DEBUG utils 20342 140736257598272 (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-03-12 12:20:45,133 DEBUG utils 20481 140736257598272 (0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:20:45,135 DEBUG utils 20481 140736257598272 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-03-12 12:20:45,170 DEBUG utils 20481 140736257598272 (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:20:45,172 DEBUG utils 20481 140736257598272 (0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('wazimap', '0007_fieldtable_geoversion', '2018-03-12T10:20:45.171276+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('wazimap', u'0007_fieldtable_geoversion', datetime.datetime(2018, 3, 12, 10, 20, 45, 171276, tzinfo=<UTC>))
+2018-03-12 12:20:45,184 DEBUG schema 20481 140736257598272 ALTER TABLE "wazimap_geography" ALTER COLUMN "version" SET DEFAULT %s; (params [''])
+2018-03-12 12:20:45,186 DEBUG utils 20481 140736257598272 (0.001) ALTER TABLE "wazimap_geography" ALTER COLUMN "version" SET DEFAULT ''; args=['']
+2018-03-12 12:20:45,186 DEBUG schema 20481 140736257598272 UPDATE "wazimap_geography" SET "version" = %s WHERE "version" IS NULL; (params [''])
+2018-03-12 12:20:45,187 DEBUG utils 20481 140736257598272 (0.001) UPDATE "wazimap_geography" SET "version" = '' WHERE "version" IS NULL; args=['']
+2018-03-12 12:20:45,187 DEBUG schema 20481 140736257598272 ALTER TABLE "wazimap_geography" ALTER COLUMN "version" SET NOT NULL; (params [])
+2018-03-12 12:20:45,187 DEBUG utils 20481 140736257598272 (0.000) ALTER TABLE "wazimap_geography" ALTER COLUMN "version" SET NOT NULL; args=[]
+2018-03-12 12:20:45,188 DEBUG schema 20481 140736257598272 ALTER TABLE "wazimap_geography" ALTER COLUMN "version" DROP DEFAULT; (params [])
+2018-03-12 12:20:45,189 DEBUG utils 20481 140736257598272 (0.001) ALTER TABLE "wazimap_geography" ALTER COLUMN "version" DROP DEFAULT; args=[]
+2018-03-12 12:20:45,190 DEBUG utils 20481 140736257598272 (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:20:45,191 DEBUG utils 20481 140736257598272 (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('wazimap', '0008_auto_20170424_1209', '2018-03-12T10:20:45.190602+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('wazimap', u'0008_auto_20170424_1209', datetime.datetime(2018, 3, 12, 10, 20, 45, 190602, tzinfo=<UTC>))
+2018-03-12 12:20:45,192 DEBUG utils 20481 140736257598272 (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:20:45,193 DEBUG utils 20481 140736257598272 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-03-12 12:20:45,194 DEBUG utils 20481 140736257598272 (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+2018-03-12 12:20:45,195 DEBUG utils 20481 140736257598272 (0.001) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('contenttypes', 'contenttype'); args=('contenttypes', 'contenttype')
+2018-03-12 12:20:45,197 DEBUG utils 20481 140736257598272 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sites'; args=('sites',)
+2018-03-12 12:20:45,198 DEBUG utils 20481 140736257598272 (0.000) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('sites', 'site'); args=('sites', 'site')
+2018-03-12 12:20:45,199 DEBUG utils 20481 140736257598272 (0.000) SELECT (1) AS "a" FROM "django_site" LIMIT 1; args=()
+2018-03-12 12:20:45,200 DEBUG utils 20481 140736257598272 (0.000) SELECT "django_site"."id", "django_site"."domain", "django_site"."name" FROM "django_site" WHERE "django_site"."id" = 1; args=(1,)
+2018-03-12 12:20:45,201 DEBUG utils 20481 140736257598272 (0.000) UPDATE "django_site" SET "domain" = 'example.com', "name" = 'example.com' WHERE "django_site"."id" = 1; args=('example.com', 'example.com', 1)
+2018-03-12 12:20:45,204 DEBUG utils 20481 140736257598272 (0.001) INSERT INTO "django_site" ("id", "domain", "name") VALUES (1, 'example.com', 'example.com'); args=(1, 'example.com', 'example.com')
+2018-03-12 12:20:45,208 DEBUG utils 20481 140736257598272 (0.003) SELECT setval(pg_get_serial_sequence('"django_site"','id'), coalesce(max("id"), 1), max("id") IS NOT null) FROM "django_site";; args=None
+2018-03-12 12:20:45,209 DEBUG utils 20481 140736257598272 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'wazimap'; args=('wazimap',)
+2018-03-12 12:20:45,210 DEBUG utils 20481 140736257598272 (0.000) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('wazimap', 'geography'); args=('wazimap', 'geography')
+2018-03-12 12:20:45,211 DEBUG utils 20481 140736257598272 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'census'; args=('census',)
+2018-03-12 12:20:45,213 DEBUG utils 20481 140736257598272 (0.000) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('census', 'column'), ('census', 'table'), ('census', 'subjectconcept'), ('census', 'summarylevel'), ('census', 'geography'); args=('census', 'column', 'census', 'table', 'census', 'subjectconcept', 'census', 'summarylevel', 'census', 'geography')
+2018-03-12 12:21:11,851 DEBUG utils 20568 140736257598272 (0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:21:11,854 DEBUG utils 20568 140736257598272 (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-03-12 12:21:11,855 DEBUG utils 20568 140736257598272 (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:21:11,856 DEBUG utils 20568 140736257598272 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-03-12 12:21:11,899 DEBUG utils 20568 140736257598272 (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+2018-03-12 12:21:11,900 DEBUG utils 20568 140736257598272 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sites'; args=('sites',)
+2018-03-12 12:21:11,901 DEBUG utils 20568 140736257598272 (0.001) SELECT (1) AS "a" FROM "django_site" LIMIT 1; args=()
+2018-03-12 12:21:11,903 DEBUG utils 20568 140736257598272 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'wazimap'; args=('wazimap',)
+2018-03-12 12:21:11,904 DEBUG utils 20568 140736257598272 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'census'; args=('census',)
+2018-03-12 12:38:57,933 DEBUG utils 22839 140736257598272 (0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:38:57,936 DEBUG utils 22839 140736257598272 (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-03-12 12:38:57,938 DEBUG utils 22839 140736257598272 (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:38:57,939 DEBUG utils 22839 140736257598272 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-03-12 12:38:57,982 DEBUG utils 22839 140736257598272 (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+2018-03-12 12:38:57,983 DEBUG utils 22839 140736257598272 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sites'; args=('sites',)
+2018-03-12 12:38:57,984 DEBUG utils 22839 140736257598272 (0.001) SELECT (1) AS "a" FROM "django_site" LIMIT 1; args=()
+2018-03-12 12:38:57,985 DEBUG utils 22839 140736257598272 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'wazimap'; args=('wazimap',)
+2018-03-12 12:38:57,986 DEBUG utils 22839 140736257598272 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'census'; args=('census',)
+2018-03-12 12:39:14,944 DEBUG utils 22922 123145438797824 (0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:39:14,947 DEBUG utils 22922 123145438797824 (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-03-12 12:39:37,495 DEBUG utils 22922 123145443004416 (0.003) SELECT DISTINCT "wazimap_geography"."version" FROM "wazimap_geography"; args=()
+2018-03-12 12:39:37,499 DEBUG utils 22922 123145443004416 (0.002) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."parent_level" IS NULL AND "wazimap_geography"."geo_level" = 'world' AND "wazimap_geography"."parent_code" IS NULL AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=('world', '')
+2018-03-12 12:39:51,020 DEBUG utils 22922 123145443004416 (0.004) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'AA' AND "wazimap_geography"."geo_level" = 'continent' AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'AA', u'continent', '')
+2018-03-12 12:39:51,021 WARNING base 22922 123145443004416 Not Found: /profiles/continent-AA/
+2018-03-12 12:39:51,093 WARNING base 22922 123145443004416 Not Found: /favicon.ico
+2018-03-12 12:39:57,859 DEBUG utils 22922 123145443004416 (0.004) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'AS' AND "wazimap_geography"."geo_level" = 'continent' AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'AS', u'continent', '')
+2018-03-12 12:39:57,860 WARNING base 22922 123145443004416 Not Found: /profiles/continent-AS/
+2018-03-12 12:40:11,929 DEBUG utils 22922 123145447211008 (0.005) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE (UPPER("wazimap_geography"."name"::text) LIKE UPPER('%sou%') OR "wazimap_geography"."geo_code" = 'SOU') LIMIT 10; args=(u'%sou%', u'SOU')
+2018-03-12 12:40:13,785 DEBUG utils 22922 123145443004416 (0.003) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'ZA' AND "wazimap_geography"."geo_level" = 'country' AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'ZA', u'country', '')
+2018-03-12 12:40:13,785 WARNING base 22922 123145443004416 Not Found: /profiles/country-ZA/
+2018-03-12 12:40:29,030 DEBUG utils 22922 123145443004416 (0.005) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'AA' AND "wazimap_geography"."geo_level" = 'continent' AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'AA', u'continent', '')
+2018-03-12 12:40:29,031 WARNING base 22922 123145443004416 Not Found: /profiles/continent-AA/
+2018-03-12 12:40:41,400 DEBUG utils 22922 123145443004416 (0.003) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'AA' AND "wazimap_geography"."geo_level" = 'continent' AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'AA', u'continent', '')
+2018-03-12 12:40:41,401 WARNING base 22922 123145443004416 Not Found: /profiles/continent-AA/
+2018-03-12 12:42:37,878 DEBUG utils 23230 140736257598272 (0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:42:37,881 DEBUG utils 23230 140736257598272 (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-03-12 12:42:37,882 DEBUG utils 23230 140736257598272 (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:42:37,883 DEBUG utils 23230 140736257598272 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-03-12 12:42:37,928 DEBUG utils 23230 140736257598272 (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+2018-03-12 12:42:37,929 DEBUG utils 23230 140736257598272 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sites'; args=('sites',)
+2018-03-12 12:42:37,930 DEBUG utils 23230 140736257598272 (0.000) SELECT (1) AS "a" FROM "django_site" LIMIT 1; args=()
+2018-03-12 12:42:37,932 DEBUG utils 23230 140736257598272 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'wazimap'; args=('wazimap',)
+2018-03-12 12:42:37,936 DEBUG utils 23230 140736257598272 (0.004) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'census'; args=('census',)
+2018-03-12 12:42:42,866 DEBUG utils 23304 123145553747968 (0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:42:42,870 DEBUG utils 23304 123145553747968 (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-03-12 12:43:05,478 DEBUG utils 23304 123145557954560 (0.005) SELECT DISTINCT "wazimap_geography"."version" FROM "wazimap_geography"; args=()
+2018-03-12 12:43:05,481 DEBUG utils 23304 123145557954560 (0.001) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'AA' AND "wazimap_geography"."geo_level" = 'continent' AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'AA', u'continent', '')
+2018-03-12 12:43:05,481 WARNING base 23304 123145557954560 Not Found: /profiles/continent-AA/
+2018-03-12 12:43:17,283 DEBUG utils 23304 123145557954560 (0.003) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."parent_level" IS NULL AND "wazimap_geography"."geo_level" = 'world' AND "wazimap_geography"."parent_code" IS NULL AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=('world', '')
+2018-03-12 12:43:19,169 DEBUG utils 23304 123145570574336 (0.015) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'AA' AND "wazimap_geography"."geo_level" = 'continent' AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'AA', u'continent', '')
+2018-03-12 12:43:19,171 WARNING base 23304 123145570574336 Not Found: /profiles/continent-AA/
+2018-03-12 12:44:20,045 DEBUG utils 23447 140736257598272 (0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:44:20,048 DEBUG utils 23447 140736257598272 (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-03-12 12:44:20,050 DEBUG utils 23447 140736257598272 (0.001) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:44:20,051 DEBUG utils 23447 140736257598272 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-03-12 12:44:20,095 DEBUG utils 23447 140736257598272 (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+2018-03-12 12:44:20,099 DEBUG utils 23447 140736257598272 (0.004) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sites'; args=('sites',)
+2018-03-12 12:44:20,101 DEBUG utils 23447 140736257598272 (0.001) SELECT (1) AS "a" FROM "django_site" LIMIT 1; args=()
+2018-03-12 12:44:20,102 DEBUG utils 23447 140736257598272 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'wazimap'; args=('wazimap',)
+2018-03-12 12:44:20,104 DEBUG utils 23447 140736257598272 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'census'; args=('census',)
+2018-03-12 12:44:25,425 DEBUG utils 23523 123145339011072 (0.003) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+2018-03-12 12:44:25,428 DEBUG utils 23523 123145339011072 (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+2018-03-12 12:44:28,911 DEBUG utils 23523 123145343217664 (0.003) SELECT DISTINCT "wazimap_geography"."version" FROM "wazimap_geography"; args=()
+2018-03-12 12:44:28,913 DEBUG utils 23523 123145343217664 (0.001) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."parent_level" IS NULL AND "wazimap_geography"."geo_level" = 'world' AND "wazimap_geography"."parent_code" IS NULL AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=('world', '')
+2018-03-12 12:44:36,275 DEBUG utils 23523 123145355837440 (0.006) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'AA' AND "wazimap_geography"."geo_level" = 'continent' AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'AA', u'continent', '')
+2018-03-12 12:44:36,411 DEBUG utils 23523 123145364250624 (0.003) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'AA' AND "wazimap_geography"."geo_level" = 'continent' AND "wazimap_geography"."version" = '') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'AA', u'continent', '')
+2018-03-12 12:44:36,421 DEBUG utils 23523 123145364250624 (0.001) SELECT "wazimap_geography"."id", "wazimap_geography"."geo_level", "wazimap_geography"."geo_code", "wazimap_geography"."version", "wazimap_geography"."name", "wazimap_geography"."long_name", "wazimap_geography"."square_kms", "wazimap_geography"."parent_level", "wazimap_geography"."parent_code" FROM "wazimap_geography" WHERE ("wazimap_geography"."geo_code" = 'WW' AND "wazimap_geography"."version" = '' AND "wazimap_geography"."geo_level" = 'world') ORDER BY "wazimap_geography"."id" ASC LIMIT 1; args=(u'WW', u'', u'world')

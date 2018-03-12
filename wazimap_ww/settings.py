@@ -36,8 +36,8 @@ WAZIMAP['comparative_levels'] = ['world', 'continent', 'country']
 
 WAZIMAP['geometry_data'] = {
   '': {
-      'world': 'geo/world.topojson', 
-      'continent': 'geo/continent.topojson', 
+      'world': 'geo/world.topojson',
+      'continent': 'geo/continent.topojson',
       'country': 'geo/country.topojson'
   }
 }
@@ -61,7 +61,7 @@ LOGGING = {
         'console': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': 'logs/mylog.log',
+            'filename': '/Users/josiah/wider/wazimap_ww/logs/mylog.log',
             'formatter': 'verbose'
         },
     },
