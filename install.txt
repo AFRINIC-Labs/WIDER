@@ -23,10 +23,28 @@ Edit /ENV/lib/python2.7/site-packages/wazimap/settings.py
       'default': dj_database_url.parse(DATABASE_URL),
   }
 
+Connect to postgres db using e.g. pgAdmin3/4
+Create table regions and main (using the file ../db_dump/CREATE_TABLE.sql)
 
+comment out wazimap_ww/wazimap_ww/tables.py content
 
-python manage.py migrate
+run: wazimap_ww/ python manage.py migrate
+
+populate wazimap_geography table using this command in pgAdmin:
+
+  COPY wazimap_geography (geo_level, geo_code, name, parent_level, parent_code, long_name, version) FROM 'db_dump/data/wazimap-geography.csv' CSV HEADER DELIMITER ',';
+
+Run (in pgAdmin):
+  UPDATE wazimap_geography SET version = ''
+
+uncomment out wazimap_ww/wazimap_ww/tables.py content
+
+run: wazimap_ww/python manage.py migrate
 
 let louw know if you have a database error
 
-python manage.py runserver
+run: wazimap_ww/python manage.py runserver
+
+edit wazimap_ww/.git/info/exclude
+
+  add:*.pyc and setting.py
