@@ -43,13 +43,8 @@ WITH (
 );
 ALTER TABLE public.regions
   OWNER TO wider;
-
+  /*
 COPY wazimap_geography (geo_level, geo_code, name, parent_level, parent_code, long_name, version) FROM '/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/db_dump/data/wazimap-geography.csv' CSV HEADER DELIMITER ',';
-
-
-
-
-/*
 
 CREATE OR REPLACE FUNCTION public.populate_market_share()
   RETURNS void AS
@@ -58,7 +53,7 @@ rec record;
 BEGIN
 
 FOR rec IN
-SELECT * 
+SELECT *
 FROM "main"
 LOOP
   INSERT INTO market_share VALUES(
@@ -117,7 +112,7 @@ ALTER TABLE public.countries
     OWNER to wazimap;
 
   FOR rec IN
-      SELECT * 
+      SELECT *
         FROM "countriescc"
      LOOP
     PERFORM public."suppressByCC"(rec.cname,rec.code);
@@ -135,26 +130,26 @@ CREATE OR REPLACE FUNCTION public."suppressByCC"(
     cname text,
     cc text)
   RETURNS boolean AS
-$BODY$DECLARE 
+$BODY$DECLARE
     geo_level  text :='country';
     parent_level  text :='world';
 
-BEGIN 
+BEGIN
 
  INSERT INTO countries VALUES(
-  cname, 
-  CC, 
-  current_date, 
-  geo_level, 
-  parent_level, 
-  (SELECT SUM(cr.users) FROM main AS cr WHERE cr.country_code = CC), 
-  (SELECT SUM(cr.gdpxusers) FROM main AS cr WHERE cr.country_code = CC), 
-  (SELECT SUM(cr.percentageofcountry) FROM main AS cr WHERE cr.country_code = CC), 
-  (SELECT SUM(cr.percentageofinternet) FROM main AS cr WHERE cr.country_code = CC), 
-  (SELECT SUM(cr.v6users) FROM main AS cr WHERE cr.country_code = CC), 
-  (SELECT SUM(cr.percentageofas) FROM main AS cr WHERE cr.country_code = CC), 
+  cname,
+  CC,
+  current_date,
+  geo_level,
+  parent_level,
+  (SELECT SUM(cr.users) FROM main AS cr WHERE cr.country_code = CC),
+  (SELECT SUM(cr.gdpxusers) FROM main AS cr WHERE cr.country_code = CC),
+  (SELECT SUM(cr.percentageofcountry) FROM main AS cr WHERE cr.country_code = CC),
+  (SELECT SUM(cr.percentageofinternet) FROM main AS cr WHERE cr.country_code = CC),
+  (SELECT SUM(cr.v6users) FROM main AS cr WHERE cr.country_code = CC),
+  (SELECT SUM(cr.percentageofas) FROM main AS cr WHERE cr.country_code = CC),
   (SELECT SUM(cr.percentageofcountryv6total) FROM main AS cr WHERE cr.country_code = CC),
-  (SELECT SUM(cr.percentageofinternetv6total) FROM main AS cr WHERE cr.country_code = CC), 
+  (SELECT SUM(cr.percentageofinternetv6total) FROM main AS cr WHERE cr.country_code = CC),
   (SELECT SUM(cr.samples) FROM main AS cr WHERE cr.country_code = CC),
   current_date);
   RETURN FALSE;
@@ -203,7 +198,7 @@ TABLESPACE pg_default;
 ALTER TABLE public.users_in_country
   OWNER TO wider;
 
-    
+
 FOR rec IN SELECT *  FROM "countries"
 LOOP
   INSERT INTO users_in_country VALUES(
@@ -256,7 +251,7 @@ TABLESPACE pg_default;
 ALTER TABLE public.users_in_world
   OWNER TO wider;
 
-    
+
 FOR rec IN SELECT *  FROM "countries"
 LOOP
   usersInwrldcntdiv := usersInwrldcnt - rec.users;
