@@ -5,21 +5,33 @@ from collections import OrderedDict
 from wazimap.data.tables import get_datatable, get_model_from_fields
 from wazimap.data.utils import get_stat_data, get_objects_by_geo, \
     calculate_median
-import logging
 import populationjson
+import logging
 
 logger = logging.getLogger(__name__)
 
-# Demographic recodes
-
 def get_demographics_profile(geo, session):
-	
-	demographic_data = {
-	    'has_data': True,
-	    'total_population': {
-	        "name": "People",
-	        "values": {"this": populationjson.get_population_json(geo.name)}
-	    }
-	}
 
-	return demographic_data
+    simple_v6pop = get_datatable('view_st_v6pop')
+    
+    total_users, _ = simple_v6pop.get_stat_data(geo, 'total_users')
+    total_isps, _ = simple_v6pop.get_stat_data(geo, 'total_isps')
+    total_v6, _ = simple_v6pop.get_stat_data(geo, 'total_v6')
+    
+    logger.debug(simple_v6pop)
+
+    return {
+        'has_data': True,
+        'total_users': {
+            "name": "People",
+            "values": {"this": total_users['total_users']['numerators']['this']}
+        },
+        'total_isps': {
+            "name": "ISPs",
+            "values": {"this": total_isps['total_isps']['numerators']['this']}
+        },
+        'total_v6': {
+            "name": "IPv6",
+            "values": {"this": total_v6['total_v6']['numerators']['this']}
+        }
+    }

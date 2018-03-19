@@ -6,6 +6,8 @@ create user wider
 create database wider with user wider as owner
 
 install pip
+install csvkit (for data export csv to DB)
+
 
 django startproject wazimap_ww
 

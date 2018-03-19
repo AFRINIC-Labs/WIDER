@@ -36,8 +36,16 @@
                 <div class="stat">
                     <span class="primary">
                         {% block profile_header_population %}
-                        <span class="value">{{ ipv4.ipv4_users.values.this|floatformat:"0" }}</span>
+                        
+                        <span class="value">{{ demographics.total_users.values.this|floatformat:"0" }}</span>
                         <span class="name">Internet users</span>
+                        </br>
+                        <span class="value">{{ demographics.total_isps.values.this|floatformat:"0" }}</span>
+                        <span class="name">Networks (ASNs)</span>
+                        </br>
+                        <span class="value">{{ demographics.total_v6.values.this|floatformat:"0" }}</span>
+                        <span class="name">IPv6 users</span>
+                       
                         {% endblock %}
                     </span>
                 </div>

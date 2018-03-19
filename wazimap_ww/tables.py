@@ -1,5 +1,5 @@
 from wazimap.data.tables import FieldTable, SimpleTable
-
+"""
 # Ipv4
 
 FieldTable(['users_or_not'],
@@ -68,3 +68,23 @@ SimpleTable(
     dataset='',
     year='2018'
 )
+
+"""
+
+#internet users
+SimpleTable(
+    id='view_st_v6pop',
+    universe='Internet users',
+    total_column=None,
+    description='v6pop data',
+    dataset='',
+    year='2018'
+)
+
+FieldTable(['view_ft_v4_v6'],
+        id='view_ft_v4_v6',
+        universe='IPv6',
+        value_type='BIGINT',
+        description='The IPv6 market share in a given country.',
+        dataset='Stats from stats.labs.apnic.net',
+        year='2018')

@@ -53,37 +53,50 @@ LOGGING = {
     'version': 1,
     'disable_existing_loggers': True,
     'formatters': {
-        'verbose': {
-            'format': '%(asctime)s %(levelname)s %(module)s %(process)d %(thread)d %(message)s'
-        },
+      'standard': {
+        'format': '%(asctime)s [%(levelname)s] %(name)s: %(message)s'
+      }
+    },
+    'filters':{
+
     },
     'handlers': {
-        'console': {
-            'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'filename': '/Users/josiah/wider/wazimap_ww/logs/mylog.log',
-            'formatter': 'verbose'
-        },
+      'default': {
+        'level': 'DEBUG',
+        'class': 'logging.handlers.RotatingFileHandler',
+        'filename': 'logs/mylog.log',
+        'maxBytes': 1024*1024*5, # 5 MB,
+        'backupCount': 5,
+        'formatter': 'standard',
+      },
+      'request_handler': {
+        'level': 'DEBUG',
+        'class': 'logging.handlers.RotatingFileHandler',
+        'filename': 'logs/django_request.log',
+        'maxBytes': 1024*1024*5, # 5 MB,
+        'backupCount': 5,
+        'formatter': 'standard',
+      }
     },
     'loggers': {
-        '': {
-            'handlers': ['console'],
-            'level': 'ERROR',
-        },
-        'census': {
-            'level': 'DEBUG' if DEBUG else 'INFO',
-        },
-        'django': {
-            'level': 'DEBUG' if DEBUG else 'INFO',
-        },
-        'django.template': {
-            'level': 'ERROR',
-        },
-        'wazimap': {
-            'level': 'DEBUG' if DEBUG else 'INFO',
-        },
+      '': {
+        'handlers': ['default'],
+        'level': 'DEBUG',
+        'propagate': True
+      },
+      'django.request': {
+        'handlers': ['request_handler'],
+        'level': 'DEBUG',
+        'propagate': False
+      },
+      'gdal.request': {
+        'handlers': ['request_handler'],
+        'level': 'DEBUG',
+        'propagate': False
+      }
     }
 }
+
 
 
 
