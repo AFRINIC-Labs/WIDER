@@ -49,6 +49,7 @@ WAZIMAP['map_centre'] = [45, 0]
 WAZIMAP['map_zoom'] = 2
 
 django.setup()
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': True,
@@ -61,7 +62,7 @@ LOGGING = {
         'console': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': 'logs/mylog.log',
+            'filename': '/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/mylog.log',
             'formatter': 'verbose'
         },
     },
@@ -84,7 +85,5 @@ LOGGING = {
         },
     }
 }
-
-
 
 logging.config.dictConfig(LOGGING)

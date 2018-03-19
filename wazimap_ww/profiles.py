@@ -1,6 +1,8 @@
 from wazimap.data.utils import get_session, merge_dicts, group_remainder
 from wazimap.geo import geo_data
+import logging
 
+logger = logging.getLogger(__name__)
 from wazimap_ww import (
     demographics,
     access,
@@ -20,6 +22,7 @@ PROFILE_SECTIONS = (
 
 
 def get_profile(geo, profile_name, request):
+    logger.debug(geo.version)
     session = get_session()
 
     try:

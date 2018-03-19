@@ -1,4 +1,4 @@
-note: in this example I am not using a virtualenv, because I am comvinced that it's impossible to install gdal on it.
+note: If you are using a virtualenv, don't worry about installing gdal, it is only neccucery for the map, which is what I am working on. Simply type the coutry you want to view in the
 
 install postgres
 
