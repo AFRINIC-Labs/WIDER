@@ -2,32 +2,51 @@ note: If you are using a virtualenv, don't worry about installing gdal, it is on
 
 install postgres
 
-install pip
+create user wider
+create database wider with user wider as owner
 
-pip django install
+install pip
+install csvkit (for data export csv to DB)
+
 
 django startproject wazimap_ww
 
-cd wazimap_ww
-
-delete everything inside
-
 git clone https://github.com/AFRINIC-Labs/WIDER
 
-sudo apt-get install binutils libproj-dev gdal-bin
+Erase original wazimap_ww and rename WIDER to wazimap_ww
 
-pip requirements.txt
+pip install -r requirements.txt
 
 edit: settings.py, change the directory of the logs, REMEBER TO CHANGE THEM BACK!!!
 
-delete all the files that end in .pyc if there are any
+Edit /ENV/lib/python2.7/site-packages/wazimap/settings.py
+  DATABASE_URL = os.environ.get('DATABASE_URL', 'postgresql://wider:your_PASSWORD@localhost/wider')
+  DATABASES = {
+      'default': dj_database_url.parse(DATABASE_URL),
+  }
 
-python manage.py migrate
+Connect to postgres db using e.g. pgAdmin3/4
+Create table regions and main (using the file ../db_dump/CREATE_TABLE.sql)
+
+comment out wazimap_ww/wazimap_ww/tables.py content
+
+run: wazimap_ww/ python manage.py migrate
+
+populate wazimap_geography table using this command in pgAdmin:
+
+  COPY wazimap_geography (geo_level, geo_code, name, parent_level, parent_code, long_name, version) FROM 'db_dump/data/wazimap-geography.csv' CSV HEADER DELIMITER ',';
+
+Run (in pgAdmin):
+  UPDATE wazimap_geography SET version = ''
+
+uncomment out wazimap_ww/wazimap_ww/tables.py content
+
+run: wazimap_ww/python manage.py migrate
 
 let louw know if you have a database error
 
-python manage.py runserver
+run: wazimap_ww/python manage.py runserver
 
+edit wazimap_ww/.git/info/exclude
 
-
-
+  add:*.pyc and setting.py
