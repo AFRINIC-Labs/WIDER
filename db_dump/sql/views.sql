@@ -113,9 +113,8 @@ v.population AS total
 FROM view_st_v6pop v
 
 
-
-####field user vs users in the world
-CREATE view view_ft_users_world AS
+####field  users country vs world
+CREATE view view_ft_users_country_world AS
 SELECT
 vc.geo_level AS geo_level,
 vc.geo_code AS geo_code,
@@ -131,22 +130,117 @@ TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 'world' AS type,
 (SELECT total_users FROM view_v6pop_world) AS total
 FROM view_v6pop_country vc
-UNION
+
+####field users continent vs world
+CREATE view view_ft_users_continent_world AS
 SELECT
-v.geo_level AS geo_level,
-v.geo_code AS geo_code,
+vc.geo_level AS geo_level,
+vc.geo_code AS geo_code,
 TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 'continent' AS type,
-v.total_users AS total
-FROM view_v6pop_continent v
+vc.total_users AS total
+FROM view_v6pop_continent vc
 UNION
 SELECT
-v.geo_level AS geo_level,
-v.geo_code AS geo_code,
+vc.geo_level AS geo_level,
+vc.geo_code AS geo_code,
 TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 'world' AS type,
 (SELECT total_users FROM view_v6pop_world) AS total
-FROM view_v6pop_continent v
+FROM view_v6pop_continent vc
+
+
+##### field users country vs continent
+CREATE view view_ft_users_country_continent AS
+SELECT
+v.geo_level,
+v.geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+'country' AS type, 
+v.total_users AS total
+FROM view_v6pop_country v
+UNION
+SELECT
+v.geo_level,
+v.geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+'continent' AS type, 
+(SELECT v1.total_users FROM view_v6pop_continent v1 WHERE v1.geo_code = v.parent_code) AS total
+FROM view_v6pop_country v;
+
+##### field v6 users country vs world
+CREATE view view_ft_v6users_country_world AS
+SELECT
+vc.geo_level AS geo_level,
+vc.geo_code AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+'country' AS type,
+vc.total_v6 AS total
+FROM view_v6pop_country vc
+UNION
+SELECT
+vc.geo_level AS geo_level,
+vc.geo_code AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+'world' AS type,
+(SELECT total_v6 FROM view_v6pop_world) AS total
+FROM view_v6pop_country vc;
+
+
+##### field v6 users continent vs world
+CREATE view view_ft_v6users_continent_world AS
+SELECT
+vc.geo_level AS geo_level,
+vc.geo_code AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+'continent' AS type,
+vc.total_v6 AS total
+FROM view_v6pop_continent vc
+UNION
+SELECT
+vc.geo_level AS geo_level,
+vc.geo_code AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+'world' AS type,
+(SELECT total_v6 FROM view_v6pop_world) AS total
+FROM view_v6pop_continent vc;
+
+##### field v6 users country vs continent
+CREATE view view_ft_v6users_country_continent AS
+SELECT
+v.geo_level,
+v.geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+'country' AS type, 
+v.total_v6 AS total
+FROM view_v6pop_country v
+UNION
+SELECT
+v.geo_level,
+v.geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+'continent' AS type, 
+(SELECT v1.total_v6 FROM view_v6pop_continent v1 WHERE v1.geo_code = v.parent_code) AS total
+FROM view_v6pop_country v;
+
+##### to show breakdown by continent
+CREATE view view_ft_users_world_continent AS
+SELECT
+'world'::CHARACTER VARYING AS geo_level,
+'WW'::CHARACTER VARYING AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+(SELECT wg.name FROM wazimap_geography wg WHERE wg.geo_code = vc.geo_code) AS type,
+vc.total_users AS total
+FROM view_v6pop_continent vc;
+
+CREATE view view_ft_v6users_world_continent AS
+SELECT
+'world'::CHARACTER VARYING AS geo_level,
+'WW'::CHARACTER VARYING AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+(SELECT wg.name FROM wazimap_geography wg WHERE wg.geo_code = vc.geo_code) AS type,
+vc.total_v6 AS total
+FROM view_v6pop_continent vc;
 
 
 ##### view main with AS ranked by users and v6 users
@@ -447,4 +541,178 @@ CREATE view view_ft_v6_alloc_vs_usage AS
 SELECT * FROM view_v6_allocation_usage_cc
 UNION
 SELECT * FROM view_v6_allocation_usage_ww
+
+#### wazimap geography with version
+CREATE view view_wazimap_geography AS
+SELECT 
+wg.id::INT,
+wg.geo_level::text,
+wg.geo_code::text,
+wg.name::text,
+wg.square_kms::INT,
+wg.parent_level::text,
+wg.parent_code::text,
+wg.long_name::text,
+TO_CHAR(NOW(), 'YYYY-MM') AS version 
+FROM wazimap_geography wg
+ORDER BY wg.id ASC
+
+####### ASN RANK ALL #######
+
+DROP view view_main_asn_rank_world_v6users;
+DROP view view_main_asn_rank_continent_v6users;
+DROP view view_main_asn_rank_cc_v6users;
+
+CREATE view view_main_asn_rank_world_v6users AS
+SELECT
+'world' AS geo_level,
+'WW' AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+CASE m.asname WHEN NULL THEN m.asn ELSE m.asname END AS asname,
+m.asn,
+m.asnrank, 
+m.v6users AS total
+FROM main m, wazimap_geography wg
+WHERE m.country_code = wg.geo_code;
+
+CREATE view view_main_asn_rank_cc_v6users AS
+WITH ranked_main AS (
+    SELECT *, 
+    RANK() OVER(PARTITION by m.country_code ORDER BY m.v6users DESC) AS rnk_v6users
+    FROM main m
+)
+SELECT 
+wg.geo_level AS geo_level,
+rm.country_code AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+CASE rm.asname WHEN NULL THEN rm.asn ELSE rm.asname END AS asname,
+rm.asn,
+rm.rnk_v6users AS asnrank,  
+rm.v6users AS total
+FROM ranked_main rm, wazimap_geography wg
+WHERE wg.geo_code = rm.country_code;
+
+CREATE view view_main_asn_rank_continent_v6users AS
+WITH ranked_asn AS (
+    SELECT 
+    *,
+    RANK() OVER(PARTITION by wg.parent_code ORDER BY m.v6users DESC) AS rnk_v6users
+    FROM main m, wazimap_geography wg
+    WHERE m.country_code = wg.geo_code
+)
+SELECT
+rm.parent_level AS geo_level,
+rm.parent_code AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+CASE rm.asname WHEN NULL THEN rm.asn ELSE rm.asname END AS asname,
+rm.asn,
+rm.rnk_v6users AS asnrank,   
+rm.v6users AS total
+FROM ranked_asn rm;
+
+
+DROP view view_main_asn_rank_world_users;
+DROP view view_main_asn_rank_continent_users;
+DROP view view_main_asn_rank_cc_users;
+
+CREATE view view_main_asn_rank_world_users AS
+SELECT
+'world' AS geo_level,
+'WW' AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+CASE m.asname WHEN NULL THEN m.asn ELSE m.asname END AS asname,
+m.asn,
+m.asnrank, 
+m.users AS total
+FROM main m, wazimap_geography wg
+WHERE m.country_code = wg.geo_code;
+
+CREATE view view_main_asn_rank_cc_users AS
+WITH ranked_main AS (
+    SELECT *, 
+    RANK() OVER(PARTITION by m.country_code ORDER BY m.users DESC) AS rnk_users
+    FROM main m
+)
+SELECT 
+wg.geo_level AS geo_level,
+rm.country_code AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+CASE rm.asname WHEN NULL THEN rm.asn ELSE rm.asname END AS asname,
+rm.asn,
+rm.rnk_users AS asnrank,  
+rm.users AS total
+FROM ranked_main rm, wazimap_geography wg
+WHERE wg.geo_code = rm.country_code;
+
+CREATE view view_main_asn_rank_continent_users AS
+WITH ranked_asn AS (
+    SELECT 
+    *,
+    RANK() OVER(PARTITION by wg.parent_code ORDER BY m.users DESC) AS rnk_users
+    FROM main m, wazimap_geography wg
+    WHERE m.country_code = wg.geo_code
+)
+SELECT
+rm.parent_level AS geo_level,
+rm.parent_code AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+CASE rm.asname WHEN NULL THEN rm.asn ELSE rm.asname END AS asname,
+rm.asn,
+rm.rnk_users AS asnrank,   
+rm.users AS total
+FROM ranked_asn rm;
+
+DROP view view_ft_marketshare_users;
+CREATE view view_ft_marketshare_users AS
+SELECT * FROM view_main_asn_rank_cc_users
+UNION
+SELECT * FROM view_main_asn_rank_continent_users
+UNION
+SELECT * FROM view_main_asn_rank_world_users
+
+DROP view view_ft_marketshare_v6users;
+CREATE view view_ft_marketshare_v6users AS
+SELECT * FROM view_main_asn_rank_cc_v6users
+UNION
+SELECT * FROM view_main_asn_rank_continent_v6users
+UNION
+SELECT * FROM view_main_asn_rank_world_v6users
+
+DROP view view_ft_users_continent;
+CREATE view view_ft_users_continent AS
+SELECT
+v.geo_level,
+v.geo_code,
+v.geo_version,
+'country' AS type, 
+v.total_users AS total
+FROM view_v6pop_country v
+UNION
+SELECT
+v.geo_level,
+v.geo_code,
+v.geo_version,
+'continent' AS type, 
+(SELECT v1.total_users FROM view_v6pop_continent v1 WHERE v1.geo_code = v.parent_code) AS total
+FROM view_v6pop_country v;
+
+DROP view view_ft_v6users_continent;
+CREATE view view_ft_v6users_continent AS
+SELECT
+v.geo_level,
+v.geo_code,
+v.geo_version,
+'country' AS type, 
+v.total_users AS total
+FROM view_v6pop_country v
+UNION
+SELECT
+v.geo_level,
+v.geo_code,
+v.geo_version,
+'continent' AS type, 
+(SELECT v1.total_v6 FROM view_v6pop_continent v1 WHERE v1.geo_code = v.parent_code) AS total
+FROM view_v6pop_country v;
+
+####### END ASN RANK ALL #######
 
