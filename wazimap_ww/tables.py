@@ -95,7 +95,7 @@ FieldTable(['asn'],
 
 
 #v6 market share
-FieldTable(['asn'],
+FieldTable(['asname','asn'],
         id='view_ft_marketshare_v6users',
         universe='Marketshare',
         total_column='total',
