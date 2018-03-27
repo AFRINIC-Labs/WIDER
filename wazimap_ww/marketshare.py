@@ -20,7 +20,7 @@ def get_marketshare_profile(geo, session):
 
 	total_isps, _ = simple_v6pop.get_stat_data(geo, 'total_isps')
 
-	view_ft_marketshare_users, _ = get_stat_data('asn', geo, session, order_by='-total',table_fields='total',table_name='ft_marketshare_users')
+	view_ft_marketshare_users, _ = get_stat_data('asname', geo, session, order_by='-total',table_fields='total',table_name='ft_marketshare_users')
 
 
 	return	{
