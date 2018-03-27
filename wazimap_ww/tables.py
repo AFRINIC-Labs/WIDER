@@ -83,7 +83,7 @@ FieldTable(['type'],
 #         year='2018')
 
 #market share
-FieldTable(['asn'],
+FieldTable(['asname','asn'],
         id='ft_marketshare_users',
         universe='Marketshare',
         total_column='total',
@@ -92,10 +92,9 @@ FieldTable(['asn'],
         dataset='Stats from stats.labs.apnic.net',
         year='2018')
 
-
-
 #v6 market share
-FieldTable(['asn'],
+
+FieldTable(['asname','asn'],
         id='ft_marketshare_v6users',
         universe='Marketshare',
         total_column='total',
@@ -105,7 +104,7 @@ FieldTable(['asn'],
         year='2018')
 
 # SimpleTable(id='ft_marketshare_users',
-#         universe='Marketshare',
+#         universe='Marketshre',
 #         total_column=None,
 #         description='Active IPv6 users.',
 #         dataset='Stats from stats.labs.apnic.net',
