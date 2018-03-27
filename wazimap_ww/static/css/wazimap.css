@@ -4083,7 +4083,7 @@ ul#site-menu li a:hover {
   #homepage #slippy-map {
     display: block;
     width: 100%;
-    height: 35em;
+    height: 60em;
     position: relative; } }
 
 #homepage #explore-topic-place-picker,
@@ -4223,9 +4223,11 @@ header.section-contents h1 a {
 .profile-head2head-frame #uvTab {
   display: none; }
 
+
 .chart.bar-chart{
   height: 510px;
   overflow: hidden;
 }
 
-/*# sourceMappingURL=../../../../../../../../../../../../../../static/css/wazimap.css.map */
+
+/*# sourceMappingURL=../../../../../../../../../../static/css/wazimap.css.map */
