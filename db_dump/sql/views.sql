@@ -1,20 +1,32 @@
-####query
-
-CREATE TABLE simple_v6pop
-AS SELECT * FROM view_st_v6pop
-
-
 #####with views
 
-DROP VIEW view_st_v6pop;
-DROP VIEW view_v6pop_world;
-DROP VIEW view_v6pop_continent;
+drop view view_ft_v6_alloc_vs_usage;
+drop view view_v6_allocation_usage_ww;
+drop view view_v6_allocation_usage_cc;
+drop view view_asn_type;
+drop view view_ft_marketshare_v6users;
+drop view view_main_asn_rank_top10_world_v6users;
+drop view view_main_asn_rank_top10_continent_v6users;
+drop view view_main_asn_rank_top10_cc_v6users;
+drop view view_ft_marketshare_users;
+drop view view_main_asn_rank_top10_world_users;
+drop view view_main_asn_rank_top10_continent_users;
+drop view view_main_asn_rank_top10_cc_users;
+
+drop view view_main_asn_rank_cc;
+drop view view_ft_users_world;
+drop view view_ft_users_population;
+drop view view_ft_v4_v6;
+drop view view_st_v6pop;
+drop view view_v6pop_world;
+drop view view_v6pop_continent;
 DROP VIEW view_v6pop_country;
-CREATE view view_v6pop_country AS
+
+CREATE or replace view view_v6pop_country AS
 SELECT
 wg.geo_level::VARCHAR,
 wg.geo_code::VARCHAR,
-''::VARCHAR AS geo_version,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 SUM(m.users)::BIGINT AS total_users,
 COUNT(m.asn)::BIGINT AS total_isps,
 (SELECT p.value FROM population p, country c WHERE p.country_code = c."alpha-3" AND c."alpha-2"=wg.geo_code AND p.year=2016)::BIGINT AS population,
@@ -26,11 +38,11 @@ FROM wazimap_geography wg, main m
 WHERE wg.geo_code = m.country_code
 GROUP BY wg.geo_level, wg.geo_code, wg.parent_code, wg.parent_level
 
-CREATE view view_v6pop_continent AS
+CREATE or replace view view_v6pop_continent AS
 SELECT
 v.parent_level::VARCHAR AS geo_level,
 v.parent_code::VARCHAR AS geo_code,
-''::VARCHAR AS geo_version,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 SUM(v.total_users)::BIGINT AS total_users,
 SUM(v.total_isps)::BIGINT AS total_isps,
 SUM(v.population)::BIGINT AS population,
@@ -41,13 +53,11 @@ SUM(v.total_samples)::BIGINT AS total_samples,
 FROM view_v6pop_country v
 GROUP BY v.parent_level, v.parent_code
 
-
-
-CREATE view view_v6pop_world AS
+CREATE or replace view view_v6pop_world AS
 SELECT
 'world'::VARCHAR AS geo_level,
 'WW'::VARCHAR AS geo_code,
-''::VARCHAR AS geo_version,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 SUM(v.total_users)::BIGINT AS total_users,
 SUM(v.total_isps)::BIGINT AS total_isps,
 SUM(v.population)::BIGINT AS population,
@@ -71,6 +81,7 @@ CREATE view view_ft_v4_v6 AS
 SELECT
 v.geo_level AS geo_level,
 v.geo_code AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 'ipv4' AS type,
 v.total_users AS total
 FROM view_st_v6pop v
@@ -78,6 +89,7 @@ UNION
 SELECT
 v.geo_level AS geo_level,
 v.geo_code AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 'ipv6' AS type,
 v.total_v6 AS total
 FROM view_st_v6pop v
@@ -87,6 +99,7 @@ CREATE view view_ft_users_population AS
 SELECT
 v.geo_level AS geo_level,
 v.geo_code AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 'users' AS type,
 v.total_users AS total
 FROM view_st_v6pop v
@@ -94,6 +107,7 @@ UNION
 SELECT
 v.geo_level AS geo_level,
 v.geo_code AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 'population' AS type,
 v.population AS total
 FROM view_st_v6pop v
@@ -105,6 +119,7 @@ CREATE view view_ft_users_world AS
 SELECT
 vc.geo_level AS geo_level,
 vc.geo_code AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 'country' AS type,
 vc.total_users AS total
 FROM view_v6pop_country vc
@@ -112,6 +127,7 @@ UNION
 SELECT
 vc.geo_level AS geo_level,
 vc.geo_code AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 'world' AS type,
 (SELECT total_users FROM view_v6pop_world) AS total
 FROM view_v6pop_country vc
@@ -119,6 +135,7 @@ UNION
 SELECT
 v.geo_level AS geo_level,
 v.geo_code AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 'continent' AS type,
 v.total_users AS total
 FROM view_v6pop_continent v
@@ -126,6 +143,7 @@ UNION
 SELECT
 v.geo_level AS geo_level,
 v.geo_code AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 'world' AS type,
 (SELECT total_users FROM view_v6pop_world) AS total
 FROM view_v6pop_continent v
@@ -142,6 +160,7 @@ WITH ranked_main AS (
 SELECT 
 wg.geo_level AS geo_level,
 rm.country_code AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 rm.asn, 
 CASE rm.asname WHEN NULL THEN rm.asn ELSE rm.asname END AS asname,  
 rm.users, 
@@ -166,7 +185,9 @@ WITH ranked_asn AS (
 SELECT
 rm.parent_level AS geo_level,
 rm.parent_code AS geo_code,
-CASE rm.asname WHEN NULL THEN rm.asn ELSE rm.asname END AS asname,  
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+CASE rm.asname WHEN NULL THEN rm.asn ELSE rm.asname END AS asname,
+rm.asn,  
 rm.users AS total
 FROM ranked_asn rm
 WHERE rm.rnk_users BETWEEN 1 AND 10
@@ -174,7 +195,9 @@ UNION
 SELECT 
 rm.parent_level AS geo_level,
 rm.parent_code AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 'OTHERS' AS asname,
+'OTHERS' AS asn,
 SUM(rm.users) AS total
 FROM ranked_asn rm
 WHERE rm.rnk_users > 10
@@ -192,7 +215,9 @@ WITH ranked_asn AS (
 SELECT
 rm.parent_level AS geo_level,
 rm.parent_code AS geo_code,
-CASE rm.asname WHEN NULL THEN rm.asn ELSE rm.asname END AS asname,   
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+CASE rm.asname WHEN NULL THEN rm.asn ELSE rm.asname END AS asname,
+rm.asn,   
 rm.v6users AS total
 FROM ranked_asn rm
 WHERE rm.rnk_v6users BETWEEN 1 AND 10
@@ -200,7 +225,9 @@ UNION
 SELECT 
 rm.parent_level AS geo_level,
 rm.parent_code AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 'OTHERS' AS asname,
+'OTHERS' AS asn,
 SUM(rm.v6users) AS total
 FROM ranked_asn rm
 WHERE rm.rnk_v6users > 10
@@ -216,7 +243,9 @@ WITH ranked_main AS (
 SELECT 
 wg.geo_level AS geo_level,
 rm.country_code AS geo_code,
-CASE rm.asname WHEN NULL THEN rm.asn ELSE rm.asname END AS asname,  
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+CASE rm.asname WHEN NULL THEN rm.asn ELSE rm.asname END AS asname,
+rm.asn,  
 rm.v6users AS total
 FROM ranked_main rm, wazimap_geography wg
 WHERE wg.geo_code = rm.country_code
@@ -225,7 +254,9 @@ UNION
 SELECT 
 wg.geo_level AS geo_level,
 rm.country_code AS geo_code,
-'OTHERS' AS asname,  
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+'OTHERS' AS asname, 
+'OTHERS' AS asn, 
 SUM(rm.v6users) AS total
 FROM ranked_main rm, wazimap_geography wg
 WHERE wg.geo_code = rm.country_code
@@ -242,7 +273,9 @@ WITH ranked_main AS (
 SELECT 
 wg.geo_level AS geo_level,
 rm.country_code AS geo_code,
-CASE rm.asname WHEN NULL THEN rm.asn ELSE rm.asname END AS asname,  
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+CASE rm.asname WHEN NULL THEN rm.asn ELSE rm.asname END AS asname,
+rm.asn,  
 rm.v6users AS total
 FROM ranked_main rm, wazimap_geography wg
 WHERE wg.geo_code = rm.country_code
@@ -251,7 +284,9 @@ UNION
 SELECT 
 wg.geo_level AS geo_level,
 rm.country_code AS geo_code,
-'OTHERS' AS asname,  
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+'OTHERS' AS asname,
+'OTHERS' AS asn,  
 SUM(rm.v6users) AS total
 FROM ranked_main rm, wazimap_geography wg
 WHERE wg.geo_code = rm.country_code
@@ -263,7 +298,9 @@ CREATE view view_main_asn_rank_top10_world_users AS
 SELECT
 'world' AS geo_level,
 'WW' AS geo_code,
-CASE m.asname WHEN NULL THEN m.asn ELSE m.asname END AS asname,  
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+CASE m.asname WHEN NULL THEN m.asn ELSE m.asname END AS asname,
+m.asn AS asn, 
 m.users AS total
 FROM main m, wazimap_geography wg
 WHERE m.country_code = wg.geo_code
@@ -272,7 +309,9 @@ UNION
 SELECT
 'world' AS geo_level,
 'WW' AS geo_code,
-'OTHERS' AS asname,  
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+'OTHERS' AS asname,
+'OTHERS' AS asn,  
 SUM(m.users) AS total
 FROM main m, wazimap_geography wg
 WHERE m.country_code = wg.geo_code
@@ -284,7 +323,9 @@ CREATE view view_main_asn_rank_top10_world_v6users AS
 SELECT
 'world' AS geo_level,
 'WW' AS geo_code,
-CASE m.asname WHEN NULL THEN m.asn ELSE m.asname END AS asname,  
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+CASE m.asname WHEN NULL THEN m.asn ELSE m.asname END AS asname,
+m.asn,  
 m.v6users AS total
 FROM main m, wazimap_geography wg
 WHERE m.country_code = wg.geo_code
@@ -293,7 +334,9 @@ UNION
 SELECT
 'world' AS geo_level,
 'WW' AS geo_code,
-'OTHERS' AS asname,  
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
+'OTHERS' AS asname,
+'OTHERS' AS asn,  
 SUM(m.v6users) AS total
 FROM main m, wazimap_geography wg
 WHERE m.country_code = wg.geo_code
@@ -318,10 +361,11 @@ SELECT * FROM view_main_asn_rank_top10_world_v6users
 
 ##### ASN type
 
-CREATE view view_asn_type AS
+CREATE view view_ft_asn_type AS
 SELECT 
 wg.geo_level,
 wg.geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 COALESCE(c.type, 'Unknown') AS type,
 COUNT(c.type) AS total
 FROM wazimap_geography wg INNER JOIN main m ON wg.geo_code = m.country_code
@@ -331,6 +375,7 @@ UNION
 SELECT 
 wg.parent_level AS geo_level,
 wg.parent_code AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 COALESCE(c.type, 'Unknown') AS type,
 COUNT(c.type) AS total
 FROM wazimap_geography wg INNER JOIN main m ON wg.geo_code = m.country_code
@@ -340,6 +385,7 @@ UNION
 SELECT 
 'world' AS geo_level,
 'WW' AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 COALESCE(c.type, 'Unknown') AS type,
 COUNT(c.type) AS total
 FROM wazimap_geography wg INNER JOIN main m ON wg.geo_code = m.country_code
@@ -352,6 +398,7 @@ CREATE view view_v6_allocation_usage_cc AS
 SELECT
 wg.geo_level,
 wg.geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 'allocation' AS usage_vs_alloc,
 SUM(POWER(2,48 - n.prefix_len))::BIGINT total
 FROM wazimap_geography wg, nro_allocation n
@@ -364,6 +411,7 @@ UNION
 SELECT
 wg.geo_level,
 wg.geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 'usage' AS usage_vs_alloc,
 SUM(m.v6users)::BIGINT AS total
 FROM wazimap_geography wg, main m
@@ -376,6 +424,7 @@ CREATE view view_v6_allocation_usage_ww AS
 SELECT
 wg.parent_level AS geo_level,
 wg.parent_code AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 'allocation' AS usage_vs_alloc,
 SUM(v.total)::BIGINT AS total
 FROM wazimap_geography wg, view_v6_allocation_usage_cc v
@@ -385,6 +434,7 @@ UNION
 SELECT
 v.parent_level AS geo_level,
 v.parent_code AS geo_code,
+TO_CHAR(NOW(), 'YYYY-MM')::VARCHAR AS geo_version,
 'usage' AS usage_vs_alloc,
 SUM(v.total_v6)::BIGINT AS total
 FROM view_st_v6pop v
