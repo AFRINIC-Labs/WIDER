@@ -32,18 +32,18 @@ WAZIMAP['levels'] = {
     }
 }
 
+
 WAZIMAP['comparative_levels'] = ['world', 'continent', 'country']
 
 WAZIMAP['geometry_data'] = {
-  '': {
+  '2018-03': {
       'world': 'geo/world.topojson',
       'continent': 'geo/continent.topojson',
       'country': 'geo/country.topojson'
   }
 }
 
-
-WAZIMAP['default_geo_version'] = ''
+WAZIMAP['default_geo_version'] = '2018-03'
 WAZIMAP['profile_builder'] = 'wazimap_ww.profiles.get_profile'
 WAZIMAP['map_centre'] = [45, 0]
 WAZIMAP['map_zoom'] = 2
@@ -62,12 +62,6 @@ LOGGING = {
 
     },
     'handlers': {
-        'console': {
-            'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'filename': '/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/mylog.log',
-            'formatter': 'verbose'
-        },
       'default': {
         'level': 'DEBUG',
         'class': 'logging.handlers.RotatingFileHandler',

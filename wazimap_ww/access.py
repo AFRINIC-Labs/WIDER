@@ -10,21 +10,24 @@ import populationjson
 logger = logging.getLogger(__name__)
 
 def get_access_profile(geo, session):
-
-	countriesTable = get_datatable('regions')
-	countrieUsers, total = get_stat_data('users_or_not', geo, session,table_fields=['users_or_not'])
-	worldUsers, total = get_stat_data('region_or_world', geo, session,table_fields=['region_or_world'])
-	marketShare, total = get_stat_data('asn', geo, session, '-total',table_fields=['asn'])
-
-	users, _ = countriesTable.get_stat_data(geo, 'users')
-
 	
-	
+	view_ft_users = None
+
+	if geo.geo_level == 'country':
+		view_ft_users, _ = get_stat_data(['type'], geo, session, table_name='view_ft_users_country_continent')
+	elif geo.geo_level == 'continent':
+		view_ft_users, _ = get_stat_data(['type'], geo, session, table_name='view_ft_users_continent_world')
+	elif geo.geo_level == 'world':
+		view_ft_users, _ = get_stat_data(['type'], geo, session, table_name='view_ft_users_world_continent')
+
+
+	view_ft_users_population, _ = get_stat_data(['type'], geo, session, table_name='view_ft_users_population')
+
 	return	{
-	'users':{
-		"name": "Active internet users in " + geo.name,
-        "values": {"this": users["users"]["numerators"]["this"]}
+	'view_ft_users_population_users':{
+		"name": "Population data can be pulled from",
+		"values": {"this": view_ft_users_population['Population']['numerators']['this']}
 	},
-	'users_in_country':countrieUsers,
-	'users_in_world':worldUsers,
-	'marketshare':marketShare}
+	'view_ft_users': view_ft_users,
+	'view_ft_users_population': view_ft_users_population,
+	}

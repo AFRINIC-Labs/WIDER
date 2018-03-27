@@ -39,37 +39,26 @@
                         
                         <span class="value">{{ demographics.total_users.values.this|floatformat:"0" }}</span>
                         <span class="name">Internet users</span>
-                        </br>
-                        <span class="value">{{ demographics.total_isps.values.this|floatformat:"0" }}</span>
-                        <span class="name">Networks (ASNs)</span>
-                        </br>
-                        <span class="value">{{ demographics.total_v6.values.this|floatformat:"0" }}</span>
-                        <span class="name">IPv6 users</span>
-                       
                         {% endblock %}
                     </span>
                 </div>
             </div>
-            {% if geography.this.square_kms %}
             <div class="column-half">
                 <div class="stat">
                     <span class="secondary">
-                        <span class="value">{% if geography.this.square_kms < 1.0 %}{{ geography.this.square_kms|floatformat:"3" }}{% else %}{{ geography.this.square_kms|floatformat:"1" }}{% endif %}</span>
-                        <span class="name"> square kilometres</span>
+                        <span class="value">{{ demographics.total_isps.values.this|floatformat:"0" }}</span>
+                        <span class="name"> networks (ASNs)</span>
                     </span>
-                    {% if demographics.population_density.values.this %}
                     <span class="secondary">
                         {% block profile_header_density %}
-                        <span class="value">{{ demographics.population_density.values.this|floatformat:"1" }}</span>
-                        <span class="name"> people per square kilometre</span>
+                        <span class="value">{{ demographics.total_v6.values.this|floatformat:"0" }}</span>
+                        <span class="name"> IPv6 users</span>
                         {% endblock %}
                     </span>
-                    {% endif %}
                     {% block geography_extra_sq_km %}
                     {% endblock %}
                 </div>
             </div>
-            {% endif %}
 
             {% if geography.this.show_extra_links %}
                 {% include "profile/_blocks/_header_extra_links.html" %}
@@ -106,7 +95,9 @@
 {% block profile_detail %}
 {% include 'profile/sections/access.html' %}
 {% include 'profile/sections/ipv6.html' %}
-{% include 'profile/sections/isp.html' %}
+{% include 'profile/sections/marketshare.html' %}
+{% include 'profile/sections/v6marketshare.html' %}
+{% include 'profile/sections/asntypes.html' %}
 
 {% endblock profile_detail %}
 

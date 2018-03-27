@@ -8,9 +8,11 @@ logger = logging.getLogger(__name__)
 
 from wazimap_ww import (
     demographics,
-    #access,
-    #ipv6,
-    #isp
+    access,
+    ipv6,
+    marketshare,
+    v6marketshare,
+    asntypes
 )
 
 
@@ -18,14 +20,15 @@ from wazimap_ww import (
 
 PROFILE_SECTIONS = (
     'demographics',
-   # 'access',
-   # 'ipv6',
-   #'isp'
+    'access',
+    'ipv6',
+    'marketshare',
+    'v6marketshare',
+    'asntypes'
 )
 
 
 def get_profile(geo, profile_name, request):
-    logger.debug(geo.version)
     session = get_session()
 
     try:
@@ -40,21 +43,25 @@ def get_profile(geo, profile_name, request):
 
     finally:
         session.close()
-    
+
+    #logger.debug(today().strftime('%Y-%m'));
     return data
 
 
 def get_demographics_profile(geo, session):
     return demographics.get_demographics_profile(geo, session)
 
-"""
 def get_access_profile(geo, session):
     return access.get_access_profile(geo, session)
 
 def get_ipv6_profile(geo, session):
     return ipv6.get_ipv6_profile(geo, session)
 
-def get_isp_profile(geo, session):
-    return isp.get_isp_profile(geo, session)
+def get_marketshare_profile(geo, session):
+    return marketshare.get_marketshare_profile(geo, session)
 
-"""
+def get_v6marketshare_profile(geo, session):
+    return v6marketshare.get_v6marketshare_profile(geo, session)
+
+def get_asntypes_profile(geo, session):
+    return asntypes.get_asntypes_profile(geo, session)

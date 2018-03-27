@@ -6,11 +6,24 @@ from wazimap.data.utils import get_stat_data, get_objects_by_geo, \
 
 def get_ipv6_profile(geo, session):
 
-	countriesTable = get_datatable('countries')
+	view_ft_v6users = None
 
-	users, _ = countriesTable.get_stat_data(geo, 'v6users')
+	view_ft_v4_v6, _ = get_stat_data(['type'], geo, session, table_name='view_ft_v4_v6')
 
-	return	{'ipv6_users':{
-		"name": "Active IPV6 Internet users in " + geo.name,
-        "values": {"this": users["v6users"]["numerators"]["this"]}
-	}}
+	if geo.geo_level == 'country':
+		view_ft_v6users, _ = get_stat_data(['type'], geo, session, table_name='view_ft_v6users_country_continent')
+	elif geo.geo_level == 'continent':
+		view_ft_v6users, _ = get_stat_data(['type'], geo, session, table_name='view_ft_v6users_continent_world')
+	elif geo.geo_level == 'world':
+		view_ft_v6users, _ = get_stat_data(['type'], geo, session, table_name='view_ft_v6users_world_continent')
+
+	#view_ft_v6_alloc_vs_usage, _ = get_stat_data(['usage_vs_alloc'], geo, session, table_name='view_ft_v6_alloc_vs_usage')
+
+	return	{'view_ft_v4_v6_users':{
+		"name": "Active IPv6 users in " + geo.name,
+		"values": {"this": view_ft_v4_v6['Ipv6']['numerators']['this']}
+	},
+	'view_ft_v4_v6': view_ft_v4_v6,
+	'view_ft_v6users': view_ft_v6users
+	#'view_ft_v6_alloc_vs_usage': view_ft_v6_alloc_vs_usage
+	}
