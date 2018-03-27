@@ -1,5 +1,4 @@
-wazimap.css
-wazimap.css.map
+static/css/
 *.log
 *.log.*
 *.pyc

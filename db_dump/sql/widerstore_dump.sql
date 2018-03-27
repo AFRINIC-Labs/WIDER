@@ -19,3 +19,5 @@ COPY (select * from view_main_asn_rank_continent_v6users) TO '/tmp/ft_asn_rank_c
 COPY (select * from view_main_asn_rank_world_users) TO '/tmp/ft_asn_rank_world_users.csv' CSV HEADER quote '"' DELIMITER ',';
 COPY (select * from view_main_asn_rank_world_v6users) TO '/tmp/ft_asn_rank_world_v6users.csv' CSV HEADER quote '"' DELIMITER ',';
 COPY (select * from view_st_v6pop) TO '/tmp/st_v6pop.csv' CSV HEADER quote '"' DELIMITER ',';
+COPY (select * from view_view_wazimap_geography) TO '/tmp/wazimap_geography.csv' CSV HEADER quote '"' DELIMITER ',';
+

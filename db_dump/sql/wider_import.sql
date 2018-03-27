@@ -60,3 +60,6 @@ COPY ft_asn_rank_world_v6users FROM '/tmp/ft_asn_rank_world_v6users.csv' CSV HEA
 
 truncate st_v6pop;
 COPY st_v6pop FROM '/tmp/st_v6pop.csv' CSV HEADER quote '"' DELIMITER ',';
+
+truncate wazimap_geography;
+COPY wazimap_geography FROM '/tmp/wazimap_geography.csv' CSV HEADER quote '"' DELIMITER ',';
