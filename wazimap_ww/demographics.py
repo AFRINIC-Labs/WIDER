@@ -11,7 +11,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 def get_demographics_profile(geo, session):
-    simple_v6pop = get_datatable('view_st_v6pop')
+    simple_v6pop = get_datatable('st_v6pop')
     
     total_users, _ = simple_v6pop.get_stat_data(geo, 'total_users')
     total_isps, _ = simple_v6pop.get_stat_data(geo, 'total_isps')

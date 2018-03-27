@@ -7,10 +7,10 @@ from wazimap.data.utils import get_stat_data, get_objects_by_geo, \
 import populationjson
 
 def get_v6marketshare_profile(geo, session):
-	simple_v6pop = get_datatable('view_st_v6pop')
+	simple_v6pop = get_datatable('st_v6pop')
 	total_v6, _ = simple_v6pop.get_stat_data(geo, 'total_v6')
 	
-	view_ft_marketshare_v6users, _ = get_stat_data('asn', geo, session, order_by='-total',table_fields='total',table_name='view_ft_marketshare_v6users')
+	view_ft_marketshare_v6users, _ = get_stat_data('asn', geo, session, order_by='-total',table_fields='total',table_name='ft_marketshare_v6users')
 
 	return	{
 	'isp_count':{
