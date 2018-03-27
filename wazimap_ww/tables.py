@@ -3,7 +3,7 @@ from wazimap.data.tables import FieldTable, SimpleTable
 #access
     #level=country 
 FieldTable(['type'],
-        id='view_ft_users_country_continent',
+        id='ft_users_country_continent',
         universe='Access',
         value_type='BIGINT',
         description='Internet users coutry vs Internet users in the world.',
@@ -12,7 +12,7 @@ FieldTable(['type'],
 
     #level=continent 
 FieldTable(['type'],
-        id='view_ft_users_continent_world',
+        id='ft_users_continent_world',
         universe='Access',
         value_type='BIGINT',
         description='Internet users continent vs Internet users in the world.',
@@ -21,7 +21,7 @@ FieldTable(['type'],
 
     #level=world 
 FieldTable(['type'],
-        id='view_ft_users_world_continent',
+        id='ft_users_world_continent',
         universe='Access',
         value_type='BIGINT',
         description='Internet users vs Internet users in the world.',
@@ -29,7 +29,7 @@ FieldTable(['type'],
         year='2018')
 
 FieldTable(['type'],
-        id='view_ft_users_population',
+        id='ft_users_population',
         universe='Access',
         value_type='BIGINT',
         description='Number of users (source APNIC).',
@@ -39,7 +39,7 @@ FieldTable(['type'],
 #v6
 
 FieldTable(['type'],
-        id='view_ft_v4_v6',
+        id='ft_v4_v6',
         universe='IPv6',
         value_type='BIGINT',
         description='The IPv6 market share in a given country.',
@@ -48,7 +48,7 @@ FieldTable(['type'],
 
     #level=country 
 FieldTable(['type'],
-        id='view_ft_v6users_country_continent',
+        id='ft_v6users_country_continent',
         universe='IPv6',
         value_type='BIGINT',
         description='Active IPv6 users.',
@@ -57,7 +57,7 @@ FieldTable(['type'],
 
     #level=continent 
 FieldTable(['type'],
-        id='view_ft_v6users_continent_world',
+        id='ft_v6users_continent_world',
         universe='IPv6',
         value_type='BIGINT',
         description='Active IPv6 users.',
@@ -66,7 +66,7 @@ FieldTable(['type'],
 
     #level=world 
 FieldTable(['type'],
-        id='view_ft_v6users_world_continent',
+        id='ft_v6users_world_continent',
         universe='IPv6',
         value_type='BIGINT',
         description='Active IPv6 users.',
@@ -75,7 +75,7 @@ FieldTable(['type'],
 
 #Removed until v1.1
 # FieldTable(['usage_vs_alloc'],
-#         id='view_ft_v6_alloc_vs_usage',
+#         id='ft_v6_alloc_vs_usage',
 #         universe='usage',
 #         value_type='BIGINT',
 #         description='Active IPv6 users.',
@@ -84,7 +84,7 @@ FieldTable(['type'],
 
 #market share
 FieldTable(['asn'],
-        id='view_ft_marketshare_users',
+        id='ft_marketshare_users',
         universe='Marketshare',
         total_column='total',
         value_type='BIGINT',
@@ -95,8 +95,9 @@ FieldTable(['asn'],
 
 
 #v6 market share
-FieldTable(['asname','asn'],
-        id='view_ft_marketshare_v6users',
+
+FieldTable(['asn'],
+        id='ft_marketshare_v6users',
         universe='Marketshare',
         total_column='total',
         value_type='BIGINT',
@@ -104,7 +105,7 @@ FieldTable(['asname','asn'],
         dataset='Stats from stats.labs.apnic.net',
         year='2018')
 
-# SimpleTable(id='view_ft_marketshare_users',
+# SimpleTable(id='ft_marketshare_users',
 #         universe='Marketshare',
 #         total_column=None,
 #         description='Active IPv6 users.',
@@ -113,7 +114,7 @@ FieldTable(['asname','asn'],
 
 #ASN type
 FieldTable(['type'],
-        id='view_asn_type',
+        id='ft_asn_type',
         universe='ASN types',
         value_type='BIGINT',
         description='Active IPv6 users.',
@@ -122,7 +123,7 @@ FieldTable(['type'],
 
 #Demographics
 SimpleTable(
-    id='view_st_v6pop',
+    id='st_v6pop',
     universe='Internet users',
     total_column=None,
     description='v6pop data',

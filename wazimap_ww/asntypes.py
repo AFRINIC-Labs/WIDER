@@ -10,6 +10,6 @@ import populationjson
 
 def get_asntypes_profile(geo, session):
 	
-	view_ft_asn_type, _ = get_stat_data('type', geo, session,table_name='view_asn_type')
+	view_ft_asn_type, _ = get_stat_data('type', geo, session,table_name='ft_asn_type')
 
 	return	{'view_ft_asn_type':view_ft_asn_type}

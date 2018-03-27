@@ -13,14 +13,14 @@ logger = logging.getLogger(__name__)
 
 def get_marketshare_profile(geo, session):
 
-	simple_v6pop = get_datatable('view_st_v6pop')
+	simple_v6pop = get_datatable('st_v6pop')
 
 	# view_ft_marketshare_matching = marketshare_matching.get_stat_data(geo, 'asn', total=None, percent=None)
 
 
 	total_isps, _ = simple_v6pop.get_stat_data(geo, 'total_isps')
 
-	view_ft_marketshare_users, _ = get_stat_data('asn', geo, session, order_by='-total',table_fields='total',table_name='view_ft_marketshare_users')
+	view_ft_marketshare_users, _ = get_stat_data('asn', geo, session, order_by='-total',table_fields='total',table_name='ft_marketshare_users')
 
 
 	return	{
