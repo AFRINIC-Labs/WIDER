@@ -7,15 +7,23 @@ from wazimap.data.utils import get_stat_data, get_objects_by_geo, \
 def get_ipv6_profile(geo, session):
 
 	view_ft_v6users = None
+	view_ft_v4_v6 = OrderedDict()
 
-	view_ft_v4_v6, _ = get_stat_data(['type'], geo, session, table_name='ft_v4_v6')
+	try:
+		if geo.geo_level == 'country':
+			view_ft_v6users, _ = get_stat_data(['type'], geo, session, table_name='ft_v6users_country_continent')
+		elif geo.geo_level == 'continent':
+			view_ft_v6users, _ = get_stat_data(['type'], geo, session, table_name='ft_v6users_continent_world')
+		elif geo.geo_level == 'world':
+			view_ft_v6users, _ = get_stat_data(['type'], geo, session, table_name='ft_v6users_world_continent')
+	except Exception as e:
+		view_ft_v6users = None
 
-	if geo.geo_level == 'country':
-		view_ft_v6users, _ = get_stat_data(['type'], geo, session, table_name='ft_v6users_country_continent')
-	elif geo.geo_level == 'continent':
-		view_ft_v6users, _ = get_stat_data(['type'], geo, session, table_name='ft_v6users_continent_world')
-	elif geo.geo_level == 'world':
-		view_ft_v6users, _ = get_stat_data(['type'], geo, session, table_name='ft_v6users_world_continent')
+	try:
+		view_ft_v4_v6, _ = get_stat_data(['type'], geo, session, table_name='ft_v4_v6')
+	except Exception as e:
+		view_ft_v4_v6 =  {'Ipv6': {'numerators': {'this': 0}}}
+
 
 	#view_ft_v6_alloc_vs_usage, _ = get_stat_data(['usage_vs_alloc'], geo, session, table_name='ft_v6_alloc_vs_usage')
 

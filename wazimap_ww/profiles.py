@@ -2,8 +2,6 @@ from wazimap.data.utils import get_session, merge_dicts, group_remainder
 from wazimap.geo import geo_data
 
 import logging
-import populationjson
-
 logger = logging.getLogger(__name__)
 
 from wazimap_ww import (
@@ -44,7 +42,7 @@ def get_profile(geo, profile_name, request):
     finally:
         session.close()
 
-    #logger.debug(today().strftime('%Y-%m'));
+    
     return data
 
 

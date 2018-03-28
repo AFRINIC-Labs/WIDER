@@ -10,17 +10,25 @@ logger = logging.getLogger(__name__)
 
 def get_access_profile(geo, session):
 	
-	view_ft_users = None
+	view_ft_users = OrderedDict()
+	view_ft_users_population = OrderedDict()
 
-	if geo.geo_level == 'country':
-		view_ft_users, _ = get_stat_data(['type'], geo, session, table_name='ft_users_country_continent')
-	elif geo.geo_level == 'continent':
-		view_ft_users, _ = get_stat_data(['type'], geo, session, table_name='ft_users_continent_world')
-	elif geo.geo_level == 'world':
-		view_ft_users, _ = get_stat_data(['type'], geo, session, table_name='ft_users_world_continent')
+	try:
+		if geo.geo_level == 'country':
+			view_ft_users, _ = get_stat_data(['type'], geo, session, table_name='ft_users_country_continent')
+		elif geo.geo_level == 'continent':
+			view_ft_users, _ = get_stat_data(['type'], geo, session, table_name='ft_users_continent_world')
+		elif geo.geo_level == 'world':
+			view_ft_users, _ = get_stat_data(['type'], geo, session, table_name='ft_users_world_continent')
+	except Exception as e:
+		view_ft_users = None
 
+	try:
+		view_ft_users_population, _ = get_stat_data(['type'], geo, session, table_name='ft_users_population')
+	except Exception as e:
+		logger.debug(e);
+		view_ft_users_population = {'Population': {'numerators': {'this': 0}}}
 
-	view_ft_users_population, _ = get_stat_data(['type'], geo, session, table_name='ft_users_population')
 
 	return	{
 	'view_ft_users_population_users':{
