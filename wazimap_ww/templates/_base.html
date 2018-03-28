@@ -54,7 +54,9 @@
                 {% endif %}
                 <a class="title" href="{% url 'homepage' %}">
                     {% block header_logo %}
-                    <img src="{% static 'img/wazi-logo.png' %}">
+                    <!-- <img src="{% static 'img/vanilla_log.jpg' %}">
+                    <img src="{% static 'img/afrinic-logo.png' %}">
+                    <img src="{% static 'img/internet-soc-logo.png' %}"> -->
                     {% endblock %}
                     {{ WAZIMAP.name }}
                 </a>
@@ -89,9 +91,15 @@
                     <!-- {% if WAZIMAP.twitter %}
                     <a class="wide-only" href="https://twitter.com/{{ WAZIMAP.twitter }}" title="{{ WAZIMAP.twitter }} on Twitter" target="_blank"><i class="fa fa-2x fa-twitter"></i></a>
                     {% endif %} -->
-                    <!-- <a href="http://www.mediamonitoringafrica.org/" target="_blank">
-                        <img class="mma-logo" src="{% static 'img/mma.png' %}">
-                    </a> -->
+                    <a href="https://vanilla.co.za" target="_blank">
+                        <img class="mma-logo" src="{% static 'img/vanilla_log.jpg' %}">
+                    </a>
+                    <a href="https://www.afrinic.net" target="_blank">
+                        <img class="mma-logo" src="{% static 'img/afrinic-logo.png' %}">
+                    </a>
+                    <a href="http://www.isoc.org.za" target="_blank">
+                        <img class="mma-logo" src="{% static 'img/internet-soc-logo.png' %}">
+                    </a>
                 {% endblock %}
                 </div>
             </div>

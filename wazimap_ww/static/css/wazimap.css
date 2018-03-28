@@ -1644,9 +1644,9 @@ img.screenshot {
 
 #page-header-title img,
 .box-header img {
-  -webkit-border-radius: 4px;
+/*  -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  border-radius: 4px;
+  border-radius: 4px;*/
   margin: 0 3px 0 0;
   vertical-align: baseline;
   height: 21px; }
