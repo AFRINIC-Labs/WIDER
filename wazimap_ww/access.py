@@ -25,7 +25,7 @@ def get_access_profile(geo, session):
 	return	{
 	'view_ft_users_population_users':{
 		"name": "Population data can be pulled from",
-		"values": {"this": 5000}
+		"values": {"this": view_ft_users_population['Population']['numerators']['this']}
 	},
 	'view_ft_users': view_ft_users,
 	'view_ft_users_population': view_ft_users_population,
