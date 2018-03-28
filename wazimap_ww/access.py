@@ -20,7 +20,7 @@ def get_access_profile(geo, session):
 		view_ft_users, _ = get_stat_data(['type'], geo, session, table_name='ft_users_world_continent')
 
 
-	# view_ft_users_population, _ = get_stat_data(['type'], geo, session, table_name='ft_users_population')
+	view_ft_users_population, _ = get_stat_data(['type'], geo, session, table_name='ft_users_population')
 
 	return	{
 	'view_ft_users_population_users':{
@@ -28,5 +28,5 @@ def get_access_profile(geo, session):
 		"values": {"this": 5000}
 	},
 	'view_ft_users': view_ft_users,
-	#'view_ft_users_population': view_ft_users_population,
+	'view_ft_users_population': view_ft_users_population,
 	}
