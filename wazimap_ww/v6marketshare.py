@@ -11,7 +11,7 @@ def get_v6marketshare_profile(geo, session):
 
 	try:
 		view_ft_marketshare_v6users, _ = get_stat_data('asname', geo, session, order_by='-total',table_fields='total',table_name='ft_marketshare_v6users', exclude_zero=True)
-		ispAmount = len(view_ft_marketshare_v6users)
+		ispAmount = len(view_ft_marketshare_v6users) - 1
 	except Exception as e:
 		ispAmount = 0
 		view_ft_marketshare_users = None

@@ -4116,12 +4116,11 @@ ul#site-menu li a:hover {
 
 .mma-logo {
   height: 21px;
-  padding: 2px;
-  background-color: white;
+  padding: 0px;
   vertical-align: baseline; }
 
 #page-header-title .mma-logo {
-  margin: 5px 3px 0px 0px; }
+  margin: 5px 5px 0px 0px; }
 
 #page-header-title .tool-group {
   margin-left: 5px; }
