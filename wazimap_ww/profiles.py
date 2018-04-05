@@ -9,8 +9,7 @@ from wazimap_ww import (
     access,
     ipv6,
     marketshare,
-    v6marketshare,
-    asntypes
+    v6marketshare
 )
 
 
@@ -21,8 +20,7 @@ PROFILE_SECTIONS = (
     'access',
     'ipv6',
     'marketshare',
-    'v6marketshare',
-    'asntypes'
+    'v6marketshare'
 )
 
 
@@ -60,6 +58,3 @@ def get_marketshare_profile(geo, session):
 
 def get_v6marketshare_profile(geo, session):
     return v6marketshare.get_v6marketshare_profile(geo, session)
-
-def get_asntypes_profile(geo, session):
-    return asntypes.get_asntypes_profile(geo, session)

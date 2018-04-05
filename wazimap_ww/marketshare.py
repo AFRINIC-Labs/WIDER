@@ -11,6 +11,7 @@ logger = logging.getLogger(__name__)
 def get_marketshare_profile(geo, session):
 
 	view_ft_marketshare_users = OrderedDict()
+	view_ft_asn_type = OrderedDict()
 	ispAmount = 0
 
 	try:
@@ -20,6 +21,11 @@ def get_marketshare_profile(geo, session):
 		ispAmount = 0
 		view_ft_marketshare_users = None
 
+	try:
+		view_ft_asn_type, _ = get_stat_data('type', geo, session,table_name='ft_asn_type')
+	except Exception as e:
+		view_ft_asn_type = None
+
 
 
 	return	{
@@ -27,4 +33,5 @@ def get_marketshare_profile(geo, session):
 		"name": "ISP's in " + geo.name,
         "values": {'this': ispAmount}
 	},
+	'view_ft_asn_type':view_ft_asn_type,
 	'view_ft_marketshare_users':view_ft_marketshare_users}
