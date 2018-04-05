@@ -45,7 +45,7 @@ def get_ipv6_profile(geo, session):
 	#view_ft_v6_alloc_vs_usage, _ = get_stat_data(['usage_vs_alloc'], geo, session, table_name='ft_v6_alloc_vs_usage')
 
 	return	{'view_ft_v4_v6_users':{
-		"name": "Active IPv6 users in " + geo.name,
+		"name": "Active IPv6 users",
 		"values": {"this": view_ft_v4_v6['IPv6']['numerators']['this']}
 	},
 	'view_ft_v4_v6': view_ft_v4_v6,

@@ -44,5 +44,6 @@ def get_demographics_profile(geo, session):
         'total_v6': {
             "name": "IPv6",
             "values": {"this": total_v6['total_v6']['numerators']['this']}
-        }
+        },
+        'parent': geo.parent.name
     }

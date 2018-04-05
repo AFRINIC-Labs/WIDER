@@ -30,7 +30,7 @@ def get_marketshare_profile(geo, session):
 
 	return	{
 	'isp_count':{
-		"name": "ISP's in " + geo.name,
+		"name": "ISP's",
         "values": {'this': ispAmount}
 	},
 	'view_ft_asn_type':view_ft_asn_type,

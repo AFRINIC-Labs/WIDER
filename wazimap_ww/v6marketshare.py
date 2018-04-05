@@ -20,7 +20,7 @@ def get_v6marketshare_profile(geo, session):
 
 	return	{
 	'isp_count':{
-		"name": "IPv6 ISP's in " + geo.name,
+		"name": "IPv6 ISP's",
         "values": {'this': ispAmount}
 	},
 	'view_ft_marketshare_v6users':view_ft_marketshare_v6users}

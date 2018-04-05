@@ -1,4 +1,4 @@
-<article id="example" class="clearfix">
+<article id="market_share" class="clearfix">
     <header class="section-contents">
         <h1>Market share</h1>
     </header>
@@ -6,9 +6,10 @@
 
         <section class="clearfix stat-row">
             <h2><a class="permalink" href="#demographics">Internet service providers  <i class="fa fa-link"></i></a></h2>
-            <div class="column-third">
+            <div class="column-two-thirds">
                 {% include 'profile/_blocks/_stat_list.html' with stat=marketshare.isp_count stat_type='number' %}
             </div>
+             <div class="column-third" id="chart-pie-marketshare-view_ft_asn_type" data-stat-type="scaled-percentage" data-chart-title='ISP Type'></div>
             <div class="column-full" id="chart-bar-marketshare-view_ft_marketshare_users" data-stat-type="scaled-percentage" data-chart-title=''></div>
         </section>
 

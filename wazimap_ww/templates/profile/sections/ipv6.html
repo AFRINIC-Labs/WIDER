@@ -1,5 +1,5 @@
 
-<article id="example" class="clearfix">
+<article id="ipv6" class="clearfix">
     <header class="section-contents">
         <h1>IPv6</h1>
     </header>
@@ -11,9 +11,9 @@
             <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=ipv6.view_ft_v4_v6_users stat_type='number' %}
             </div>
-            <div class="column-third" id="chart-pie-ipv6-view_ft_v4_v6" data-stat-type="scaled-percentage" data-chart-title='Show the % of IPv6 users to users (IPv4)'></div>
+            <div class="column-third" id="chart-pie-ipv6-view_ft_v4_v6" data-stat-type="scaled-percentage" data-chart-title='Ratio of IPv6'></div>
             {% if geography.parents %}
-                <div class="column-third" id="chart-pie-ipv6-view_ft_v6users" data-stat-type="scaled-percentage" data-chart-title='IPv6 users vs IPv6 users in parent level'></div>
+                <div class="column-third" id="chart-pie-ipv6-view_ft_v6users" data-stat-type="scaled-percentage" data-chart-title='Ratio of IPv6 in {{ demographics.parent }}'></div>
             {% else %}
                 <div class="column-third" id="chart-pie-ipv6-view_ft_v6users" data-stat-type="scaled-percentage" data-chart-title='IPv6 users users per continent'></div>
             {% endif %}

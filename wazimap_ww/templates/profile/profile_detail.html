@@ -15,6 +15,19 @@
 {% block body_id %}profile{% endblock %}
 
 {% block header_content %}
+<div class="floating-nav-wrapper">
+    <nav class="floating-nav affix-top">
+        <div class="wrapper clearfix">
+            <h3>{{ geography.this.short_name }}</h3>
+            <ul>
+                <li><a href="#internet_access"><i class="fa fa-user"></i> <span>Internet Access</span></a></li>
+                <li><a href="#ipv6"><i class="fa fa-rss"></i> <span>IPv6</span></a></li>
+                <li><a href="#market_share"><i class="fa fa-pie-chart"></i> <span>Market share</span></a></li>
+                <li><a href="#ipv6_market_share"><i class="fa fa-bolt"></i> <span>IPv6 Market share</span></a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
 <div id="cover-map" class="clearfix">
     <div id="slippy-map"></div>
     <div id="cover-profile" class="wrapper">
@@ -97,7 +110,22 @@
 {% include 'profile/sections/ipv6.html' %}
 {% include 'profile/sections/marketshare.html' %}
 {% include 'profile/sections/v6marketshare.html' %}
+<script type="text/javascript">
+    function testScroll(ev){
+        
+        let temp = document.getElementsByClassName('floating-nav')[0];
+        if(window.pageYOffset>40){
+            
+            temp.classList.add('affix');
+            temp.classList.remove('affix-top');
+        }else if (window.pageYOffset<40) {
+            temp.classList.add('affix-top');
+            temp.classList.remove('affix');
+        }
+    }
+    window.onscroll=testScroll
 
+</script>
 {% endblock profile_detail %}
 
 {% endblock content %}
