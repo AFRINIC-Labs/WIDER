@@ -40,7 +40,8 @@ def get_profile(geo, profile_name, request):
     finally:
         session.close()
 
-    
+    logger.debug(data)
+
     return data
 
 

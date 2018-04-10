@@ -14,6 +14,7 @@ def get_demographics_profile(geo, session):
     total_users = OrderedDict()
     total_isps = OrderedDict()
     total_v6 = OrderedDict()
+    parent = None
 
     try:
         total_users, _ = simple_v6pop.get_stat_data(geo, 'total_users')
@@ -28,7 +29,12 @@ def get_demographics_profile(geo, session):
     try:
         total_v6, _ = simple_v6pop.get_stat_data(geo, 'total_v6')
     except Exception as e:
-        total_v6 = {'total_users': {'numerators': {'this': 0}}}
+        total_v6 = {'total_users': {'numerators': {'this': 0}}}    
+
+    try:
+        parent = geo.parent.name
+    except Exception as e:
+        parent = None
     
 
     return {
@@ -45,5 +51,5 @@ def get_demographics_profile(geo, session):
             "name": "IPv6",
             "values": {"this": total_v6['total_v6']['numerators']['this']}
         },
-        'parent': geo.parent.name
+        'parent': parent
     }
