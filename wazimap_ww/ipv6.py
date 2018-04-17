@@ -40,7 +40,7 @@ def get_ipv6_profile(geo, session):
 		])
 		view_ft_v4_v6, _ = get_stat_data(['type'], geo, session, table_name='ft_v4_v6', recode=dict(REGION_IP), key_order=REGION_IP.values())
 	except Exception as e:
-		view_ft_v4_v6 =  {'Ipv6': {'numerators': {'this': 0}}}
+		view_ft_v4_v6 =  {'IPv6': {'numerators': {'this': 0}}}
 
 	#view_ft_v6_alloc_vs_usage, _ = get_stat_data(['usage_vs_alloc'], geo, session, table_name='ft_v6_alloc_vs_usage')
 
