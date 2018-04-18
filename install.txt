@@ -1,4 +1,4 @@
-note: If you are using a virtualenv, don't worry about installing gdal, it is only neccucery for the map, which is what I am working on. Simply type the coutry you want to view in the
+note: If you are using a virtualenv, don't worry about installing gdal, it is only necessary for the map, which is what I am working on. Simply type the country you want to view in the box.
 
 install postgres
 
@@ -7,7 +7,6 @@ create database wider with user wider as owner
 
 install pip
 install csvkit (for data export csv to DB)
-
 
 django startproject wazimap_ww
 
@@ -49,4 +48,4 @@ run: wazimap_ww/python manage.py runserver
 
 edit wazimap_ww/.git/info/exclude
 
-  add:*.pyc and setting.py
+  add:*.pyc and settings.py
