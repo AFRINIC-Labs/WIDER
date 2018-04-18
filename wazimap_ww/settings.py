@@ -11,7 +11,7 @@ INSTALLED_APPS = ['wazimap_ww'] + INSTALLED_APPS
 # Localise this instance of Wazimap
 WAZIMAP['name'] = 'WIDER'
 # NB: this must be https if your site supports HTTPS.
-WAZIMAP['url'] = 'http://wider.isoc.org.za'
+WAZIMAP['url'] = 'https://wider.isoc.org.za'
 WAZIMAP['country_code'] = 'WW'
 
 ROOT_URLCONF = 'wazimap.urls'
@@ -65,7 +65,7 @@ LOGGING = {
       'default': {
         'level': 'ERROR',
         'class': 'logging.handlers.RotatingFileHandler',
-        'filename': '/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/logs/mylog.log',
+        'filename': '/home/wider/wazimap_ww/logs/mylog.log',
         'maxBytes': 1024*1024*5, # 5 MB,
         'backupCount': 5,
         'formatter': 'standard',
@@ -73,7 +73,7 @@ LOGGING = {
       'request_handler': {
         'level': 'DEBUG',
         'class': 'logging.handlers.RotatingFileHandler',
-        'filename': '/home/louw/dev/projects/afrinic/firstdjango/wazimap_ww/logs/django_request.log',
+        'filename': '/home/wider/wazimap_ww/logs/django_request.log',
         'maxBytes': 1024*1024*5, # 5 MB,
         'backupCount': 5,
         'formatter': 'standard',
