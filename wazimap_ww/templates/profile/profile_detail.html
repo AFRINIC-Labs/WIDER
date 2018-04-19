@@ -16,7 +16,7 @@
 
 {% block header_content %}
 <div class="floating-nav-wrapper">
-    <nav class="floating-nav affix-top">
+    <nav class="floating-nav affix">
         <div class="wrapper clearfix">
             <h3>{{ geography.this.short_name }}</h3>
             <ul>
@@ -60,7 +60,7 @@
                 <div class="stat">
                     <span class="secondary">
                         <span class="value">{{ demographics.total_isps.values.this|floatformat:"0" }}</span>
-                        <span class="name"> networks (ASNs)</span>
+                        <span class="name"> networks (ISPs)</span>
                     </span>
                     <span class="secondary">
                         {% block profile_header_density %}
@@ -104,28 +104,12 @@
 <p class="explain">Interact with charts and statistics for additional information.</p>
 {% endblock %}
 
-
 {% block profile_detail %}
 {% include 'profile/sections/access.html' %}
 {% include 'profile/sections/ipv6.html' %}
 {% include 'profile/sections/marketshare.html' %}
 {% include 'profile/sections/v6marketshare.html' %}
-<script type="text/javascript">
-    function testScroll(ev){
-        
-        let temp = document.getElementsByClassName('floating-nav')[0];
-        if(window.pageYOffset>40){
-            
-            temp.classList.add('affix');
-            temp.classList.remove('affix-top');
-        }else if (window.pageYOffset<40) {
-            temp.classList.add('affix-top');
-            temp.classList.remove('affix');
-        }
-    }
-    window.onscroll=testScroll
 
-</script>
 {% endblock profile_detail %}
 
 {% endblock content %}

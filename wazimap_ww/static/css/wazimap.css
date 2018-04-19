@@ -1631,6 +1631,14 @@ img.screenshot {
 .box-header {
   background-color: #014948; }
 
+#page-header{
+  background-color: #014948; 
+  position: relative;
+  vertical-align: top;
+  z-index: 2000;
+}
+
+
 #page-header .wrapper {
   padding: .5em 0; }
 
@@ -4223,21 +4231,27 @@ header.section-contents h1 a {
   display: none; }
 
 
-.chart.bar-chart{
-  height: 510px;
+.chart.bar-chart .div-chart{  /*This hides the market share data past the 10th entry - Louw*/
+  height: 495px;
   overflow: hidden;
 }
 
-
+/*This was added for to fake to make the sticky nav follow the screen, there is jquery in profile.js to create offset for links - Louw*/
 #profile .floating-nav-wrapper {
     height: 55px;
+    margin-top: -25px;
+    margin-bottom: 30px;
+    z-index: 1500;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
-#profile .floating-nav.affix {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    box-shadow: 0px 1px 1px rgba(0,0,0,0.25);
+
+#profile .floating-nav {
+    z-index: 1500;
+    width: 100%;
+    padding: 0.5em;
+    background-color: #e0e4d4;
 }
 #profile .floating-nav {
     z-index: 1500;
@@ -4246,17 +4260,12 @@ header.section-contents h1 a {
     background-color: #e0e4d4;
 }
 
-
-#profile .floating-nav.affix h3 {
-    display: block;
-}
-
 #profile .floating-nav h3 {
+  position: absolute;
     margin-bottom: 0.5em;
-    display: none;
 }
 #profile .floating-nav ul {
-    margin: 0px;
+    margin-top: 30px;
     padding: 0px;
 }
 #profile .floating-nav li {
