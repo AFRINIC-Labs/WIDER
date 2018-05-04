@@ -1,4 +1,5 @@
 static/css/
+static.old/css/
 *.log
 *.log.*
 *.pyc
