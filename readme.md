@@ -5,4 +5,4 @@ To install a local dev inviroment follow the instructions on install.txt
 
 For further documentation go to: https://github.com/OpenUpSA/wazimap-za
 
-Click through to WIDER/wider for more info on how to add charts.
+Click through to WIDER/wazimap_ww for more info on how to add charts.
