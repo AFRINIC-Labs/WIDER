@@ -10,7 +10,7 @@ Profile.py is the main class, it calls classes:
 <li>marketshare.py</li>
 <li>v6marketshare.py</li>
 
-Which act ass controllers that pull data from the model (tables.py)
+Which act as controllers that pull data from the model (tables.py)
 It is up to the database engineer to create the database and the database models in tables.py, these controllers should only be pulling the data with getdata querries and giving them id's. Note that I am surrounding all the querries in try catches so that the whole program doesn't crashes.
 
 
