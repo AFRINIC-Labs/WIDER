@@ -29,14 +29,15 @@ Each of the above are a section in a WIDER page (excluding the home and about pa
 <p><b>view_ft_users, _ = get_stat_data(['type'], geo, session, table_name='ft_users_world_continent')</p></b>
 
 <p>And then add it into the return json object with an id</p>
-<pre>return	{
+<pre><b>return	{
 	'view_ft_users_population_users':{//This is to pass in the value you see at the left of each section (e.g. total users).
 		"name": "World bank data.",
 		"values": {"this": view_ft_users_population['Non-users']['numerators']['this']}
 	},
 	'view_ft_users': view_ft_users,
 	'view_ft_users_population': view_ft_users_population,
-}</pre>
+}</b></pre>
 
+Go to the front-end section under <b>templates</b> to see the last step.
 
 
