@@ -17,5 +17,10 @@ It is up to the database engineer to create the database and the database models
 
 Each of the above are a section in a WIDER page (excluding the home and about page). They call tables that are innitialised in Tables.py which acts as the model.
 
-Adding a table
+<h2>Adding a table</h2>
+
+<p>To add a table, you must first add a model. A model is the structure in which the data is called from the database, it is typically matched with a table in the database. All the models are added in tables.py. </p>
+
+
+<p>In wazimap, there are 2 kind of models/tables, there's a FieldTable and a SimpleTable. A simple table is a table that we are use to, it has multiple columbs with values. A field table has 3 kinds of columns; the region (geo_code, geo_level, geo_id), the field values, and the actual values.</p>
 
