@@ -22,5 +22,21 @@ Each of the above are a section in a WIDER page (excluding the home and about pa
 <p>To add a table, you must first add a model. A model is the structure in which the data is called from the database, it is typically matched with a table in the database. All the models are added in tables.py. </p>
 
 
-<p>In wazimap, there are 2 kind of models/tables, there's a FieldTable and a SimpleTable. A simple table is a table that we are use to, it has multiple columbs with values. A field table has 3 kinds of columns; the region (geo_code, geo_level, geo_id), the field values, and the actual values.</p>
+<p>In wazimap, there are 2 kind of models/tables, there's a FieldTable and a SimpleTable. A simple table is a table that we are use to, it has multiple columbs with values. A field table has 3 kinds of columns; the region (geo_code, geo_level, geo_id), the field values, and the actual values. I field table can be directly translated into a chart.</p>
+
+<p>Secondly you need to call the chart data from the tables.py in one of the files above (depending on which catogory you want to put it in). You should use the get_stat_data function to call field table data.</p>
+
+<p><b>view_ft_users, _ = get_stat_data(['type'], geo, session, table_name='ft_users_world_continent')</p></b>
+
+<p>And then add it into the return json object with an id</p>
+<pre>return	{
+	'view_ft_users_population_users':{//This is to pass in the value you see at the left of each section (e.g. total users).
+		"name": "World bank data.",
+		"values": {"this": view_ft_users_population['Non-users']['numerators']['this']}
+	},
+	'view_ft_users': view_ft_users,
+	'view_ft_users_population': view_ft_users_population,
+}</pre>
+
+
 
