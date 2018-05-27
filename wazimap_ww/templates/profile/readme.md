@@ -15,9 +15,9 @@ In the controller pages you load the content from the model (tables.py), format 
 Here you load them by simply inserting a div:
 
 
-<li>div class="column-third" //how big the chart is.</li>
-<li>id="chart-<pie/bar/histogram>-<the id>" //chart + charttype + the data id you specified in the controllers. </li>
-<li>data-stat-type="scaled-percentage" //the data stat type, its either percentage or scaled-percentage.</li>
-<li>data-chart-title='Ratio of genders and stuff'>//The title you want to have showed.</li>
-<li>div</li>
+<pre><div class="column-third" //how big the chart is.</li>
+id="chart-<pie/bar/histogram>-<the id>" //chart + charttype + the data id you specified in the controllers. </li>
+data-stat-type="scaled-percentage" //the data stat type, its either percentage or scaled-percentage.</li>
+data-chart-title='Ratio of genders and stuff'>//The title you want to have showed.</li>
+</div></pre>
 
