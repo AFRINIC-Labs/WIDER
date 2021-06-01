@@ -30,6 +30,6 @@ Shapely==1.5.17
 six==1.11.0
 SQLAlchemy==1.1.15
 unicodecsv==0.14.1
-urllib3==1.22
+urllib3==1.26.5
 wazimap==1.1.1
 whitenoise==3.3.1
