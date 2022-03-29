@@ -19,7 +19,7 @@ libsass==0.13.4
 nulltype==2.2.11
 options==1.4.8
 packaging==16.8
-paramiko==1.18.4
+paramiko==2.10.1
 psycopg2==2.7.3.2
 pycrypto==2.6.1
 pyparsing==2.2.0
